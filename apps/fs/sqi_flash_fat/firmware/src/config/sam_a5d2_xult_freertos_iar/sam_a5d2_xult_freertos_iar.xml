@@ -1431,7 +1431,7 @@
         </Integer>
         <Boolean dnOrder="268" id="TC0_INTERRUPT_ENABLE">
           <Values dnOrder="0">
-            <Dynamic dnOrder="0" id="core" value="true"/>
+            <Dynamic dnOrder="0" id="tc0" value="true"/>
           </Values>
         </Boolean>
         <String dnOrder="269" id="TC0_INTERRUPT_HANDLER">

@@ -142,7 +142,7 @@
             </Boolean>
           </Attributes>
           <Values dnOrder="1">
-            <Dynamic dnOrder="0" id="core" value="true"/>
+            <Dynamic dnOrder="0" id="flexcom0" value="true"/>
           </Values>
         </Boolean>
         <String dnOrder="26" id="FLEXCOM0_INTERRUPT_HANDLER">
@@ -1457,7 +1457,7 @@
             </Boolean>
           </Attributes>
           <Values dnOrder="1">
-            <Dynamic dnOrder="0" id="core" value="true"/>
+            <Dynamic dnOrder="0" id="uart1" value="true"/>
           </Values>
         </Boolean>
         <String dnOrder="276" id="UART1_INTERRUPT_HANDLER">

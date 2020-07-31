@@ -1331,7 +1331,7 @@
         </Integer>
         <Boolean dnOrder="249" id="SPI0_INTERRUPT_ENABLE">
           <Values dnOrder="0">
-            <Dynamic dnOrder="0" id="core" value="true"/>
+            <Dynamic dnOrder="0" id="spi0" value="true"/>
           </Values>
         </Boolean>
         <String dnOrder="250" id="SPI0_INTERRUPT_HANDLER">
@@ -1456,7 +1456,7 @@
         </Integer>
         <Boolean dnOrder="273" id="TC0_INTERRUPT_ENABLE">
           <Values dnOrder="0">
-            <Dynamic dnOrder="0" id="core" value="true"/>
+            <Dynamic dnOrder="0" id="tc0" value="true"/>
           </Values>
         </Boolean>
         <String dnOrder="274" id="TC0_INTERRUPT_HANDLER">

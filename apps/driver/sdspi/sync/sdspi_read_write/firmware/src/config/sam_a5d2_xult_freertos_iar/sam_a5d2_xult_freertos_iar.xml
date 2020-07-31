@@ -1035,7 +1035,6 @@
           <Values dnOrder="0">
             <Dynamic dnOrder="0">
               <Value dnOrder="0" id="FreeRTOS" priority="1" value="FreeRTOS_Tick_Handler"/>
-              <Value dnOrder="1" id="pit" priority="2" value="PIT_InterruptHandler"/>
             </Dynamic>
           </Values>
         </String>
@@ -1712,8 +1711,7 @@
           </Attributes>
           <Values dnOrder="1">
             <Dynamic dnOrder="0">
-              <Value dnOrder="0" id="core" priority="1" value="true"/>
-              <Value dnOrder="1" id="spi1" priority="1" value="true"/>
+              <Value dnOrder="0" id="spi1" priority="1" value="true"/>
             </Dynamic>
           </Values>
         </Boolean>
@@ -1858,8 +1856,7 @@
           </Attributes>
           <Values dnOrder="1">
             <Dynamic dnOrder="0">
-              <Value dnOrder="0" id="core" priority="1" value="true"/>
-              <Value dnOrder="1" id="tc0" priority="2" value="true"/>
+              <Value dnOrder="0" id="tc0" priority="2" value="true"/>
             </Dynamic>
           </Values>
         </Boolean>

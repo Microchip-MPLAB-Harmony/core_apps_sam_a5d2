@@ -1827,8 +1827,7 @@
         <Boolean dnOrder="260" id="UART1_INTERRUPT_ENABLE">
           <Values dnOrder="0">
             <Dynamic dnOrder="0">
-              <Value dnOrder="0" id="core" priority="1" value="true"/>
-              <Value dnOrder="1" id="uart1" priority="2" value="true"/>
+              <Value dnOrder="0" id="uart1" priority="2" value="true"/>
             </Dynamic>
           </Values>
         </Boolean>

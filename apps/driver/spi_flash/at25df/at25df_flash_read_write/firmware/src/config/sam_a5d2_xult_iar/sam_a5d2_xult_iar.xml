@@ -1316,7 +1316,7 @@
             </Boolean>
           </Attributes>
           <Values dnOrder="1">
-            <Dynamic dnOrder="0" id="core" value="true"/>
+            <Dynamic dnOrder="0" id="spi0" value="true"/>
           </Values>
         </Boolean>
         <String dnOrder="246" id="SPI0_INTERRUPT_HANDLER">

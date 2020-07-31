@@ -1343,7 +1343,7 @@
         </Integer>
         <Boolean dnOrder="244" id="SDMMC1_INTERRUPT_ENABLE">
           <Values dnOrder="0">
-            <Dynamic dnOrder="0" id="core" value="true"/>
+            <Dynamic dnOrder="0" id="sdmmc1" value="true"/>
           </Values>
         </Boolean>
         <String dnOrder="245" id="SDMMC1_INTERRUPT_HANDLER">
@@ -1558,7 +1558,7 @@
         </Integer>
         <Boolean dnOrder="286" id="TC0_INTERRUPT_ENABLE">
           <Values dnOrder="0">
-            <Dynamic dnOrder="0" id="core" value="true"/>
+            <Dynamic dnOrder="0" id="tc0" value="true"/>
           </Values>
         </Boolean>
         <String dnOrder="287" id="TC0_INTERRUPT_HANDLER">
