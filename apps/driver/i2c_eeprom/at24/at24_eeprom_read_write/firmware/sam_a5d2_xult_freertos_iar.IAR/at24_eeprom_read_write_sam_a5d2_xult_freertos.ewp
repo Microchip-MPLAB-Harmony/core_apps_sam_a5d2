@@ -220,7 +220,6 @@
                 <debug>1</debug>
                 <option>
                     <name>CCDefines</name>
-                    <state>__FPU_PRESENT=1</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -1284,7 +1283,6 @@
                 <debug>0</debug>
                 <option>
                     <name>CCDefines</name>
-                    <state>__FPU_PRESENT=1</state>
                     <state>NDEBUG</state>
                 </option>
                 <option>
@@ -2226,6 +2224,9 @@
                         <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\definitions.h</name>
                     </file>
                     <file>
+                        <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\device.h</name>
+                    </file>
+                    <file>
                         <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\FreeRTOSConfig.h</name>
                     </file>
                     <group>
@@ -2270,6 +2271,18 @@
                             </file>
                         </group>
                     </group>
+                    <group>
+                        <name>osal</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\osal\osal.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\osal\osal_definitions.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\osal\osal_freertos.h</name>
+                        </file>
+                    </group>
                     <file>
                         <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\user.h</name>
                     </file>
@@ -2282,9 +2295,6 @@
                 <name>packs</name>
                 <group>
                     <name>ATSAMA5D27_DFP</name>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\device.h</name>
-                    </file>
                     <group>
                         <name>component</name>
                         <file>
@@ -2546,15 +2556,6 @@
                 </group>
             </group>
             <file>
-                <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\osal\osal.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\osal\osal_definitions.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\osal\osal_freertos.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\..\src\app.h</name>
             </file>
         </group>
@@ -2669,6 +2670,12 @@
                             </file>
                         </group>
                     </group>
+                    <group>
+                        <name>osal</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\osal\osal_freertos.c</name>
+                        </file>
+                    </group>
                     <file>
                         <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\tasks.c</name>
                     </file>
@@ -2731,9 +2738,6 @@
                     </group>
                 </group>
             </group>
-            <file>
-                <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\osal\osal_freertos.c</name>
-            </file>
             <file>
                 <name>$PROJ_DIR$\..\src\app.c</name>
             </file>
