@@ -99,6 +99,7 @@ extern "C" {
 #define SYS_FS_FAT_READONLY               false
 #define SYS_FS_FAT_CODE_PAGE              437
 #define SYS_FS_FAT_MAX_SS                 SYS_FS_MEDIA_MAX_BLOCK_SIZE
+#define SYS_FS_FAT_ALIGNED_BUFFER_LEN     512
 
 
 
@@ -119,7 +120,9 @@ extern "C" {
 
 /* MX25L Driver Instance Configuration */
 #define DRV_MX25L_INDEX                       0
+#define DRV_MX25L_CLIENTS_NUMBER              1
 #define DRV_MX25L_START_ADDRESS               0x0
+#define DRV_MX25L_PAGE_SIZE                   256
 #define DRV_MX25L_ERASE_BUFFER_SIZE           4096
 
 /* Memory Driver Global Configuration Options */
