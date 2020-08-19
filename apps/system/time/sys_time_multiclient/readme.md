@@ -111,5 +111,5 @@ Refer to the following table for switch and LED name:
 | Board | Switch Name | LED Name |
 | ----- | ----------- | -------- |
 |  [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1)  | USER | D5(Green) |
-|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | PB_USER | RGB_LED(Green) |
+|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | PB_USER | RGB_LED(Blue) |
 ||||
