@@ -52,6 +52,7 @@ The following table shows the target hardware for the application projects.
 
 - Download harmony MPU bootstrap loader from this [location](https://github.com/Microchip-MPLAB-Harmony/at91bootstrap/blob/master/boot.bin)
 - Copy the downloaded boot loader binary( boot.bin) onto the SD card
+- Create a new JPEG file in the SD Card with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG
 
 #### Setting up the board
 
