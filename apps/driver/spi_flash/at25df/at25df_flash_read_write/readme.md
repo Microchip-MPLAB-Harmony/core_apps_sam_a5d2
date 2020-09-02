@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 driver and system service application examples for SAM A5D2 family
+title: SPI Flash AT25DF - AT25DF flash read write 
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # SPI Flash AT25DF - AT25DF flash read write
