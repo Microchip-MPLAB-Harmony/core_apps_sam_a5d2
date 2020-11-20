@@ -1,0 +1,76 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_a5d2_driver_spi_sync_spi_self_loopback_multi_client_sam_a5d2_xult_freertos",
+		"version": "3.0.1",
+		"displayName": "SPI Driver synchronous - Self loopback multi client Example for SAM A5D2x Family",
+		"projectName": "spi_self_loopback_multi_client_sam_a5d2_xult_freertos",
+		"shortDescription": "This example demonstrates how to use the SPI driver in synchronous mode to achieve self-loop back between multiple clients in RTOS environment.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.40.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.40.0"
+			}
+		],
+		"dfp": {
+			"name": "SAMA5D2_DFP",
+			"semverRange": "^1.5.42"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.5.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAMA5D27",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAMA5D2 Xplained Ultra Evaluation Kit"
+			],
+			[
+				"Harmony", "Drivers", "SPI"
+			],
+			[
+				"Peripherals", "SPI"
+			]
+		],
+		"peripherals": [
+			"SPI"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"ATSAMA5D27",
+			"SAM A5D2x Family",
+			"SPI",
+			"Serial Communication",
+			"SERCOM",
+			"FLEXCOM"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
