@@ -121,7 +121,7 @@ static void APP_SysFSEventHandler(SYS_FS_EVENT event,void* eventData,uintptr_t c
             if(strcmp((const char *)eventData, SDCARD_MOUNT_NAME) == 0)
             {
                 appData.sdCardMountFlag = false;
-                
+
                 /* Initialize the data structure */
                 appData.srcFilePath =   SDCARD_SOURCE_FILE_PATH;
                 appData.dstDirPath  =   EMMC_DIR_PATH;
@@ -136,6 +136,7 @@ static void APP_SysFSEventHandler(SYS_FS_EVENT event,void* eventData,uintptr_t c
             break;
 
         case SYS_FS_EVENT_ERROR:
+        default:
             break;
     }
 }
@@ -172,7 +173,7 @@ void APP_Initialize ( void )
     appData.dstDirPath  =   EMMC_DIR_PATH;
     appData.dstFilePath =   EMMC_FILE_PATH;
     appData.nCopy       =   0;
-    
+
     /* Place the App state machine in its initial state. */
     appData.state = APP_MOUNT_WAIT;
 
@@ -257,7 +258,7 @@ void APP_Tasks ( void )
         case APP_READ_WRITE_TO_FILE:
 
             appData.nBytesRead = SYS_FS_FileRead(appData.readFileHandle, (void *)dataBuffer, APP_DATA_LEN);
-            
+
             if (appData.nBytesRead == -1)
             {
                 /* There was an error while reading the file.
@@ -289,9 +290,9 @@ void APP_Tasks ( void )
             /* Close both files */
             SYS_FS_FileClose(appData.readFileHandle);
             SYS_FS_FileClose(appData.writeFileHandle);
-            
+
             appData.nCopy++;
-            
+
             if(appData.nCopy == 1)
             {
                 /* Copy data back from eMMC to sdCard */
