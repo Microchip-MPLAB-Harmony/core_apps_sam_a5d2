@@ -1,0 +1,74 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_a5d2_fs_sdmmc_fat_throughput_sam_a5d2_xult",
+		"version": "3.0.1",
+		"displayName": "FAT filesystem throughput using SDMMC Media Example for SAM A5D2x Family",
+		"projectName": "sdmmc_fat_throughput_sam_a5d2_xult",
+		"shortDescription": "This application calculates throughput by Writing and Reading data into a Sd-Card at High Speed using the MPLAB Harmony File System and the SDMMC driver.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.40.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.40.0"
+			}
+		],
+		"dfp": {
+			"name": "SAMA5D2_DFP",
+			"semverRange": "^1.5.42"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.5.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAMA5D27",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAMA5D27-SOM1-EK1"
+			],
+			[
+				"Harmony", "Middleware", "File System (FS)", "SDMMC_FAT_THROUGHPUT"
+			],
+			[
+				"File System (FS)", "SDMMC_FAT_THROUGHPUT"
+			]
+		],
+		"peripherals": [
+			"SDMMC_FAT_THROUGHPUT"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"File System",
+			"ATSAMA5D27",
+			"SAM A5D2x Family",
+            "Throughput"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
