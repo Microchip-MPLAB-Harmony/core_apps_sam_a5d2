@@ -50,7 +50,9 @@
 // *****************************************************************************
 
 #include "configuration.h"
+#include "interrupts.h"
 #include "definitions.h"
+
 
 // *****************************************************************************
 // *****************************************************************************
@@ -153,6 +155,8 @@ void RSTC_Handler( void )                __attribute__((weak, alias("DefaultInte
 void RTC_Handler( void )                 __attribute__((weak, alias("DefaultInterruptHandler")));
 
 void FreeRTOS_Tick_Handler(              void );
+void UART1_InterruptHandler(             void );
+void PIOB_InterruptHandler(              void );
 
 /* Handlers for vectors that are shared by multiple interrupts */
 void SYSC_SharedHandler( void )
@@ -162,6 +166,8 @@ void SYSC_SharedHandler( void )
 /* data for irq register initialization */
 IrqData irqData[] = {
     { 3,   (uint32_t) AIC_REGS,    FreeRTOS_Tick_Handler,      AIC_SMR_SRCTYPE_INT_LEVEL_SENSITIVE_Val,  0x0 },
+    { 25,  (uint32_t) AIC_REGS,    UART1_InterruptHandler,     AIC_SMR_SRCTYPE_INT_LEVEL_SENSITIVE_Val,  0x0 },
+    { 68,  (uint32_t) AIC_REGS,    PIOB_InterruptHandler,      AIC_SMR_SRCTYPE_INT_LEVEL_SENSITIVE_Val,  0x7 },
 };
 
 uint32_t irqDataEntryCount = sizeof( irqData ) / sizeof( irqData[ 0 ]);

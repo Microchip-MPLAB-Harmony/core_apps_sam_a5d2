@@ -2137,7 +2137,22 @@
                 <group>
                     <name>sam_a5d2_xult_iar</name>
                     <group>
+                        <name>bsp</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\bsp\bsp.h</name>
+                        </file>
+                    </group>
+                    <group>
                         <name>peripheral</name>
+                        <group>
+                            <name>uart</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\peripheral\uart\plib_uart_common.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\peripheral\uart\plib_uart1.h</name>
+                            </file>
+                        </group>
                         <group>
                             <name>pit</name>
                             <file>
@@ -2185,6 +2200,9 @@
                         <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\definitions.h</name>
                     </file>
                     <file>
+                        <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\interrupts.h</name>
+                    </file>
+                    <file>
                         <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\device.h</name>
                     </file>
                     <file>
@@ -2192,6 +2210,15 @@
                     </file>
                     <group>
                         <name>system</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\system\system.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\system\system_common.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\system\system_module.h</name>
+                        </file>
                         <group>
                             <name>int</name>
                             <file>
@@ -2205,6 +2232,12 @@
                             <name>cache</name>
                             <file>
                                 <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\system\cache\sys_cache.h</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>debug</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\system\debug\sys_debug.h</name>
                             </file>
                         </group>
                     </group>
@@ -2379,8 +2412,209 @@
                             <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\component\xdmac.h</name>
                         </file>
                     </group>
+                    <group>
+                        <name>instance</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\acc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\adc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\aes.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\aesb.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\aic.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\aximx.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\chipid.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\classd.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\flexcom0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\flexcom1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\flexcom2.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\flexcom3.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\flexcom4.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\gmac.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\i2sc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\i2sc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\icm.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\isc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\l2cc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\lcdc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\matrix0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\matrix1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\mcan0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\mcan1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\mpddrc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\pdmic.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\pio.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\pit.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\pmc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\ptc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\pwm.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\qspi0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\qspi1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\rstc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\rtc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\rxlp.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\saic.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\sckc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\sdmmc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\sdmmc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\secumod.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\sfc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\sfr.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\sfrbu.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\sha.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\shdwc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\smc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\spi0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\spi1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\ssc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\ssc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\tc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\tc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\tdes.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\trng.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\twihs0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\twihs1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\uart0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\uart1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\uart2.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\uart3.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\uart4.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\udphs.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\wdt.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\xdmac0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\instance\xdmac1.h</name>
+                        </file>
+                    </group>
                     <file>
-                        <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\atsama5d27.h</name>
+                        <name>$PROJ_DIR$\..\src\packs\ATSAMA5D27_DFP\sama5d27.h</name>
                     </file>
                     <group>
                         <name>pio</name>
@@ -2493,13 +2727,16 @@
                 </group>
             </group>
             <file>
-                <name>$PROJ_DIR$\..\src\app.h</name>
+                <name>$PROJ_DIR$\..\src\task1.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\src\app1.h</name>
+                <name>$PROJ_DIR$\..\src\task2.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\src\app2.h</name>
+                <name>$PROJ_DIR$\..\src\task3.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\task4.h</name>
             </file>
         </group>
         <group>
@@ -2509,7 +2746,19 @@
                 <group>
                     <name>sam_a5d2_xult_iar</name>
                     <group>
+                        <name>bsp</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\bsp\bsp.c</name>
+                        </file>
+                    </group>
+                    <group>
                         <name>peripheral</name>
+                        <group>
+                            <name>uart</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\peripheral\uart\plib_uart1.c</name>
+                            </file>
+                        </group>
                         <group>
                             <name>pit</name>
                             <file>
@@ -2652,13 +2901,16 @@
                 </group>
             </group>
             <file>
-                <name>$PROJ_DIR$\..\src\app.c</name>
+                <name>$PROJ_DIR$\..\src\task1.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\src\app1.c</name>
+                <name>$PROJ_DIR$\..\src\task2.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\src\app2.c</name>
+                <name>$PROJ_DIR$\..\src\task3.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\task4.c</name>
             </file>
         </group>
         <group>

@@ -42,6 +42,13 @@
 //DOM-IGNORE-END
 
 #include "plib_pio.h"
+#include "interrupts.h"
+
+/* Array to store callback objects of each configured interrupt */
+PIO_PIN_CALLBACK_OBJ portPinCbObj[1];
+
+/* Array to store number of interrupts in each PORT Channel + previous interrupt count */
+uint8_t portNumCb[7 + 1] = { 0, 0, 1, 1, 1, 1, 1, 1, };
 
 /******************************************************************************
   Function:
@@ -57,23 +64,46 @@ void PIO_Initialize ( void )
 {
 
  /* Port B Peripheral function GPIO configuration */
-	PIOB_REGS->PIO_MSKR = 0x1;
+	PIOB_REGS->PIO_MSKR = 0x261;
 	PIOB_REGS->PIO_CFGR = 0x0;
 	
  /* Port B Pin 0 configuration */
 	PIOB_REGS->PIO_MSKR = 0x1;
 	PIOB_REGS->PIO_CFGR = (PIOB_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100;
 	
- /* Port B Latch configuration */
-	PIOB_REGS->PIO_SODR = 0x1;
+ /* Port B Pin 5 configuration */
+	PIOB_REGS->PIO_MSKR = 0x20;
+	PIOB_REGS->PIO_CFGR = (PIOB_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100;
+	
+ /* Port B Pin 6 configuration */
+	PIOB_REGS->PIO_MSKR = 0x40;
+	PIOB_REGS->PIO_CFGR = (PIOB_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100;
+	
+ /* Port B Pin 9 configuration */
+	PIOB_REGS->PIO_MSKR = 0x200;
+	PIOB_REGS->PIO_CFGR = (PIOB_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x1003200;
+	
+
+    /* Clear the ISR register */ 
+	(uint32_t)PIOB_REGS->PIO_ISR;
+
+ /* Port D Peripheral function A configuration */
+	PIOD_REGS->PIO_MSKR = 0xc;
+	PIOD_REGS->PIO_CFGR = 0x1;
 	
 
 
 
 
 
-
-
+    uint32_t i;
+    /* Initialize Interrupt Pin data structures */
+    portPinCbObj[0 + 0].pin = PIO_PIN_PB9;
+    
+    for(i=0; i<1; i++)
+    {
+        portPinCbObj[i].callback = NULL;
+    }
 
 }
 
@@ -219,7 +249,115 @@ void PIO_PortOutputEnable(PIO_PORT port, uint32_t mask)
     ((pio_group_registers_t*)port)->PIO_MSKR = mask;
     ((pio_group_registers_t*)port)->PIO_CFGR |= (1 << PIO_CFGR_DIR_Pos);
 }
+// *****************************************************************************
+/* Function:
+    void PIO_PortInterruptEnable(PIO_PORT port, uint32_t mask)
 
+  Summary:
+    Enables IO interrupt on selected IO pins of a port.
+
+  Remarks:
+    See plib_pio.h for more details.
+*/
+void PIO_PortInterruptEnable(PIO_PORT port, uint32_t mask)
+{
+    ((pio_group_registers_t*)port)->PIO_IER = mask;
+}
+
+// *****************************************************************************
+/* Function:
+    void PIO_PortInterruptDisable(PIO_PORT port, uint32_t mask)
+
+  Summary:
+    Disables IO interrupt on selected IO pins of a port.
+
+  Remarks:
+    See plib_pio.h for more details.
+*/
+void PIO_PortInterruptDisable(PIO_PORT port, uint32_t mask)
+{
+    ((pio_group_registers_t*)port)->PIO_IDR = mask;
+}
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: PIO APIs which operates on one pin at a time
+// *****************************************************************************
+// *****************************************************************************
+
+// *****************************************************************************
+/* Function:
+    bool PIO_PinInterruptCallbackRegister(
+        PIO_PIN pin,
+        const PIO_PIN_CALLBACK callback,
+        uintptr_t context
+    );
+
+  Summary:
+    Allows application to register callback for every pin.
+
+  Remarks:
+    See plib_pio.h for more details.
+*/
+bool PIO_PinInterruptCallbackRegister(
+    PIO_PIN pin,
+    const PIO_PIN_CALLBACK callback,
+    uintptr_t context
+)
+{
+    uint8_t i;
+    uint8_t portIndex;
+
+    portIndex = pin >> 5;
+
+    for(i = portNumCb[portIndex]; i < portNumCb[portIndex +1]; i++)
+    {
+        if (portPinCbObj[i].pin == pin)
+        {
+            portPinCbObj[i].callback = callback;
+            portPinCbObj[i].context  = context;
+            return true;
+        }
+    }
+    return false;
+}
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Interrupt Service Routine (ISR) Implementation(s)
+// *****************************************************************************
+// *****************************************************************************
+
+// *****************************************************************************
+/* Function:
+    void PIOB_InterruptHandler (void)
+
+  Summary:
+    Interrupt handler for PORTB.
+
+  Description:
+    This function defines the Interrupt service routine for PORTB.
+    This is the function which by default gets into Interrupt Vector Table.
+
+  Remarks:
+    User should not call this function.
+*/
+void PIOB_InterruptHandler(void)
+{
+    uint32_t status = 0;
+    uint8_t j;
+
+    status  = PIOB_REGS->PIO_ISR;
+    status &= PIOB_REGS->PIO_IMR;
+	
+	for( j = 0; j < 1; j++ )
+	{
+		if((status & ( 1 << (portPinCbObj[j].pin & 0x1F) ) ) && (portPinCbObj[j].callback != NULL))
+		{
+			portPinCbObj[j].callback ( portPinCbObj[j].pin, portPinCbObj[j].context );
+		}
+	}   
+}
 
 /*******************************************************************************
  End of File
