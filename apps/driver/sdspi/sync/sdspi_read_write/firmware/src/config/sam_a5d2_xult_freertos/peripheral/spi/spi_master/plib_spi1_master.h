@@ -1,22 +1,21 @@
 /*******************************************************************************
-  Device Header File
+  SPI PLIB
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    device.h
+    plib_spi1_master.h
 
   Summary:
-    This file includes the selected device from within the project.
-    The device will provide access to respective device packs.
+    SPI1 Master PLIB Header File
 
   Description:
-    None
+    This file has prototype of all the interfaces provided for particular
+    SPI peripheral.
 
 *******************************************************************************/
 
-// DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -39,27 +38,47 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
-// DOM-IGNORE-END
 
-#ifndef DEVICE_H
-#define DEVICE_H
+#ifndef PLIB_SPI1_MASTER_H
+#define PLIB_SPI1_MASTER__H
 
-#pragma GCC diagnostic push
-#ifndef __cplusplus
-#pragma GCC diagnostic ignored "-Wnested-externs"
+#include "device.h"
+#include "plib_spi_master_common.h"
+
+/* Provide C++ Compatibility */
+#ifdef __cplusplus
+
+    extern "C" {
+
 #endif
-#pragma GCC diagnostic ignored "-Wsign-conversion"
-#pragma GCC diagnostic ignored "-Wattributes"
-#pragma GCC diagnostic ignored "-Wundef"
-#ifndef DONT_USE_PREDEFINED_CORE_HANDLERS
-    #define DONT_USE_PREDEFINED_CORE_HANDLERS
-#endif //DONT_USE_PREDEFINED_CORE_HANDLERS
-#ifndef DONT_USE_PREDEFINED_PERIPHERALS_HANDLERS
-    #define DONT_USE_PREDEFINED_PERIPHERALS_HANDLERS
-#endif //DONT_USE_PREDEFINED_PERIPHERALS_HANDLERS
-#include "sama5d27.h"
-#pragma GCC diagnostic pop
-#include "device_cache.h"
-#include "toolchain_specifics.h"
 
-#endif //DEVICE_H
+/****************************** SPI1 Interface *********************************/
+
+void SPI1_Initialize( void );
+
+bool SPI1_WriteRead( void* pTransmitData, size_t txSize, void* pReceiveData, size_t rxSize );
+
+bool SPI1_Write( void* pTransmitData, size_t txSize );
+
+bool SPI1_Read( void* pReceiveData, size_t rxSize );
+
+bool SPI1_TransferSetup( SPI_TRANSFER_SETUP *setup, uint32_t spiSourceClock );
+
+
+bool SPI1_IsBusy( void );
+
+void SPI1_CallbackRegister( const SPI_CALLBACK callback, uintptr_t context );
+
+
+/* Provide C++ Compatibility */
+#ifdef __cplusplus
+
+    }
+
+#endif
+
+#endif // PLIB_SPI1_MASTER_H
+
+/*******************************************************************************
+ End of File
+*/
