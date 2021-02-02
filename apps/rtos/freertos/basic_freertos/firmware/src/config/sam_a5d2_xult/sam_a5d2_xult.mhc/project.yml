@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8FDD6248506F28B32C4F5FD9AA0D9C6F
-- generatedChecksum: 23E3D572BCE07A12E9065BB3E3C7F214
+- generatedChecksum: 4693B8CC018C492E1D08F256AB131D67
   logicalPath: config\sam_a5d2_xult\peripheral\aic
   name: plib_aic.c
   physicalPath: peripheral\aic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 23E3D572BCE07A12E9065BB3E3C7F214
+  userChecksum: 4693B8CC018C492E1D08F256AB131D67
 - generatedChecksum: C44A2DE64636C4A4ABCAC3F964B3216A
   logicalPath: config\sam_a5d2_xult\peripheral\clk
   name: plib_clk.c
@@ -132,13 +132,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5ECD1EF775F08E8EB4C584E0E3B0D659
-- generatedChecksum: D0E51539C88452226AB5AB798D1877D4
+- generatedChecksum: 6543BFA6103E17C13976BE4FBA9F9B96
   logicalPath: config\sam_a5d2_xult\peripheral\pit
   name: plib_pit.c
   physicalPath: peripheral\pit
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D0E51539C88452226AB5AB798D1877D4
+  userChecksum: 6543BFA6103E17C13976BE4FBA9F9B96
 - generatedChecksum: 2878CEFC9C111F7B135B6CD176DBC2F4
   logicalPath: config\sam_a5d2_xult\peripheral\uart
   name: plib_uart1.c
@@ -244,13 +244,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: AF3A8D8AA610E7DFD3E38DDAC5E42074
-- generatedChecksum: 445D69BC1F52D9D51D254C1E6DE8B1C0
+- generatedChecksum: F4B4AD3892607F3E500ABB1F45E39E67
   logicalPath: config\sam_a5d2_xult
   name: FreeRTOSConfig.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 445D69BC1F52D9D51D254C1E6DE8B1C0
+  userChecksum: F4B4AD3892607F3E500ABB1F45E39E67
 - generatedChecksum: 899EF31DB152CC5EE2556838420C4AB6
   logicalPath: packs\ATSAMA5D27_DFP\component
   name: acc.h
@@ -1459,7 +1459,7 @@ settings:
   delimiter: ;=
   key: preprocessor-macros
   security: NON_SECURE
-  value: ROM_ORIGIN=0x0x26F00000;ROM_LENGTH=-0x26f00000
+  value: ''
 - append: true
   category: C32CPP
   delimiter: ;
