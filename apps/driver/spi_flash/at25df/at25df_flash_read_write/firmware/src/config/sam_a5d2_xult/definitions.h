@@ -55,7 +55,7 @@
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/aic/plib_aic.h"
-#include "peripheral/spi/plib_spi0.h"
+#include "peripheral/spi/spi_master/plib_spi0_master.h"
 #include "driver/spi_flash/at25df/drv_at25df.h"
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
@@ -73,6 +73,9 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* CPU clock frequency */
+#define CPU_CLOCK_FREQUENCY 498000000
 
 // *****************************************************************************
 // *****************************************************************************
@@ -166,22 +169,22 @@ void SYS_Tasks ( void );
 // Section: Type Definitions
 // *****************************************************************************
 // *****************************************************************************
-    
+
 // *****************************************************************************
 /* System Objects
-        
+
 Summary:
     Structure holding the system's object handles
-        
+
 Description:
     This structure contains the object handles for all objects in the
     MPLAB Harmony project's system configuration.
-        
+
 Remarks:
     These handles are returned from the "Initialize" functions for each module
     and must be passed into the "Tasks" function for each module.
 */
-        
+
 typedef struct
 {
     /* AT25DF Driver Object */
