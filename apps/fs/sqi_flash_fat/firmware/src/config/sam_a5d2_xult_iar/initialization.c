@@ -215,6 +215,7 @@ const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
 
 void SYS_Initialize ( void* data )
 {
+
   
     CLK_Initialize();
 	PIO_Initialize();
@@ -229,7 +230,7 @@ void SYS_Initialize ( void* data )
 
     PLIB_L2CC_Initialize();
 
-    INT_Initialize();
+    AIC_INT_Initialize();
     
 	WDT_REGS->WDT_MR = WDT_MR_WDDIS_Msk; 		// Disable WDT 
 
