@@ -1,0 +1,68 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: drv_mx25l}
+children:
+- type: Symbols
+  children:
+  - type: Boolean
+    attributes: {id: DRV_MEMORY_CONNECTED}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drv_memory_0, value: 'true'}
+  - type: String
+    attributes: {id: DRV_MX25L_PLIB}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: drv_mx25l, value: QSPI0}
+  - type: Integer
+    attributes: {id: ERASE_BUFFER_SIZE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Comment
+    attributes: {id: ERASE_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+- type: Attachments
+  children:
+  - type: DirectDependency
+    attributes: {id: drv_mx25l_SQI_dependency}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: qspi0}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: QSPI0_SQI}
+  - type: DirectCapability
+    attributes: {id: memory}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: drv_memory_0}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: drv_memory_MEMORY_dependency}
+- type: ElementPosition
+  attributes: {x: '501', y: '202', id: drv_mx25l}
