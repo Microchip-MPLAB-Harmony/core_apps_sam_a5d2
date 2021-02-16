@@ -15,6 +15,7 @@ This application calculates throughput by Writing and Reading data into a eMMC d
 
 ### Application performs below filesystem operations and throughput calculations on eMMC device using both **Aligned** and **Unaligned** buffers
 
+- Checks if the eMMC card is having Valid File system. If not then it Formats the eMMC card to FAT32
 - Opens a file named **throughput.txt** in the root directory of the eMMC device
 - Writes 10 Megabytes of data to file in chunks of 64 Kilobytes
 - Once the operation is completed it calculates the time taken and overall throughtput for write in **Megabytes/second** and displays on the console

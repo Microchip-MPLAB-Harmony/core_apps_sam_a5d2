@@ -91,6 +91,9 @@ typedef enum
     /* The app waits for sdcard to be mounted */
     APP_MOUNT_WAIT = 0,
 
+    /* The app formats the disk. */
+    APP_FORMAT_DISK,
+
     /* The app opens the file to read */
     APP_OPEN_READ_FILE,
 
@@ -155,6 +158,9 @@ typedef struct
     
     /* Flag to indicate eMMC mount status */
     volatile bool      eMMCMountFlag;
+
+    /* Flag to indicate Format is required */
+    volatile bool      eMMCFormatRequired;
     
     /* Number of time the copy operation is performed */
     uint32_t           nCopy;

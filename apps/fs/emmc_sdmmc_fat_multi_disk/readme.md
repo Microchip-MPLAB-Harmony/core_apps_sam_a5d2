@@ -15,6 +15,7 @@ This application shows an example of using the FAT filesystem to access and modi
 
 Following file system operations are performed by this application:
 
+- Application checks if the eMMC card is having Valid File system. If not then it Formats the eMMC card to FAT32
 - Application reads a file with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG in the root directory of SD-card media
 - Application then creates a new directory in the root directory of EMMC media with the name Dir1
 - Application creates a new file in the directory Dir1 in the eMMC media with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG

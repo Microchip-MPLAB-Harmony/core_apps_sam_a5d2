@@ -94,6 +94,10 @@ APP_DATA appData;
 /* Application data buffer */
 uint8_t BUFFER_ATTRIBUTES dataBuffer[APP_DATA_LEN];
 
+/* Work buffer used by FAT FS during Format */
+uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
+
+SYS_FS_FORMAT_PARAM formatOpt;
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -113,6 +117,13 @@ static void APP_SysFSEventHandler(SYS_FS_EVENT event,void* eventData,uintptr_t c
             else if(strcmp((const char *)eventData, SDCARD_MOUNT_NAME) == 0)
             {
                 appData.sdCardMountFlag = true;
+            }
+            break;
+
+        case SYS_FS_EVENT_MOUNT_WITH_NO_FILESYSTEM:
+            if(strcmp((const char *)eventData, EMMC_MOUNT_NAME) == 0)
+            {
+                appData.eMMCFormatRequired = true;
             }
             break;
 
@@ -197,10 +208,32 @@ void APP_Tasks ( void )
     switch ( appData.state )
     {
         case APP_MOUNT_WAIT:
-            /* Wait for SDCARD and eMMC to be Auto Mounted */
-            if((appData.sdCardMountFlag == true) &&
-              (appData.eMMCMountFlag == true))
+            if ((appData.sdCardMountFlag == true) &&
+                (appData.eMMCFormatRequired == true))
             {
+                /* Mount was successful. Format the disk. */
+                appData.state = APP_FORMAT_DISK;
+            }
+            /* Wait for SDCARD and eMMC to be Auto Mounted */
+            else if((appData.sdCardMountFlag == true) &&
+                    (appData.eMMCMountFlag == true))
+            {
+                appData.state = APP_OPEN_READ_FILE;
+            }
+            break;
+
+        case APP_FORMAT_DISK:
+            formatOpt.fmt = SYS_FS_FORMAT_FAT32;
+            formatOpt.au_size = 0;
+
+            if (SYS_FS_DriveFormat (EMMC_MOUNT_NAME, &formatOpt, (void *)work, SYS_FS_FAT_MAX_SS) != SYS_FS_RES_SUCCESS)
+            {
+                /* Format of the disk failed. */
+                appData.state = APP_ERROR;
+            }
+            else
+            {
+                /* Format succeeded. Set current drive. */
                 appData.state = APP_OPEN_READ_FILE;
             }
             break;

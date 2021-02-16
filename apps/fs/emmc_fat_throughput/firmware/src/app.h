@@ -90,6 +90,9 @@ typedef enum
     /* The app waits for sdcard to be mounted */
     APP_MOUNT_WAIT = 0,
 
+    /* The app formats the disk. */
+    APP_FORMAT_DISK,
+
     APP_SET_CURRENT_DRIVE,
 
     APP_OPEN_FILE,
@@ -137,6 +140,9 @@ typedef struct
 
     /* Flag to indicate SDCARD mount status */
     volatile bool      eMMCMountFlag;
+
+    /* Flag to indicate Format is required */
+    volatile bool      diskFormatRequired;
 
     /* Flag to indicate usage of unaligned buffer */
     bool useUnAlignedBuffer;

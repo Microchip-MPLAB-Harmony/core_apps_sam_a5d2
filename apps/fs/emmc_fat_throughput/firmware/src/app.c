@@ -96,6 +96,11 @@ uint8_t CACHE_ALIGN dataBuffer[BUFFER_SIZE + 1];
 
 uint8_t *dataPtr = NULL;
 
+/* Work buffer used by FAT FS during Format */
+uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
+
+SYS_FS_FORMAT_PARAM formatOpt;
+
 static const char messageBuffer[] =
 "\n\r-------------------------------------------------------------------"
 "\n\r\t         EMMC Throughput Demo Application \t\t"
@@ -122,11 +127,19 @@ static void APP_SysFSEventHandler(SYS_FS_EVENT event,void* eventData,uintptr_t c
             }
             break;
 
+        case SYS_FS_EVENT_MOUNT_WITH_NO_FILESYSTEM:
+            if(strcmp((const char *)eventData, EMMC_MOUNT_NAME) == 0)
+            {
+                appData.diskFormatRequired = true;
+            }
+            break;
+
         /* If the event is unmount then check if EMMC media has been unmount */
         case SYS_FS_EVENT_UNMOUNT:
             if(strcmp((const char *)eventData, EMMC_MOUNT_NAME) == 0)
             {
                 appData.eMMCMountFlag = false;
+                appData.diskFormatRequired = false;
                 appData.useUnAlignedBuffer = false;
                 appData.rwCounter = 0;
 
@@ -207,9 +220,32 @@ void APP_Tasks ( void )
     {
         case APP_MOUNT_WAIT:
         {
-            /* Wait for EMMC to be Auto Mounted */
-            if(appData.eMMCMountFlag == true)
+            if (appData.diskFormatRequired == true)
             {
+                /* Mount was successful. Format the disk. */
+                appData.state = APP_FORMAT_DISK;
+            }
+            else if(appData.eMMCMountFlag == true)
+            {
+                /* Mount was successful. Set current drive. */
+                appData.state = APP_SET_CURRENT_DRIVE;
+            }
+            break;
+        }
+
+        case APP_FORMAT_DISK:
+        {
+            formatOpt.fmt = SYS_FS_FORMAT_FAT32;
+            formatOpt.au_size = 0;
+
+            if (SYS_FS_DriveFormat (EMMC_MOUNT_NAME, &formatOpt, (void *)work, SYS_FS_FAT_MAX_SS) != SYS_FS_RES_SUCCESS)
+            {
+                /* Format of the disk failed. */
+                appData.state = APP_ERROR;
+            }
+            else
+            {
+                /* Format succeeded. Set current drive. */
                 appData.state = APP_SET_CURRENT_DRIVE;
             }
             break;
