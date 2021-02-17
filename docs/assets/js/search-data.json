@@ -803,357 +803,465 @@
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/driver/usart/sync/usart_multi_instance/readme.html",
     "relUrl": "/apps/driver/usart/sync/usart_multi_instance/readme.html"
   },"134": {
+    "doc": "FAT filesystem throughput using eMMC Media",
+    "title": "FAT filesystem throughput using eMMC Media",
+    "content": "This application calculates throughput by Writing and Reading data into a eMMC device at High Speed using the MPLAB Harmony File System and the SDMMC driver. ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_fat_throughput/readme.html#fat-filesystem-throughput-using-emmc-media",
+    "relUrl": "/apps/fs/emmc_fat_throughput/readme.html#fat-filesystem-throughput-using-emmc-media"
+  },"135": {
+    "doc": "FAT filesystem throughput using eMMC Media",
+    "title": "Description",
+    "content": "Application performs below filesystem operations and throughput calculations on eMMC device using both Aligned and Unaligned buffers . | Checks if the eMMC card is having Valid File system. If not then it Formats the eMMC card to FAT32 | Opens a file named throughput.txt in the root directory of the eMMC device | Writes 10 Megabytes of data to file in chunks of 64 Kilobytes | Once the operation is completed it calculates the time taken and overall throughtput for write in Megabytes/second and displays on the console | Reads 10 Megabytes of data from file in chunks of 64 Kilobytes | Once the operation is completed it calculates the time taken and overall throughtput for reading in Megabytes/second and displays on the console | Closes the file once read is completed | Checks if the Above steps need to be repeated for Unaligned buffer. If already done then it Glows an LED reporting success and the console will have throughput information for both Aligned and Unaligned buffers. | . File system layer uses: . | SDMMC Driver to communicate to eMMC device | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_fat_throughput/readme.html#description",
+    "relUrl": "/apps/fs/emmc_fat_throughput/readme.html#description"
+  },"136": {
+    "doc": "FAT filesystem throughput using eMMC Media",
+    "title": "Downloading and building the application",
+    "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/fs/emmc_fat_throughput/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | sam_a5d2_xult.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_fat_throughput/readme.html#downloading-and-building-the-application",
+    "relUrl": "/apps/fs/emmc_fat_throughput/readme.html#downloading-and-building-the-application"
+  },"137": {
+    "doc": "FAT filesystem throughput using eMMC Media",
+    "title": "Setting up AT91Bootstrap loader",
+    "content": "To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the at91bootstrap loader documentation for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries. ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_fat_throughput/readme.html#setting-up-at91bootstrap-loader",
+    "relUrl": "/apps/fs/emmc_fat_throughput/readme.html#setting-up-at91bootstrap-loader"
+  },"138": {
+    "doc": "FAT filesystem throughput using eMMC Media",
+    "title": "Setting up the hardware",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | sam_a5d2_xult.X | SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . Setting up SAMA5D2 Xplained Ultra Evaluation Kit . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Short jumper JP2 (DEBUG_DIS) | Connect the Debug USB port on the board to the computer using a micro USB cable | Jumper JP9 (BOOT_DIS) should be open | . NOTE: To run this demo successfully, on board eMMC device should have a valid FAT partition . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_fat_throughput/readme.html#setting-up-the-hardware",
+    "relUrl": "/apps/fs/emmc_fat_throughput/readme.html#setting-up-the-hardware"
+  },"139": {
+    "doc": "FAT filesystem throughput using eMMC Media",
+    "title": "Running the Application",
+    "content": ". | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) . | Open the Terminal application (Ex.:Tera term) on the computer. | Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Reset the board to run the application | The LED is turned ON if there was no error during the file operations . Refer to the following table for LED name: . | Board | LED Name | . | SAMA5D2 Xplained Ultra Evaluation Kit | RGB_LED(Green) | . |   |   | . | Calculated throughput values for Aligned and Un-Aligned buffers are dispalyed on console as below: . | Note: The Values showed in the below output may differ slightly when demo is run | . | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_fat_throughput/readme.html#running-the-application",
+    "relUrl": "/apps/fs/emmc_fat_throughput/readme.html#running-the-application"
+  },"140": {
+    "doc": "FAT filesystem throughput using eMMC Media",
+    "title": "Additional Steps (Optional)",
+    "content": "To increase the throughput for the Un-aligned buffers you can follow below steps . | Launch MHC for the project . | Increase the size for the internal aligned buffer used by Filesystem service with some value as shown below. This internal buffer will be used when application buffer is Un-aligned and placed in cacheable region. | Note: Increasing the size of the aligned buffer will consume more RAM | . | Regenerate the project . | Once done repeat the steps mentioned in Running The Application and observe the change in throughput for Un-aligned buffer | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_fat_throughput/readme.html#additional-steps-optional",
+    "relUrl": "/apps/fs/emmc_fat_throughput/readme.html#additional-steps-optional"
+  },"141": {
+    "doc": "FAT filesystem throughput using eMMC Media",
+    "title": "FAT filesystem throughput using eMMC Media",
+    "content": ". ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_fat_throughput/readme.html",
+    "relUrl": "/apps/fs/emmc_fat_throughput/readme.html"
+  },"142": {
     "doc": "FAT filesystem using EMMC media",
     "title": "FAT filesystem using EMMC media",
     "content": "This application shows an example of using the FAT filesystem to access and modify the contents of a eMMC device using contents from SD card. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#fat-filesystem-using-emmc-media",
     "relUrl": "/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#fat-filesystem-using-emmc-media"
-  },"135": {
+  },"143": {
     "doc": "FAT filesystem using EMMC media",
     "title": "Description",
-    "content": "Following file system operations are performed by this application: . | Application reads a file with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG in the root directory of SD-card media | Application then creates a new directory in the root directory of EMMC media with the name Dir1 | Application creates a new file in the directory Dir1 in the eMMC media with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG | Application writes the content it read from step 1 into the newly created file | Application creates a new directory in root directory of the SD Card filesystem | Application copies the file (by following steps above) from eMMC/Dir1 to sdcard/Dir1 | . The reason for choosing a JPEG file for test purposes is that the duplicate file, Dir1/FILE_TOO_LONG_NAME_EXAMPLE_123.JPG created by the demonstration could be easily verified for correctness. If the new file inside Dir1 opens for viewing on the computer and matches to original image, the test is deemed to have passed. Otherwise, if the file does not open (i.e., is corrupted), the test will be considered to have failed. ",
+    "content": "Following file system operations are performed by this application: . | Application checks if the eMMC card is having Valid File system. If not then it Formats the eMMC card to FAT32 | Application reads a file with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG in the root directory of SD-card media | Application then creates a new directory in the root directory of EMMC media with the name Dir1 | Application creates a new file in the directory Dir1 in the eMMC media with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG | Application writes the content it read from step 1 into the newly created file | Application creates a new directory in root directory of the SD Card filesystem | Application copies the file (by following steps above) from eMMC/Dir1 to sdcard/Dir1 | . The reason for choosing a JPEG file for test purposes is that the duplicate file, Dir1/FILE_TOO_LONG_NAME_EXAMPLE_123.JPG created by the demonstration could be easily verified for correctness. If the new file inside Dir1 opens for viewing on the computer and matches to original image, the test is deemed to have passed. Otherwise, if the file does not open (i.e., is corrupted), the test will be considered to have failed. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#description",
     "relUrl": "/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#description"
-  },"136": {
+  },"144": {
     "doc": "FAT filesystem using EMMC media",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/fs/emmc_sdmmc_fat_multi_disk/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | sam_a5d2_xult.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#downloading-and-building-the-application"
-  },"137": {
+  },"145": {
     "doc": "FAT filesystem using EMMC media",
     "title": "Setting up AT91Bootstrap loader",
     "content": "To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the at91bootstrap loader documentation for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#setting-up-at91bootstrap-loader",
     "relUrl": "/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#setting-up-at91bootstrap-loader"
-  },"138": {
+  },"146": {
     "doc": "FAT filesystem using EMMC media",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | sam_a5d2_xult.X | SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . Setting up SAMA5D2 Xplained Ultra Evaluation Kit . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | Create a new JPEG file in the SD Card with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Short jumper JP2 (DEBUG_DIS) | Connect the Debug USB port on the board to the computer using a micro USB cable | Jumper JP9 (BOOT_DIS) should be open | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#setting-up-the-hardware"
-  },"139": {
+  },"147": {
     "doc": "FAT filesystem using EMMC media",
     "title": "Running the Application",
     "content": ". | NOTE: To run this demo successfully, on board eMMC device should have a valid FAT partition | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) | Reset the board to run the application | The LED is turned ON if there was no error during creating the directory and copying the file into it | . Refer to the following table for LED name: . | Board | LED Name | . | SAMA5D2 Xplained Ultra Evaluation Kit | RGB_LED(Green) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#running-the-application",
     "relUrl": "/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html#running-the-application"
-  },"140": {
+  },"148": {
     "doc": "FAT filesystem using EMMC media",
     "title": "FAT filesystem using EMMC media",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html",
     "relUrl": "/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html"
-  },"141": {
+  },"149": {
     "doc": "FAT filesystem using SDMMC Media",
     "title": "FAT filesystem using SDMMC Media",
     "content": "This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDMMC driver. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat/readme.html#fat-filesystem-using-sdmmc-media",
     "relUrl": "/apps/fs/sdmmc_fat/readme.html#fat-filesystem-using-sdmmc-media"
-  },"142": {
+  },"150": {
     "doc": "FAT filesystem using SDMMC Media",
     "title": "Description",
     "content": "File System Operations on the SD Card: . | Application opens a file named FILE_TOO_LONG_NAME_EXAMPLE_123.JPG in the root directory of the SD card and reads its content into memory . | The image file could be any arbitrary JPEG (image) file chosen by the user and then renamed to FILE_TOO_LONG_NAME_EXAMPLE_123.JPG | . | Application creates directory named Dir1 in the root directory | Application creates a new file named FILE_TOO_LONG_NAME_EXAMPLE_123.JPG inside Dir1 | Application copies the content from step 1 into this newly created file | . The reason for choosing a JPEG file for test purposes is that the duplicate file, Dir1/FILE_TOO_LONG_NAME_EXAMPLE_123.JPG created by the demonstration could be easily verified for correctness.If the new file inside Dir1 opens for viewing on the computer and matches to original image, the test is deemed to have passed. Otherwise, if the file does not open (i.e., is corrupted), the test will be considered to have failed. Note: . Since the application creates a directory named Dir1, it is important that the a folder with the same name does not exist on the SD card. If a directory named Dir1 is already present on the SD card, the application will fail. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat/readme.html#description",
     "relUrl": "/apps/fs/sdmmc_fat/readme.html#description"
-  },"143": {
+  },"151": {
     "doc": "FAT filesystem using SDMMC Media",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/fs/sdmmc_fat/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | sam_a5d27_som1_ek_freertos.X | MPLABX project for SAMA5D27-SOM1-EK1 | . | sam_a5d2_xult.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_freertos.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_freertos_iar.IAR | IAR project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_iar.IAR | IAR project for SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/fs/sdmmc_fat/readme.html#downloading-and-building-the-application"
-  },"144": {
+  },"152": {
     "doc": "FAT filesystem using SDMMC Media",
     "title": "Setting up AT91Bootstrap loader",
     "content": "To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the at91bootstrap loader documentation for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat/readme.html#setting-up-at91bootstrap-loader",
     "relUrl": "/apps/fs/sdmmc_fat/readme.html#setting-up-at91bootstrap-loader"
-  },"145": {
+  },"153": {
     "doc": "FAT filesystem using SDMMC Media",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | sam_a5d2_xult.X sam_a5d2_xult_freertos.X sam_a5d2_xult_freertos_iar.IAR sam_a5d2_xult_iar.IAR | SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d27_som1_ek_freertos.X | SAMA5D27-SOM1-EK1 | . |   |   | . Setting up SAMA5D27-SOM1-EK1 . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | Create a new JPEG file in the SD Card with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Connect the Debug USB port on the board to the computer using a micro USB cable | . Setting up SAMA5D2 Xplained Ultra Evaluation Kit . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | Create a new JPEG file in the SD Card with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Short jumper JP2 (DEBUG_DIS) | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/fs/sdmmc_fat/readme.html#setting-up-the-hardware"
-  },"146": {
+  },"154": {
     "doc": "FAT filesystem using SDMMC Media",
     "title": "Running the Application",
     "content": ". | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) | Reset the board to run the application | The LED is turned ON if there was no error during creating the directory and copying the file into it | . Refer to the following table for LED name: . | Board | LED Name | . | SAMA5D27-SOM1-EK1 | D5(Green) | . | SAMA5D2 Xplained Ultra Evaluation Kit | RGB_LED(Green) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat/readme.html#running-the-application",
     "relUrl": "/apps/fs/sdmmc_fat/readme.html#running-the-application"
-  },"147": {
+  },"155": {
     "doc": "FAT filesystem using SDMMC Media",
     "title": "FAT filesystem using SDMMC Media",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat/readme.html",
     "relUrl": "/apps/fs/sdmmc_fat/readme.html"
-  },"148": {
+  },"156": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "FAT filesystem throughput using SDMMC Media",
+    "content": "This application calculates throughput by Writing and Reading data into a Sd-Card at High Speed using the MPLAB Harmony File System and the SDMMC driver. ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat_throughput/readme.html#fat-filesystem-throughput-using-sdmmc-media",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#fat-filesystem-throughput-using-sdmmc-media"
+  },"157": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Description",
+    "content": "Application performs below filesystem operations and throughput calculations on SD-Card using both Aligned and Unaligned buffers . | Opens a file named throughput.txt in the root directory of the SD card | Writes 10 Megabytes of data to file in chunks of 64 Kilobytes | Once the operation is completed it calculates the time taken and overall throughtput for write in Megabytes/second and displays on the console | Reads 10 Megabytes of data from file in chunks of 64 Kilobytes | Once the operation is completed it calculates the time taken and overall throughtput for reading in Megabytes/second and displays on the console | Closes the file once read is completed | Checks if the Above steps need to be repeated for Unaligned buffer. If already done then it Glows an LED reporting success and the console will have throughput information for both Aligned and Unaligned buffers. | . File system layer uses: . | SDMMC Driver to communicate to SD Card | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat_throughput/readme.html#description",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#description"
+  },"158": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Downloading and building the application",
+    "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/fs/sdmmc_fat_throughput/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | sam_a5d2_xult.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat_throughput/readme.html#downloading-and-building-the-application",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#downloading-and-building-the-application"
+  },"159": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Setting up AT91Bootstrap loader",
+    "content": "To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the at91bootstrap loader documentation for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries. ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat_throughput/readme.html#setting-up-at91bootstrap-loader",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#setting-up-at91bootstrap-loader"
+  },"160": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Setting up the hardware",
+    "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | sam_a5d2_xult.X | SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . Setting up SAMA5D2 Xplained Ultra Evaluation Kit . Addtional hardware required . | SD Card with FAT32 file system . | The SD Card should have atleast 10MB of free space for the demo to work | . | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Short jumper JP2 (DEBUG_DIS) | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat_throughput/readme.html#setting-up-the-hardware",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#setting-up-the-hardware"
+  },"161": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Running the Application",
+    "content": ". | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) . | Open the Terminal application (Ex.:Tera term) on the computer. | Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Reset the board to run the application | The LED is turned ON if there was no error during the file operations . Refer to the following table for LED name: . | Board | LED Name | . | SAMA5D2 Xplained Ultra Evaluation Kit | RGB_LED(Green) | . |   |   | . | Calculated throughput values for Aligned and Un-Aligned buffers are dispalyed on console as below: . | Note: The Values showed in the below output may differ slightly when demo is run | . | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat_throughput/readme.html#running-the-application",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#running-the-application"
+  },"162": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "Additional Steps (Optional)",
+    "content": "To increase the throughput for the Un-aligned buffers you can follow below steps . | Launch MHC for the project . | Increase the size for the internal aligned buffer used by Filesystem service with some value as shown below. This internal buffer will be used when application buffer is Un-aligned and placed in cacheable region. | Note: Increasing the size of the aligned buffer will consume more RAM | . | Regenerate the project . | Once done repeat the steps mentioned in Running The Application and observe the change in throughput for Un-aligned buffer | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat_throughput/readme.html#additional-steps-optional",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html#additional-steps-optional"
+  },"163": {
+    "doc": "FAT filesystem throughput using SDMMC Media",
+    "title": "FAT filesystem throughput using SDMMC Media",
+    "content": ". ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sdmmc_fat_throughput/readme.html",
+    "relUrl": "/apps/fs/sdmmc_fat_throughput/readme.html"
+  },"164": {
     "doc": "FAT filesystem using SPI flash media",
     "title": "FAT filesystem using SPI flash media",
     "content": "This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a flash memory using SPI Flash driver. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/spi_flash_fat/readme.html#fat-filesystem-using-spi-flash-media",
     "relUrl": "/apps/fs/spi_flash_fat/readme.html#fat-filesystem-using-spi-flash-media"
-  },"149": {
+  },"165": {
     "doc": "FAT filesystem using SPI flash media",
     "title": "Description",
     "content": "File System Operations on the On-Board SPI Flash Memory . | Performs a SYS-FS_FormatDisk | Opens a newfile.txt on the at25df flash | Write and reads back 4KB of data on newfile.txt | Verifies the Data Read back | . File system layer uses . Memory driver to communicate with the On-Board SPI Flash Memory . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/spi_flash_fat/readme.html#description",
     "relUrl": "/apps/fs/spi_flash_fat/readme.html#description"
-  },"150": {
+  },"166": {
     "doc": "FAT filesystem using SPI flash media",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/fs/spi_flash_fat/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | sam_a5d2_xult.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_freertos.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_freertos_iar.IAR | IAR project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_iar.IAR | IAR project for SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/spi_flash_fat/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/fs/spi_flash_fat/readme.html#downloading-and-building-the-application"
-  },"151": {
+  },"167": {
     "doc": "FAT filesystem using SPI flash media",
     "title": "Setting up AT91Bootstrap loader",
     "content": "To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the at91bootstrap loader documentation for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/spi_flash_fat/readme.html#setting-up-at91bootstrap-loader",
     "relUrl": "/apps/fs/spi_flash_fat/readme.html#setting-up-at91bootstrap-loader"
-  },"152": {
+  },"168": {
     "doc": "FAT filesystem using SPI flash media",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | sam_a5d2_xult.X sam_a5d2_xult_freertos.X sam_a5d2_xult_freertos_iar.IAR sam_a5d2_xult_iar.IAR | SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . Setting up SAMA5D2 Xplained Ultra Evaluation Kit . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Short jumper JP2 (DEBUG_DIS) | Connect the Debug USB port on the board to the computer using a micro USB cable | Make sure that the jumper JP9 is removed (jumper pins are not shorted) | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/spi_flash_fat/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/fs/spi_flash_fat/readme.html#setting-up-the-hardware"
-  },"153": {
+  },"169": {
     "doc": "FAT filesystem using SPI flash media",
     "title": "Running the Application",
     "content": ". | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) | Reset the board to run the application | The LED is turned ON if data has successfully been written and read back from file “newfile.txt” | . Refer to the following table for LED name: . | Board | LED Name | . | SAMA5D2 Xplained Ultra Evaluation Kit | RGB_LED(Green) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/spi_flash_fat/readme.html#running-the-application",
     "relUrl": "/apps/fs/spi_flash_fat/readme.html#running-the-application"
-  },"154": {
+  },"170": {
     "doc": "FAT filesystem using SPI flash media",
     "title": "FAT filesystem using SPI flash media",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/spi_flash_fat/readme.html",
     "relUrl": "/apps/fs/spi_flash_fat/readme.html"
-  },"155": {
+  },"171": {
     "doc": "FAT filesystem using MX25L Media",
     "title": "FAT filesystem using MX25L Media",
     "content": "This application shows an example of using the MPLAB Harmony File System to access SQI based MX25L flash media. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sqi_flash_fat/readme.html#fat-filesystem-using-mx25l-media",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#fat-filesystem-using-mx25l-media"
-  },"156": {
+  },"172": {
     "doc": "FAT filesystem using MX25L Media",
     "title": "Description",
     "content": "File System Operations on the On-Board MX25L Flash Memory . | Performs a SYS_FS_FormatDisk | Opens a newfile.txt on the MX25L flash | Write and reads back 4KB of data on newfile.txt | Verifies the Data Read back | . File system layer uses the following components . | One instance of the Memory driver is used to communicate with the On-Board SQI Flash memory | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sqi_flash_fat/readme.html#description",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#description"
-  },"157": {
+  },"173": {
     "doc": "FAT filesystem using MX25L Media",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/fs/sqi_flash_fat/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | sam_a5d2_xult.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_freertos.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_freertos_iar.IAR | IAR project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_iar.IAR | IAR project for SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sqi_flash_fat/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#downloading-and-building-the-application"
-  },"158": {
+  },"174": {
     "doc": "FAT filesystem using MX25L Media",
     "title": "Setting up AT91Bootstrap loader",
     "content": "To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the at91bootstrap loader documentation for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sqi_flash_fat/readme.html#setting-up-at91bootstrap-loader",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#setting-up-at91bootstrap-loader"
-  },"159": {
+  },"175": {
     "doc": "FAT filesystem using MX25L Media",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | sam_a5d2_xult.X sam_a5d2_xult_freertos.X sam_a5d2_xult_freertos_iar.IAR sam_a5d2_xult_iar.IAR | SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . Setting up SAMA5D2 Xplained Ultra Evaluation Kit . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Short jumper JP2 (DEBUG_DIS) | Connect the Debug USB port on the board to the computer using a micro USB cable | Make sure that the jumper JP9 is removed (jumper pins are not shorted) | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sqi_flash_fat/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#setting-up-the-hardware"
-  },"160": {
+  },"176": {
     "doc": "FAT filesystem using MX25L Media",
     "title": "Running the Application",
     "content": ". | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) | Reset the board to run the application | The LED is turned ON if data has successfully been written and read back from file “newfile.txt” | . Refer to the following table for LED name: . | Board | LED Name | . | SAMA5D2 Xplained Ultra Evaluation Kit | RGB_LED(Green) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sqi_flash_fat/readme.html#running-the-application",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html#running-the-application"
-  },"161": {
+  },"177": {
     "doc": "FAT filesystem using MX25L Media",
     "title": "FAT filesystem using MX25L Media",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/fs/sqi_flash_fat/readme.html",
     "relUrl": "/apps/fs/sqi_flash_fat/readme.html"
-  },"162": {
+  },"178": {
     "doc": "FreeRTOS basic",
     "title": "FreeRTOS basic",
-    "content": "This example application blinks an LED to show the FreeRTOS threads that are running and to indicate status. ",
+    "content": "This example application demonstrates context switching between four tasks of different priorites. Two tasks run periodically while the other two tasks are event driven. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/basic_freertos/readme.html#freertos-basic",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#freertos-basic"
-  },"163": {
+  },"179": {
     "doc": "FreeRTOS basic",
     "title": "Description",
-    "content": "This demonstration creates three tasks and a queue. Task1 sends message to Task2 and Task3 to unblock and toggle an LED. Task1 priority is low compared to Task2 and Task3 which shares same priority. | Task1: This task sends the data (i.e. delay, the amount of time for which the task need blocked) to Task2 and Task3 using a queue, then Task1 blocks itself for 200ms to allow other tasks to schedule and run | Task2: This task blocks until it receives the data from queue, if the Task2 receives the expected delay (i.e. 1000ms) from Task1 then toggles the LED and blocks itself for the amount of delay received | Task3: This task blocks until it receives the data from queue, if the Task3 receives the expected delay (i.e. 100ms) from Task1 then toggles the LED and blocks itself for the amount of delay received | . ",
+    "content": "This demonstration creates four tasks each of differen priority. Task1 has the lowest priority, followed by Task2, Task3 and Task4 which has the highest priority. Task1 and Task2 run periodically. Task3 blocks until a character is received on UART terminal. Task3 registers a read callback with the UART PLIB and blcoks on a UART receive semaphore. The semaphore is given from the registered callback which is called when a character is receved on the terminal. Task4 blocks until a user switch is pressed. Task4 registers a callback for the switch press event with the PIO peripheral and then blocks on the switch press semaphore. The semaphore is given from the registered callback which is called when the switch is pressed. All the tasks print messages on the UART terminal to indicate tasks entry/exit. Since all the tasks use the same UART peripheral library, a mutex is used to guard the shared resource (UART ring buffer). | Task1: Task1 is configured for priority 1 (lowest of all the application tasks). The task1 runs for about 100 ticks and then blocks for 10 milliseconds. Each time task1 is run, it prints a message on the UART console “Tsk1-P1 &lt;-“ where, the &lt;- symbol indicates that task1 is running. Just before blocking it prints another message on the UART console “Tsk1-P1 -&gt;” where, the -&gt; symbol indicates that task1 is about to put itself into a blocked state. | Task2: Task2 is configured for priority 2. The task2 runs for about 10 ticks and then blocks for 250 milliseconds. Each time task2 is run, it prints a message on the UART console “Tsk2-P2 &lt;-“ where, the &lt;- symbol indicates that task2 is running. Just before blocking it prints another message on the UART console “Tsk2-P2 -&gt;” where, the -&gt; symbol indicates that task2 is about to put itself into a blocked state. | Task3: Task3 is configured for priority 3. It remains blocked on a semaphore which is released when a character is entered on the UART console. Once active, the task reads out the received characters and toggles LED if letter ‘L’ or ‘l’ is pressed. The task then runs for about 50 ticks, before again blocking itself until a new character is received. Each time task3 is run, it prints a message on the UART console “Tsk3-P3 &lt;-“ where, the &lt;- symbol indicates that task2 is running. Just before blocking it prints another message on the UART console “Tsk3-P3 -&gt;” where, the -&gt; symbol indicates that task3 is about to put itself into a blocked state. | Task4: Task4 is configured for priority 4 (highest of all the application tasks). It remains blocked on a semaphore which is released when a user switch is pressed. Once active, the task runs for about 10 ticks, before again blocking itself until the switch is pressed again. Each time task4 is run, it prints a message on the UART console “Tsk4-P4 &lt;-“ where, the &lt;- symbol indicates that task4 is running. Just before blocking it prints another message on the UART console “Tsk4-P4 -&gt;” where, the -&gt; symbol indicates that task4 is about to put itself into a blocked state. | . The following figure shows possible context switching between the tasks. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/basic_freertos/readme.html#description",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#description"
-  },"164": {
+  },"180": {
     "doc": "FreeRTOS basic",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/rtos/freertos/basic_freertos/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | sam_a5d2_xult.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_iar.IAR | IAR project for SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/basic_freertos/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#downloading-and-building-the-application"
-  },"165": {
+  },"181": {
     "doc": "FreeRTOS basic",
     "title": "Setting up AT91Bootstrap loader",
     "content": "To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the at91bootstrap loader documentation for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/basic_freertos/readme.html#setting-up-at91bootstrap-loader",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#setting-up-at91bootstrap-loader"
-  },"166": {
+  },"182": {
     "doc": "FreeRTOS basic",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | sam_a5d2_xult.X sam_a5d2_xult_iar.IAR | SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . Setting up SAMA5D2 Xplained Ultra Evaluation Kit . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Short jumper JP2 (DEBUG_DIS) | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/basic_freertos/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#setting-up-the-hardware"
-  },"167": {
+  },"183": {
     "doc": "FreeRTOS basic",
     "title": "Running the Application",
-    "content": ". | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) | Reset the board to run the application | The LED indicates the success or failure. | The LED toggles on success i.e. each time when the Task2 or Task3 receives a valid message | . | . Refer to the following table for LED name: . | Board | LED Name | . | SAMA5D2 Xplained Ultra Evaluation Kit | RGB_LED(Blue) | . |   |   | . ",
+    "content": ". | Open the Terminal application (Ex.:Tera Term) on the computer. | Connect to the EDBG Virtual COM port and configure the serial settings as follows: . Baud : 115200 . Data : 8 Bits . Parity : None . Stop : 1 Bit . Flow Control : None . | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) | Reset the board to run the application | Observe the following output on the terminal. | Enter any character on the terminal to run task3. Notice how task1 and task2 are pre-empted by task3 as task3 is of higher priority than task1 and task2. Pressing character ‘l’ or “L’ toggles the on board LED. Notice how task1 and task2 are not run when characters are entered continuously on the terminal. | Press the user switch on the board to run task4. Notice how task4 preempts all other tasks as it is of highest priority. | . Refer to the following table for LED and Switch name: . | Board | LED Name | Switch Name | . | SAMA5D2 Xplained Ultra Evaluation Kit | RGB_LED(Green) | PB_USER | . |   |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/basic_freertos/readme.html#running-the-application",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html#running-the-application"
-  },"168": {
+  },"184": {
     "doc": "FreeRTOS basic",
     "title": "FreeRTOS basic",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/basic_freertos/readme.html",
     "relUrl": "/apps/rtos/freertos/basic_freertos/readme.html"
-  },"169": {
+  },"185": {
     "doc": "FreeRTOS Task Notification",
     "title": "FreeRTOS Task Notification",
     "content": "This example application is to illustrate the FreeRTOS Task Notification feature which is used as a light weight binary semaphore. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/task_notification_freertos/readme.html#freertos-task-notification",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#freertos-task-notification"
-  },"170": {
+  },"186": {
     "doc": "FreeRTOS Task Notification",
     "title": "Description",
     "content": ". | This demonstration creates two tasks that send notifications back and forth to each other. | Task2 blocks to wait for Task1 to notify and will be blocked for 500ms | Task1 sends a notification to Tasks2, bringing it out of the blocked state, toggles an LED | Task1 blocks to wait for Task2 to notify | Task2 sends notification to Task1, bringing it out of the blocked state | . | Above steps will be repeated. i.e. an LED toggles for every 500ms | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/task_notification_freertos/readme.html#description",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#description"
-  },"171": {
+  },"187": {
     "doc": "FreeRTOS Task Notification",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/rtos/freertos/task_notification_freertos/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | sam_a5d2_xult.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_iar.IAR | IAR project for SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/task_notification_freertos/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#downloading-and-building-the-application"
-  },"172": {
+  },"188": {
     "doc": "FreeRTOS Task Notification",
     "title": "Setting up AT91Bootstrap loader",
     "content": "To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the at91bootstrap loader documentation for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/task_notification_freertos/readme.html#setting-up-at91bootstrap-loader",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#setting-up-at91bootstrap-loader"
-  },"173": {
+  },"189": {
     "doc": "FreeRTOS Task Notification",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | sam_a5d2_xult.X sam_a5d2_xult_iar.IAR | SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . Setting up SAMA5D2 Xplained Ultra Evaluation Kit . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Short jumper JP2 (DEBUG_DIS) | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/task_notification_freertos/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#setting-up-the-hardware"
-  },"174": {
+  },"190": {
     "doc": "FreeRTOS Task Notification",
     "title": "Running the Application",
     "content": ". | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) | Reset the board to run the application | The LED toggles on success for every 500ms | . Refer to the following table for LED name: . | Board | LED Name | . | SAMA5D2 Xplained Ultra Evaluation Kit | RGB_LED(Blue) | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/task_notification_freertos/readme.html#running-the-application",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html#running-the-application"
-  },"175": {
+  },"191": {
     "doc": "FreeRTOS Task Notification",
     "title": "FreeRTOS Task Notification",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/rtos/freertos/task_notification_freertos/readme.html",
     "relUrl": "/apps/rtos/freertos/task_notification_freertos/readme.html"
-  },"176": {
+  },"192": {
     "doc": "Time System Service multi-client",
     "title": "Time System Service multi-client",
     "content": "This example application demonstrates the multi-client system timer functionality. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/system/time/sys_time_multiclient/readme.html#time-system-service-multi-client",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#time-system-service-multi-client"
-  },"177": {
+  },"193": {
     "doc": "Time System Service multi-client",
     "title": "Description",
     "content": ". | This application demonstrates timer functionality (with two clients to the Time System Service) by periodically printing a message on console every two seconds and blinking an LED every one second . | Delay, counter and single shot timer functionality is demonstrated on a switch press . | On a switch press, the application reads the current value of the 64 bit counter (say, count 1) | It then starts a delay of 500 milliseconds and waits for the delay to expire | Once the delay has expired, the application again reads the current value of the 64 bit counter (say, count 2) and calculates the difference between the two counter values . | The difference count indicates the time spent for the delay and is printed on the console as, “Delay time = x ms”, where x is the delay value and is equal to 500 milliseconds in the given example . | The application then starts a single shot timer of 100 milliseconds | When the single shot timer expires, a message is printed on the console that says “Single shot timer of 100 ms expired” | This message is printed only once on every switch press | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/system/time/sys_time_multiclient/readme.html#description",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#description"
-  },"178": {
+  },"194": {
     "doc": "Time System Service multi-client",
     "title": "Downloading and building the application",
     "content": "To clone or download this application from Github, go to the main page of this repository and then click Clone button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these instructions. Path of the application within the repository is apps/system/time/sys_time_multiclient/firmware . To build the application, refer to the following table and open the project using its IDE. | Project Name | Description | . | sam_a5d27_som1_ek_freertos.X | MPLABX project for SAMA5D27-SOM1-EK1 | . | sam_a5d2_xult_freertos.X | MPLABX project for SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d2_xult_freertos_iar.IAR | IAR project for SAMA5D2 Xplained Ultra Evaluation Kit | . |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/system/time/sys_time_multiclient/readme.html#downloading-and-building-the-application",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#downloading-and-building-the-application"
-  },"179": {
+  },"195": {
     "doc": "Time System Service multi-client",
     "title": "Setting up AT91Bootstrap loader",
     "content": "To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the at91bootstrap loader documentation for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/system/time/sys_time_multiclient/readme.html#setting-up-at91bootstrap-loader",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#setting-up-at91bootstrap-loader"
-  },"180": {
+  },"196": {
     "doc": "Time System Service multi-client",
     "title": "Setting up the hardware",
     "content": "The following table shows the target hardware for the application projects. | Project Name | Board | . | sam_a5d2_xult_freertos.X sam_a5d2_xult_freertos_iar.IAR | SAMA5D2 Xplained Ultra Evaluation Kit | . | sam_a5d27_som1_ek_freertos.X | SAMA5D27-SOM1-EK1 | . |   |   | . Setting up SAMA5D27-SOM1-EK1 . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Connect the Debug USB port on the board to the computer using a micro USB cable | . Setting up SAMA5D2 Xplained Ultra Evaluation Kit . Addtional hardware required . | SD Card with FAT32 file system | . Setting up the SD Card . | Download harmony MPU bootstrap loader from this location | Copy the downloaded boot loader binary( boot.bin) onto the SD card | . Setting up the board . | SDMMC slot used for bootloading the application is SDMMC1 | Short jumper JP2 (DEBUG_DIS) | Connect the Debug USB port on the board to the computer using a micro USB cable | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/system/time/sys_time_multiclient/readme.html#setting-up-the-hardware",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#setting-up-the-hardware"
-  },"181": {
+  },"197": {
     "doc": "Time System Service multi-client",
     "title": "Running the Application",
     "content": ". | Build the application using its IDE | Copy the output binary (named ‘harmony.bin’) onto the SD Card (Refer to the ‘Setting up hardware’ section above for setting up the SD card) | Insert the SD card into SDMMC slot on the board (Refer to the ‘Setting up hardware’ section for the correct SDMMC slot) | Open the Terminal application (Ex.:Tera term) on the computer. | Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows: . | Baud : 115200 | Data : 8 Bits | Parity : None | Stop : 1 Bit | Flow Control : None | . | Reset the board to run the application | Observe the following message getting printed on the console every two seconds . | Press the switch and observe the following output on the terminal (highlighted in red box) . | “Delay time = 500 ms” indicates the amount of time spent during the delay | “Single shot timer of 100 ms expired” is printed only once on every switch press | . | LED indicates the periodic timer functionality . | LED is toggled periodically every one second | . | . Refer to the following table for switch and LED name: . | Board | Switch Name | LED Name | . | SAMA5D27-SOM1-EK1 | USER | D5(Blue) | . | SAMA5D2 Xplained Ultra Evaluation Kit | PB_USER | RGB_LED(Blue) | . |   |   |   | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/system/time/sys_time_multiclient/readme.html#running-the-application",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html#running-the-application"
-  },"182": {
+  },"198": {
     "doc": "Time System Service multi-client",
     "title": "Time System Service multi-client",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/system/time/sys_time_multiclient/readme.html",
     "relUrl": "/apps/system/time/sys_time_multiclient/readme.html"
-  },"183": {
+  },"199": {
     "doc": "Bootstrapping MPU applications using At91bootstrap loader",
     "title": "Bootstrapping MPU applications using At91bootstrap loader",
     "content": "MPU applications are linked to execute from external DRAM memory that is available on the evaluation kit. This require all peripherals and clock leading to the DRAM memory to be configured prior to the application being programmed. This is done using a bootstrap loader. Bootstrap loader project used for this purpose is a variant of the AT91Bootstrap project available for Microchip MPUs. It can be downloaded from here. This project is adapted to be used from within MPLABx IDE on both Windows and Linux. To facilitate the debugging and running of the MPU application, each application in this repository is bundled with its own copy of the AT91Bootstrap project. Each copy of the bootstrap project can be found under same folder as the application project and is named and is prefixed with “at91bootstrap_”. For eg: if the application folder name is sam_a5d2_xult.X, then bootstrap project folder will be named at91bootstrap_sam_a5d2_xult.X and will be present at the same folder level. Bootstrap project is configured to load and execute a raw binary file named “harmony.bin” from the SD card. SD card slot to be used shall vary with the evaluation kit. Each application project is configured with a post build step which will generate the necessary binary file named “harmony.bin” at the end of each build. If you are only interested in running or debugging the MPU applications in this repository , you can skip the following sections and and jump straight to Debugging MPU application using MPLABx. Each copy of the bootstrap project in this repository is preconfigured to the correct evaluation kit.Also, the bootstrap binary files required to program and run the applications are checked into the repository. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/docs/readme_bootstrap.html#bootstrapping-mpu-applications-using-at91bootstrap-loader",
     "relUrl": "/apps/docs/readme_bootstrap.html#bootstrapping-mpu-applications-using-at91bootstrap-loader"
-  },"184": {
+  },"200": {
     "doc": "Bootstrapping MPU applications using At91bootstrap loader",
     "title": "Building AT91Bootstrap project",
     "content": ". | Bootstrap project can be configured using MPLABx using its KCONFIG menu. To do this, open the project in MPLABx, right click on the project and select “properties”. In categories, select “Kconfig” as shown below: . | Click on “LOAD” button and navigate to the boards folder inside the project. Choose the a default configuration file (defconfig) config file to select a target evaluation board and boot method . | For eg: If you want to boot harmony.bin file from sd card for SAMA5D27 evaluation kit, navigate to board/sama5d2_xplained folder and select “sama5d2_xplainedsd_harmony_defconfig” file | . | Click on “Apply” and “OK” buttons to configure the project . | Build the project to generate the bootstrap binaries . | Note: At91bootstrap project requires arm-gcc to build it. XC32 toolchain is not supported yet | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/docs/readme_bootstrap.html#building-at91bootstrap-project",
     "relUrl": "/apps/docs/readme_bootstrap.html#building-at91bootstrap-project"
-  },"185": {
+  },"201": {
     "doc": "Bootstrapping MPU applications using At91bootstrap loader",
     "title": "Configure MPLABx application to use AT91Bootstrap loader",
     "content": "MPLABx debugger relies on AT91Bootstrap to configure the board before programming the application binaries. To configure an application to use AT91Bootstrap, follow the steps detailed below: . Configure a debug tool . | Right click on the application project and select properties. This will open the properties window. In the configuration option –&gt; connected hardware tools, select the debugger. Note: if no debugger is connected, click on the “show all” check box and select the supported debugger. Only Jlink options are supported . | Select the target toolchain and click on apply to save the changes . | This will result in an additional menu option to be available in the configuration tree view called “bootstrap” as shown below: . | . Configure bootstrap . | Click on “Use bootstrap” check box to enable bootstrap support . | Click on the “LOAD” button to load the bootstrap file. This will open a file picker, which allows you to choose the bootstrap binary file. | Navigate to the “binaries” folder under the AT91Bootstrap project folder. This contains the build output of the bootstrap project. You can either choose the “AT91Bootstrap.elf” file or “boot.bin” file . | If ELF file is choosen, the “Bootstrap entry address” and the “Bootstrap load address” text box can be left empty as this information can be read from the ELF file | If BIN file is chosen, the bootstrap entry address and the load address should be filled in their corresponding text boxes | An example configuration can be seen below. Here a relative path is used with respect to the project directory, to make the configuration portable . | . | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/docs/readme_bootstrap.html#configure-mplabx-application-to-use-at91bootstrap-loader",
     "relUrl": "/apps/docs/readme_bootstrap.html#configure-mplabx-application-to-use-at91bootstrap-loader"
-  },"186": {
+  },"202": {
     "doc": "Bootstrapping MPU applications using At91bootstrap loader",
     "title": "Debugging MPU applications using MPLABx",
     "content": "Once the applicaton is configured to use bootstrap loader, debugging the application is as simple right clicking the application and selecting “Debug” option. This will cause debugger to perform a two stage loading: . Stage 1: Loads the bootstrap loader into the internal SRAM and executes it. This will configure the board specific peripherals and memory . Stage 2: Loads the application into the external DRAM and debugs it. User can perform actions like setting breakpoints, single-stepping etc. Debugging the applicaton using MPLABx has the following limitations: . | Running application using debugger is not supported | Call stack is not supported | Step in, step out using debugger does not work | . Note: Make sure that you reset the board between each debug sessions so that the debugger can attach to the target correctly . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/docs/readme_bootstrap.html#debugging-mpu-applications-using-mplabx",
     "relUrl": "/apps/docs/readme_bootstrap.html#debugging-mpu-applications-using-mplabx"
-  },"187": {
+  },"203": {
     "doc": "Bootstrapping MPU applications using At91bootstrap loader",
     "title": "Running MPU applications",
     "content": "To run the applications, copy both the application binary named “harmony.bin” and the bootstrap binary named “boot.bin” onto an SD card. Insert the SD card into the SD slot of the evaluation kit and press the reset button. The ROM bootloader will copy the bootstrap binary “boot.bin” into the internal SRAM and executes it. The bootstrap will configure the external DRAM and the required peripherals, then copy the applicaton binary “harmony.bin” into the DRAM and executes it. ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/docs/readme_bootstrap.html#running-mpu-applications",
     "relUrl": "/apps/docs/readme_bootstrap.html#running-mpu-applications"
-  },"188": {
+  },"204": {
     "doc": "Bootstrapping MPU applications using At91bootstrap loader",
     "title": "Bootstrapping MPU applications using At91bootstrap loader",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/apps/docs/readme_bootstrap.html",
     "relUrl": "/apps/docs/readme_bootstrap.html"
-  },"189": {
+  },"205": {
     "doc": "Release notes",
     "title": "Microchip MPLAB® Harmony 3 Release Notes",
     "content": " ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/release_notes.html#microchip-mplab-harmony-3-release-notes",
     "relUrl": "/release_notes.html#microchip-mplab-harmony-3-release-notes"
-  },"190": {
+  },"206": {
+    "doc": "Release notes",
+    "title": "Harmony 3 peripheral library application examples for SAM A5D2 family  v3.1.0",
+    "content": "Development kit and demo application support . Following table provides number of peripheral library examples available for different development kits. | Development Kits | MPLABx applications | IAR applications | . | None | 43 | 0 | . | SAMA5D2 Xplained Ultra Evaluation Kit | 39 | 36 | . | SAMA5D27-SOM1-EK1 | 4 | 0 | . New Features . | None | . Known Issues . | SAMA5D2 family: SAMA5D2_DFP v1.5.53 or higher is required to correctly program and debug the application from within MPLABx 5.45 | . Development Tools . | MPLAB® X IDE v5.45 | MPLAB® X IDE plug-ins: . | MPLAB® Harmony Configurator (MHC) v3.7.0 | . | MPLAB® XC32 C/C++ Compiler v2.50 | IAR Embedded workbench for ARM v8.50 or above | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/release_notes.html#harmony-3-peripheral-library-application-examples-for-sam-a5d2-family--v310",
+    "relUrl": "/release_notes.html#harmony-3-peripheral-library-application-examples-for-sam-a5d2-family--v310"
+  },"207": {
+    "doc": "Release notes",
+    "title": "Harmony 3 driver and system service application examples for SAM A5D2 family  v3.0.1",
+    "content": "New Features . | Added discover.microchip.com metadata | . Bug fixes . | Same as v3.0.0 | . Known Issues . | Same as v3.0.0 | . Development Tools . | Same as v3.0.0 | . ",
+    "url": "http://localhost:4000/core_apps_sam_a5d2/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-sam-a5d2-family--v301",
+    "relUrl": "/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-sam-a5d2-family--v301"
+  },"208": {
     "doc": "Release notes",
     "title": "Harmony 3 driver and system service application examples for SAM A5D2 family  v3.0.0",
     "content": "Development kit and demo application support . Following table provides number of peripheral library examples available for different development kits. | Development Kits | MPLABx applications | IAR applications | . | SAMA5D27-SOM1-EK1 | 4 | 0 | . | SAMA5D2 Xplained Ultra Evaluation Kit | 37 | 36 | . New Features . New features added in this release are as follows: . | Applications migrated from csp repository to this new application repository for SAM A5D2 development boards | . Known Issues . The current known issues are as follows: . | None | . Development Tools . | MPLAB® X IDE v5.40 | MPLAB® X IDE plug-ins: . | MPLAB® Harmony Configurator (MHC) v3.6.0 | . | MPLAB® XC32 C/C++ Compiler v2.41 | IAR Embedded workbench for ARM v8.50 or above | . ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-sam-a5d2-family--v300",
     "relUrl": "/release_notes.html#harmony-3-driver-and-system-service-application-examples-for-sam-a5d2-family--v300"
-  },"191": {
+  },"209": {
     "doc": "Release notes",
     "title": "Release notes",
     "content": ". ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/release_notes.html",
     "relUrl": "/release_notes.html"
-  },"192": {
+  },"210": {
     "doc": "Harmony 3 driver and system service application examples for SAM A5D2 family",
     "title": "Harmony 3 driver and system service application examples for SAM A5D2 family",
-    "content": "[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com) # Harmony 3 driver and system service application examples for SAM A5D2 family MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices. Refer to the following links for more information. - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit) - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus) - [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide) - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony) - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/) This repository contains the MPLAB® Harmony 3 driver and system service application examples for SAM A5D2 family - [Release Notes](/core_apps_sam_a5d2/release_notes.html) - [MPLAB® Harmony License](/core_apps_sam_a5d2/mplab_harmony_license.html) To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2) and then click **Clone** button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki). ## Contents Summary | Folder | Description | --- | --- | apps | Contains driver and system service example applications | docs | Contains documentation in html format for offline viewing (to be used only after cloning this repository onto a local machine). Use [github pages](https://microchip-mplab-harmony.github.io/core_apps_sam_a5d2/) of this repository for viewing it online. | ## Code Examples The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries. | Name | Description | ---- | ----------- | [I2C driver asynchronous - I2C EEPROM](/core_apps_sam_a5d2/apps/driver/i2c/async/i2c_eeprom/readme.html) | This example application shows how to use the I2C driver in asynchronous mode to perform operations on the EEPROM | [I2C driver synchronous - I2C EEPROM](/core_apps_sam_a5d2/apps/driver/i2c/sync/i2c_eeprom/readme.html) | This example application shows how to use the I2C driver in synchronous mode to perform operations on the EEPROM | [I2C EEPROM AT24 driver - EEPROM Read Write](/core_apps_sam_a5d2/apps/driver/i2c_eeprom/at24/at24_eeprom_read_write/readme.html) | This example application shows how to use the AT24 driver to perform read and write operations on AT24 series of EEPROM | [Memory driver asynchronous - MX25L QSPI and AT25DF SPI flash read write](/core_apps_sam_a5d2/apps/driver/memory/async/mx25l_at25df_read_write/readme.html) | This example application shows how to use the Memory driver in asynchronous mode to perform block operations on the MX25L QSPI flash and the AT25DF SPI flash media | [Memory driver synchronous - MX25L QSPI and AT25DF SPI flash read write](/core_apps_sam_a5d2/apps/driver/memory/sync/mx25l_at25df_read_write/readme.html) | This example application shows how to use the Memory driver in synchronous mode to perform block operations on the MX25L QSPI flash and the AT25DF SPI flash media | [SDMMC driver asynchronous - SDMMC Read Write](/core_apps_sam_a5d2/apps/driver/sdmmc/async/sdmmc_read_write/readme.html) | This example application shows how to use the SDMMC driver in asynchronous mode to perform block operations on the SD Card Media | [SDSPI driver asynchronous - SDSPI Read Write](/core_apps_sam_a5d2/apps/driver/sdspi/async/sdspi_read_write/readme.html) | This example application shows how to use the SDSPI driver in asynchronous mode to perform block operations on the SD Card Media | [SDSPI driver synchronous - SDSPI Read Write](/core_apps_sam_a5d2/apps/driver/sdspi/sync/sdspi_read_write/readme.html) | This example application shows how to use the SDSPI driver in synchronous mode to perform block operations on the SD Card Media | [SPI Driver asynchronous - multi client](/core_apps_sam_a5d2/apps/driver/spi/async/spi_multi_slave/readme.html) | This example demonstrates how to use single instance of the SPI driver in asynchronous mode to communicate with multiple EEPROMs | [SPI Driver asynchronous - Self loopback multi client](/core_apps_sam_a5d2/apps/driver/spi/async/spi_self_loopback_multi_client/readme.html) | This example demonstrates how to use the SPI driver in asynchronous mode to achieve self-loop back between multiple clients | [SPI Driver synchronous - multi client](/core_apps_sam_a5d2/apps/driver/spi/sync/spi_multi_slave/readme.html) | This example demonstrates how to use single instance of the SPI driver in synchronous mode to communicate with multiple EEPROMs in an RTOS environment | [SPI Driver synchronous - Self loopback multi client](/core_apps_sam_a5d2/apps/driver/spi/sync/spi_self_loopback_multi_client/readme.html) | This example demonstrates how to use the SPI driver in synchronous mode to achieve self-loop back between multiple clients in RTOS environment | [SPI EEPROM AT25 driver - EEPROM Read Write](/core_apps_sam_a5d2/apps/driver/spi_eeprom/at25/at25_eeprom_read_write/readme.html) | This example application shows how to use the AT25 driver to perform read and write operations on AT25 series of EEPROM | [SPI Flash AT25DF - AT25DF flash read write](/core_apps_sam_a5d2/apps/driver/spi_flash/at25df/at25df_flash_read_write/readme.html) | This example application shows how to use the AT25DF SPI flash driver to perform block operations on the on-board AT25DF Flash memory | [SQI flash MX25L driver - MX25L SQI read write](/core_apps_sam_a5d2/apps/driver/sqi_flash/mx25l/mx25l_flash_read_write/readme.html) | This example application shows how to use the MX25L QSPI flash driver to perform block operations on the on-board MX25L QSPI Flash memory | [USART driver asynchronous - USART echo](/core_apps_sam_a5d2/apps/driver/usart/async/usart_echo/readme.html) | This example echoes the received characters over the console using the USART driver in asynchronous mode | [USART driver asynchronous - USART multi instance](/core_apps_sam_a5d2/apps/driver/usart/async/usart_multi_instance/readme.html) | This example echoes the received characters over the two consoles using the USART driver in asynchronous mode | [USART driver synchronous - USART echo](/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/readme.html) | This example echoes the received characters over the console using the USART driver in synchronous mode | [USART driver synchronous - USART multi instance](/core_apps_sam_a5d2/apps/driver/usart/sync/usart_multi_instance/readme.html) | This example echoes the received characters over the two consoles using the USART driver in synchronous mode | [FAT filesystem using EMMC media](/core_apps_sam_a5d2/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html) | This application shows an example of using the FAT filesystem to access and modify the contents of a eMMC device using contents from SD card | [FAT filesystem using SDMMC Media](/core_apps_sam_a5d2/apps/fs/sdmmc_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDMMC driver | [FAT filesystem using SPI flash media](/core_apps_sam_a5d2/apps/fs/spi_flash_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a flash memory using SPI Flash driver | [FAT filesystem using MX25L Media](/core_apps_sam_a5d2/apps/fs/sqi_flash_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access SQI based MX25L flash media | [FreeRTOS basic](/core_apps_sam_a5d2/apps/rtos/freertos/basic_freertos/readme.html) | This example application blinks an LED to show the FreeRTOS threads that are running and to indicate status | [FreeRTOS Task Notification](/core_apps_sam_a5d2/apps/rtos/freertos/task_notification_freertos/readme.html) | This example application is to illustrate the FreeRTOS Task Notification feature which is used as a light weight binary semaphore | [Time System Service multi-client](/core_apps_sam_a5d2/apps/system/time/sys_time_multiclient/readme.html) | This example application demonstrates the multi-client system timer functionality | ____ [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2/blob/master/mplab_harmony_license.md) [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2/releases/latest) [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2/releases/latest) [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2/graphs/commit-activity) [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg)]() ____ [![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology) [![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology) [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/) [![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech) [![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg?style=social)]() [![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg?style=social)]() ",
+    "content": "[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com) # Harmony 3 driver and system service application examples for SAM A5D2 family MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices. Refer to the following links for more information. - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit) - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus) - [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide) - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony) - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/) This repository contains the MPLAB® Harmony 3 driver and system service application examples for SAM A5D2 family - [Release Notes](/core_apps_sam_a5d2/release_notes.html) - [MPLAB® Harmony License](/core_apps_sam_a5d2/mplab_harmony_license.html) To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2) and then click **Clone** button to clone this repository or download as zip file. This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki). ## Contents Summary | Folder | Description | --- | --- | apps | Contains driver and system service example applications | docs | Contains documentation in html format for offline viewing (to be used only after cloning this repository onto a local machine). Use [github pages](https://microchip-mplab-harmony.github.io/core_apps_sam_a5d2/) of this repository for viewing it online. | ## Code Examples The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries. | Name | Description | ---- | ----------- | [I2C driver asynchronous - I2C EEPROM](/core_apps_sam_a5d2/apps/driver/i2c/async/i2c_eeprom/readme.html) | This example application shows how to use the I2C driver in asynchronous mode to perform operations on the EEPROM | [I2C driver synchronous - I2C EEPROM](/core_apps_sam_a5d2/apps/driver/i2c/sync/i2c_eeprom/readme.html) | This example application shows how to use the I2C driver in synchronous mode to perform operations on the EEPROM | [I2C EEPROM AT24 driver - EEPROM Read Write](/core_apps_sam_a5d2/apps/driver/i2c_eeprom/at24/at24_eeprom_read_write/readme.html) | This example application shows how to use the AT24 driver to perform read and write operations on AT24 series of EEPROM | [Memory driver asynchronous - MX25L QSPI and AT25DF SPI flash read write](/core_apps_sam_a5d2/apps/driver/memory/async/mx25l_at25df_read_write/readme.html) | This example application shows how to use the Memory driver in asynchronous mode to perform block operations on the MX25L QSPI flash and the AT25DF SPI flash media | [Memory driver synchronous - MX25L QSPI and AT25DF SPI flash read write](/core_apps_sam_a5d2/apps/driver/memory/sync/mx25l_at25df_read_write/readme.html) | This example application shows how to use the Memory driver in synchronous mode to perform block operations on the MX25L QSPI flash and the AT25DF SPI flash media | [SDMMC driver asynchronous - SDMMC Read Write](/core_apps_sam_a5d2/apps/driver/sdmmc/async/sdmmc_read_write/readme.html) | This example application shows how to use the SDMMC driver in asynchronous mode to perform block operations on the SD Card Media | [SDSPI driver asynchronous - SDSPI Read Write](/core_apps_sam_a5d2/apps/driver/sdspi/async/sdspi_read_write/readme.html) | This example application shows how to use the SDSPI driver in asynchronous mode to perform block operations on the SD Card Media | [SDSPI driver synchronous - SDSPI Read Write](/core_apps_sam_a5d2/apps/driver/sdspi/sync/sdspi_read_write/readme.html) | This example application shows how to use the SDSPI driver in synchronous mode to perform block operations on the SD Card Media | [SPI Driver asynchronous - multi client](/core_apps_sam_a5d2/apps/driver/spi/async/spi_multi_slave/readme.html) | This example demonstrates how to use single instance of the SPI driver in asynchronous mode to communicate with multiple EEPROMs | [SPI Driver asynchronous - Self loopback multi client](/core_apps_sam_a5d2/apps/driver/spi/async/spi_self_loopback_multi_client/readme.html) | This example demonstrates how to use the SPI driver in asynchronous mode to achieve self-loop back between multiple clients | [SPI Driver synchronous - multi client](/core_apps_sam_a5d2/apps/driver/spi/sync/spi_multi_slave/readme.html) | This example demonstrates how to use single instance of the SPI driver in synchronous mode to communicate with multiple EEPROMs in an RTOS environment | [SPI Driver synchronous - Self loopback multi client](/core_apps_sam_a5d2/apps/driver/spi/sync/spi_self_loopback_multi_client/readme.html) | This example demonstrates how to use the SPI driver in synchronous mode to achieve self-loop back between multiple clients in RTOS environment | [SPI EEPROM AT25 driver - EEPROM Read Write](/core_apps_sam_a5d2/apps/driver/spi_eeprom/at25/at25_eeprom_read_write/readme.html) | This example application shows how to use the AT25 driver to perform read and write operations on AT25 series of EEPROM | [SPI Flash AT25DF - AT25DF flash read write](/core_apps_sam_a5d2/apps/driver/spi_flash/at25df/at25df_flash_read_write/readme.html) | This example application shows how to use the AT25DF SPI flash driver to perform block operations on the on-board AT25DF Flash memory | [SQI flash MX25L driver - MX25L SQI read write](/core_apps_sam_a5d2/apps/driver/sqi_flash/mx25l/mx25l_flash_read_write/readme.html) | This example application shows how to use the MX25L QSPI flash driver to perform block operations on the on-board MX25L QSPI Flash memory | [USART driver asynchronous - USART echo](/core_apps_sam_a5d2/apps/driver/usart/async/usart_echo/readme.html) | This example echoes the received characters over the console using the USART driver in asynchronous mode | [USART driver asynchronous - USART multi instance](/core_apps_sam_a5d2/apps/driver/usart/async/usart_multi_instance/readme.html) | This example echoes the received characters over the two consoles using the USART driver in asynchronous mode | [USART driver synchronous - USART echo](/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/readme.html) | This example echoes the received characters over the console using the USART driver in synchronous mode | [USART driver synchronous - USART multi instance](/core_apps_sam_a5d2/apps/driver/usart/sync/usart_multi_instance/readme.html) | This example echoes the received characters over the two consoles using the USART driver in synchronous mode | [FAT filesystem throughput using eMMC Media](/core_apps_sam_a5d2/apps/fs/emmc_fat_throughput/readme.html) | This application calculates throughput by Writing and Reading data into a eMMC device at High Speed using the MPLAB Harmony File System and the SDMMC driver | [FAT filesystem using EMMC media](/core_apps_sam_a5d2/apps/fs/emmc_sdmmc_fat_multi_disk/readme.html) | This application shows an example of using the FAT filesystem to access and modify the contents of a eMMC device using contents from SD card | [FAT filesystem using SDMMC Media](/core_apps_sam_a5d2/apps/fs/sdmmc_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDMMC driver | [FAT filesystem throughput using SDMMC Media](/core_apps_sam_a5d2/apps/fs/sdmmc_fat_throughput/readme.html) | This application calculates throughput by Writing and Reading data into a Sd-Card at High Speed using the MPLAB Harmony File System and the SDMMC driver | [FAT filesystem using SPI flash media](/core_apps_sam_a5d2/apps/fs/spi_flash_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a flash memory using SPI Flash driver | [FAT filesystem using MX25L Media](/core_apps_sam_a5d2/apps/fs/sqi_flash_fat/readme.html) | This application shows an example of using the MPLAB Harmony File System to access SQI based MX25L flash media | [FreeRTOS basic](/core_apps_sam_a5d2/apps/rtos/freertos/basic_freertos/readme.html) | This example application demonstrates context switching between four tasks of different priorites. Two tasks run periodically while the other two tasks are event driven | [FreeRTOS Task Notification](/core_apps_sam_a5d2/apps/rtos/freertos/task_notification_freertos/readme.html) | This example application is to illustrate the FreeRTOS Task Notification feature which is used as a light weight binary semaphore | [Time System Service multi-client](/core_apps_sam_a5d2/apps/system/time/sys_time_multiclient/readme.html) | This example application demonstrates the multi-client system timer functionality | ____ [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2/blob/master/mplab_harmony_license.md) [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2/releases/latest) [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2/releases/latest) [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2/graphs/commit-activity) [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg)]() ____ [![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology) [![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology) [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/) [![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech) [![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg?style=social)]() [![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/core_apps_sam_a5d2.svg?style=social)]() ",
     "url": "http://localhost:4000/core_apps_sam_a5d2/",
     "relUrl": "/"
   }
