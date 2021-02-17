@@ -56,13 +56,13 @@ The following applications are provided to demonstrate the typical or interestin
 | [USART driver asynchronous - USART multi instance](apps/driver/usart/async/usart_multi_instance/readme.md) | This example echoes the received characters over the two consoles using the USART driver in asynchronous mode |
 | [USART driver synchronous - USART echo](apps/driver/usart/sync/usart_echo/readme.md) | This example echoes the received characters over the console using the USART driver in synchronous mode |
 | [USART driver synchronous - USART multi instance](apps/driver/usart/sync/usart_multi_instance/readme.md) | This example echoes the received characters over the two consoles using the USART driver in synchronous mode |
-| [FAT filesystem throughput using EMMC Media](apps/fs/emmc_fat_throughput/readme.md) | This application calculates throughput by Writing and Reading data into a eMMC media at High Speed using the MPLAB Harmony File System and the SDMMC driver |
+| [FAT filesystem throughput using eMMC Media](apps/fs/emmc_fat_throughput/readme.md) | This application calculates throughput by Writing and Reading data into a eMMC device at High Speed using the MPLAB Harmony File System and the SDMMC driver |
 | [FAT filesystem using EMMC media](apps/fs/emmc_sdmmc_fat_multi_disk/readme.md) | This application shows an example of using the FAT filesystem to access and modify the contents of a eMMC device using contents from SD card |
 | [FAT filesystem using SDMMC Media](apps/fs/sdmmc_fat/readme.md) | This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDMMC driver |
 | [FAT filesystem throughput using SDMMC Media](apps/fs/sdmmc_fat_throughput/readme.md) | This application calculates throughput by Writing and Reading data into a Sd-Card at High Speed using the MPLAB Harmony File System and the SDMMC driver |
 | [FAT filesystem using SPI flash media](apps/fs/spi_flash_fat/readme.md) | This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a flash memory using SPI Flash driver |
 | [FAT filesystem using MX25L Media](apps/fs/sqi_flash_fat/readme.md) | This application shows an example of using the MPLAB Harmony File System to access SQI based MX25L flash media |
-| [FreeRTOS basic](apps/rtos/freertos/basic_freertos/readme.md) | This example application blinks an LED to show the FreeRTOS threads that are running and to indicate status |
+| [FreeRTOS basic](apps/rtos/freertos/basic_freertos/readme.md) | This example application demonstrates context switching between four tasks of different priorites. Two tasks run periodically while the other two tasks are event driven |
 | [FreeRTOS Task Notification](apps/rtos/freertos/task_notification_freertos/readme.md) | This example application is to illustrate the FreeRTOS Task Notification feature which is used as a light weight binary semaphore |
 | [Time System Service multi-client](apps/system/time/sys_time_multiclient/readme.md) | This example application demonstrates the multi-client system timer functionality |
 
