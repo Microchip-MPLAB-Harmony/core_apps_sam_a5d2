@@ -28,8 +28,8 @@ To build the application, refer to the following table and open the project usin
 | ----------------- | ---------------------------------------------- |
 | sam_a5d2_xult.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 | sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
-| sam_a5d2_xult_freertos_iar.IAR | IAR project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
-| sam_a5d2_xult_iar.IAR | IAR project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult_freertos_iar.IAR/spi_multi_slave_sam_a5d2_xult_freertos.eww/spi_multi_slave_sam_a5d2_xult_freertos.eww | IAR project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult_iar.IAR/spi_multi_slave_sam_a5d2_xult.eww/spi_multi_slave_sam_a5d2_xult.eww | IAR project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
 ## Setting up AT91Bootstrap loader
@@ -42,7 +42,7 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_a5d2_xult.X <br> sam_a5d2_xult_freertos.X <br> sam_a5d2_xult_freertos_iar.IAR <br> sam_a5d2_xult_iar.IAR | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult.X <br> sam_a5d2_xult_freertos.X <br> sam_a5d2_xult_freertos_iar.IAR/spi_multi_slave_sam_a5d2_xult_freertos.eww/spi_multi_slave_sam_a5d2_xult_freertos.eww <br> sam_a5d2_xult_iar.IAR/spi_multi_slave_sam_a5d2_xult.eww/spi_multi_slave_sam_a5d2_xult.eww | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
