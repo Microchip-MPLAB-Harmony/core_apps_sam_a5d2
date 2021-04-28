@@ -516,10 +516,10 @@
     <conf name="default" type="9">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <targetDevice>ATSAMA5D27CD1G</targetDevice>
+        <targetDevice>ATSAMA5D27</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool></platformTool>
         <languageToolchain></languageToolchain>
         <languageToolchainVersion></languageToolchainVersion>
         <platform>3</platform>
@@ -537,9 +537,9 @@
       <makefileType>
         <makeTool>
           <workingDirectory>.</workingDirectory>
-          <buildCommand>make ARCH=arm  CROSS_COMPILE=arm-none-eabi-</buildCommand>
-          <cleanCommand>make mplabclean ARCH=arm CROSS_COMPILE=arm-none-eabi-</cleanCommand>
-          <debugBuildCommand>make ARCH=arm CROSS_COMPILE=arm-none-eabi-</debugBuildCommand>
+          <buildCommand>make CROSS_COMPILE=arm-none-eabi-</buildCommand>
+          <cleanCommand>make mplabclean CROSS_COMPILE=arm-none-eabi-</cleanCommand>
+          <debugBuildCommand>make CROSS_COMPILE=arm-none-eabi-</debugBuildCommand>
           <imageName>binaries/at91bootstrap-stripped.elf</imageName>
           <debugImageName>binaries/at91bootstrap.elf</debugImageName>
           <userIncludePaths></userIncludePaths>
