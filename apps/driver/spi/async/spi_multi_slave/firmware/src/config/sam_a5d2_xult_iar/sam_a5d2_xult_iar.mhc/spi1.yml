@@ -74,8 +74,23 @@ children:
       - type: Dynamic
         attributes: {id: spi1, value: '83000000'}
   - type: KeyValueSet
+    attributes: {id: SPI_MR_MSTR}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
+  - type: KeyValueSet
     attributes: {id: SPI_MR_PCS}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
