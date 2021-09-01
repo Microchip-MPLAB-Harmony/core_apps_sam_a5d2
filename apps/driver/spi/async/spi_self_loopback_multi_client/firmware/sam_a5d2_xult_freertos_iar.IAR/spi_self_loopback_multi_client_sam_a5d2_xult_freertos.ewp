@@ -2214,6 +2214,9 @@
                     <file>
                         <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\interrupts.h</name>
                     </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\FreeRTOSConfig.h</name>
+                    </file>
                     <group>
                         <name>driver</name>
                         <group>
@@ -2232,9 +2235,6 @@
                             <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\driver\driver_common.h</name>
                         </file>
                     </group>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_freertos_iar\FreeRTOSConfig.h</name>
-                    </file>
                     <group>
                         <name>system</name>
                         <file>
