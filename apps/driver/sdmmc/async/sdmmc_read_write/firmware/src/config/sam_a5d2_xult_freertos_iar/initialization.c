@@ -178,6 +178,7 @@ void SYS_Initialize ( void* data )
 {
 
   
+    MMU_Initialize();
     CLK_Initialize();
 	PIO_Initialize();
 
@@ -186,7 +187,6 @@ void SYS_Initialize ( void* data )
 	BSP_Initialize();
 	PIT_TimerInitialize();
 
-    MMU_Initialize();
     Matrix_Initialize();
 
     PLIB_L2CC_Initialize();
