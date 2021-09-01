@@ -96,10 +96,6 @@ const DRV_USART_INIT drvUsart0InitData =
     /* USART Client Objects Pool */
     .clientObjPool = (uintptr_t)&drvUSART0ClientObjPool[0],
 
-    .dmaChannelTransmit = SYS_DMA_CHANNEL_NONE,
-
-    .dmaChannelReceive = SYS_DMA_CHANNEL_NONE,
-
 
     .remapDataWidth = drvUsart0remapDataWidth,
 
@@ -160,6 +156,7 @@ void SYS_Initialize ( void* data )
 {
 
   
+    MMU_Initialize();
     CLK_Initialize();
 	PIO_Initialize();
 
@@ -170,7 +167,6 @@ void SYS_Initialize ( void* data )
 
 	PIT_TimerInitialize();
 
-    MMU_Initialize();
     Matrix_Initialize();
 
     PLIB_L2CC_Initialize();
