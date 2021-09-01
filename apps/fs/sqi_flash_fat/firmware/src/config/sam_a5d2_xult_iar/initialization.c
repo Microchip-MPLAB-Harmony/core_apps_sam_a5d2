@@ -175,13 +175,15 @@ const SYS_FS_FUNCTIONS FatFsFunctions =
 };
 
 
+
 const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
 {
     {
         .nativeFileSystemType = FAT,
         .nativeFileSystemFunctions = &FatFsFunctions
-    }
+    },
 };
+
 
 // </editor-fold>
 
@@ -217,6 +219,7 @@ void SYS_Initialize ( void* data )
 {
 
   
+    MMU_Initialize();
     CLK_Initialize();
 	PIO_Initialize();
 
@@ -225,7 +228,6 @@ void SYS_Initialize ( void* data )
     QSPI0_Initialize();
 
 	BSP_Initialize();
-    MMU_Initialize();
     Matrix_Initialize();
 
     PLIB_L2CC_Initialize();
