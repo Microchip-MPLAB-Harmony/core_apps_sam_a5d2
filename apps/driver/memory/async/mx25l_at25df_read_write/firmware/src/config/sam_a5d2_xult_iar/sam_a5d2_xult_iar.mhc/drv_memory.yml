@@ -42,6 +42,10 @@ children:
             children:
             - {type: Value, value: '*** Configure Memory Device in DRV_MX25L Configurations
                 ***'}
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'true'}
       - type: Boolean
         attributes: {id: DRV_MEMORY_ERASE_ENABLE}
         children:
@@ -111,6 +115,10 @@ children:
             children:
             - {type: Value, value: '*** Configure Memory Device in DRV_AT25DF Configurations
                 ***'}
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'true'}
       - type: Boolean
         attributes: {id: DRV_MEMORY_ERASE_ENABLE}
         children:
