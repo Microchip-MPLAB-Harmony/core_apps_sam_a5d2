@@ -116,6 +116,15 @@ children:
           children:
           - type: User
             attributes: {value: '2'}
+      - type: Menu
+        attributes: {id: DRV_SDMMC_RTOS_MENU}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'true'}
       - type: Comment
         attributes: {id: DRV_SDMMC_SDCDEN_COMMENT}
         children:
@@ -123,6 +132,15 @@ children:
           children:
           - type: Boolean
             attributes: {id: visible}
+            children:
+            - {type: Value, value: 'true'}
+      - type: File
+        attributes: {id: DRV_SDMMC_SYS_RTOS_TASK}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: enabled}
             children:
             - {type: Value, value: 'true'}
       - type: Combo
