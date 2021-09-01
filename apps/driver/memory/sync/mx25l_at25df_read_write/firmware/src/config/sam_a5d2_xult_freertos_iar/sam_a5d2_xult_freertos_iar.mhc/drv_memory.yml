@@ -4,6 +4,24 @@ attributes: {id: drv_memory}
 children:
 - type: Symbols
   children:
+  - type: File
+    attributes: {id: DRV_MEMORY_ASYNC_HEADER_LOCAL}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: File
+    attributes: {id: DRV_MEMORY_ASYNC_SOURCE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
   - type: Combo
     attributes: {id: DRV_MEMORY_COMMON_MODE}
     children:
@@ -18,6 +36,24 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drv_memory, value: 'true'}
+  - type: File
+    attributes: {id: DRV_MEMORY_SYNC_HEADER_LOCAL}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: DRV_MEMORY_SYNC_SOURCE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
 - type: Instances
   children:
   - type: InstanceComponent
@@ -25,6 +61,15 @@ children:
     children:
     - type: Symbols
       children:
+      - type: Integer
+        attributes: {id: DRV_MEMORY_BUFFER_QUEUE_SIZE}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'false'}
       - type: String
         attributes: {id: DRV_MEMORY_DEVICE}
         children:
@@ -69,6 +114,24 @@ children:
           children:
           - type: Dynamic
             attributes: {id: drv_memory_0, value: 'false'}
+      - type: Menu
+        attributes: {id: DRV_MEMORY_RTOS_MENU}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'false'}
+      - type: File
+        attributes: {id: DRV_MEMORY_SYS_RTOS_TASK}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: enabled}
+            children:
+            - {type: Value, value: 'false'}
     - type: Attachments
       children:
       - type: DirectDependency
@@ -89,6 +152,15 @@ children:
     children:
     - type: Symbols
       children:
+      - type: Integer
+        attributes: {id: DRV_MEMORY_BUFFER_QUEUE_SIZE}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'false'}
       - type: String
         attributes: {id: DRV_MEMORY_DEVICE}
         children:
@@ -133,6 +205,24 @@ children:
           children:
           - type: Dynamic
             attributes: {id: drv_memory_1, value: 'false'}
+      - type: Menu
+        attributes: {id: DRV_MEMORY_RTOS_MENU}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'false'}
+      - type: File
+        attributes: {id: DRV_MEMORY_SYS_RTOS_TASK}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: enabled}
+            children:
+            - {type: Value, value: 'false'}
     - type: Attachments
       children:
       - type: DirectDependency
