@@ -77,7 +77,7 @@ const DRV_SPI_PLIB_INTERFACE drvSPI0PlibAPI = {
     .writeRead = (DRV_SPI_PLIB_WRITE_READ)SPI1_WriteRead,
 
     /* SPI PLIB Transfer Status function */
-    .isBusy = (DRV_SPI_PLIB_IS_BUSY)SPI1_IsBusy,
+    .isTransmitterBusy = (DRV_SPI_PLIB_TRANSMITTER_IS_BUSY)SPI1_IsTransmitterBusy,
 
     /* SPI PLIB Callback Register */
     .callbackRegister = (DRV_SPI_PLIB_CALLBACK_REGISTER)SPI1_CallbackRegister,
@@ -167,6 +167,7 @@ void SYS_Initialize ( void* data )
 {
 
   
+    MMU_Initialize();
     CLK_Initialize();
 	PIO_Initialize();
 
@@ -175,7 +176,6 @@ void SYS_Initialize ( void* data )
 	BSP_Initialize();
 	PIT_TimerInitialize();
 
-    MMU_Initialize();
     Matrix_Initialize();
 
     PLIB_L2CC_Initialize();
