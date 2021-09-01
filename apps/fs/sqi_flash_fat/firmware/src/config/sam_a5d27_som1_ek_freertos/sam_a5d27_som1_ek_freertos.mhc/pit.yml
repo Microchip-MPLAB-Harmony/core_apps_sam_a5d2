@@ -53,6 +53,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: pit, value: PIT_TimerPeriodSet}
+  - type: Integer
+    attributes: {id: PERIOD_TICKS}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: pit, value: '5125'}
   - type: String
     attributes: {id: RTOS_INTERRUPT_HANDLER}
     children:
