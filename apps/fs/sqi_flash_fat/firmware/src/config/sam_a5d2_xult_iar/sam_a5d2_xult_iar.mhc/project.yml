@@ -860,13 +860,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6403B61D64A6FF1495CA40649C7030F4
-- generatedChecksum: 9A2E447771660A3B07A36DCEA2366CD5
+- generatedChecksum: 0B63948DFEB39ECD63FCCCD4A0F2357E
   logicalPath: packs/ATSAMA5D27_DFP
   name: sama5d27.h
   physicalPath: ../../packs/ATSAMA5D27_DFP
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9A2E447771660A3B07A36DCEA2366CD5
+  userChecksum: 0B63948DFEB39ECD63FCCCD4A0F2357E
 - generatedChecksum: 606D0AF2B36A202C6CBED74A59AA655E
   logicalPath: packs/ATSAMA5D27_DFP/pio
   name: sama5d27.h
