@@ -1,0 +1,78 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_a5d2_fs_sqi_flash_fat_sam_a5d27_som1_ek_freertos",
+		"version": "3.1.0",
+		"displayName": "FAT filesystem using SQI FLASH Media Example for SAM A5D2x Family",
+		"projectName": "sqi_flash_fat_sam_a5d27_som1_ek_freertos",
+		"shortDescription": "This application shows an example of using the MPLAB Harmony File System to access SQI based flash media",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.50.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=3.01.0"
+			}
+		],
+		"dfp": {
+			"name": "SAMA5D2_DFP",
+			"semverRange": "^1.5.53"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.8.0"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAMA5D27CD1G",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"SAMA5D27-SOM1-EK1"
+			],
+			[
+				"Harmony",
+				"Middleware",
+				"File System (FS)",
+				"SQI FLASH_FAT"
+			],
+			[
+				"File System (FS)",
+				"SQI FLASH_FAT"
+			]
+		],
+		"peripherals": [
+			"SQI FLASH_FAT"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"File System",
+			"ATSAMA5D27CD1G",
+			"SAM A5D2x Family"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
