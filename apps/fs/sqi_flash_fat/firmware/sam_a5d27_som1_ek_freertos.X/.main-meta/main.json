@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_a5d2_fs_sqi_flash_fat_sam_a5d27_som1_ek_freertos",
-		"version": "3.1.0",
+		"version": "3.2.0",
 		"displayName": "FAT filesystem using SQI FLASH Media Example for SAM A5D2x Family",
 		"projectName": "sqi_flash_fat_sam_a5d27_som1_ek_freertos",
 		"shortDescription": "This application shows an example of using the MPLAB Harmony File System to access SQI based flash media",
@@ -15,7 +15,7 @@
 		"compiler": [
 			{
 				"name": "XC32",
-				"semverRange": ">=3.01.0"
+				"semverRange": ">=3.1.0"
 			}
 		],
 		"dfp": {
