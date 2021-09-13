@@ -42,7 +42,7 @@ Following table provides number of peripheral library examples available for dif
 
 Following table provides number of peripheral library examples available for different development kits.
 
-| Development Kits  | MPLABx applications | IAR applications |
+| Development Kits  | MPLAB X applications | IAR applications |
 |:-----------------:|:-------------------:|:----------------:|
 | None | 43 | 0 |
 | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) | 39 | 36 |
@@ -54,7 +54,7 @@ Following table provides number of peripheral library examples available for dif
 
 ### Known Issues
 
-- **SAMA5D2 family**: SAMA5D2_DFP v1.5.53 or higher is required to correctly program and debug the application from within MPLABx 5.45
+- **SAMA5D2 family**: SAMA5D2_DFP v1.5.53 or higher is required to correctly program and debug the application from within MPLAB X 5.45
 
 ### Development Tools
 
@@ -85,7 +85,7 @@ Following table provides number of peripheral library examples available for dif
 
 Following table provides number of peripheral library examples available for different development kits.
 
-| Development Kits  | MPLABx applications | IAR applications |
+| Development Kits  | MPLAB X applications | IAR applications |
 |:-----------------:|:-------------------:|:----------------:|
 | [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1) | 4 | 0 |
 | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) | 37 | 36 |
