@@ -238,7 +238,8 @@ void SYS_Initialize ( void* data )
   
     MMU_Initialize();
     CLK_Initialize();
-	PIO_Initialize();
+    PIO_Initialize();
+
 
 
 
@@ -256,9 +257,9 @@ void SYS_Initialize ( void* data )
     TC0_CH0_TimerInitialize(); 
      
     
+	BSP_Initialize();
     QSPI0_Initialize();
 
-	BSP_Initialize();
 
     sysObj.drvMX25L = DRV_MX25L_Initialize((SYS_MODULE_INDEX)DRV_MX25L_INDEX, (SYS_MODULE_INIT *)&drvMX25LInitData);
 
