@@ -83,7 +83,7 @@ const DRV_SPI_PLIB_INTERFACE drvSPI0PlibAPI = {
     .callbackRegister = (DRV_SPI_PLIB_CALLBACK_REGISTER)SPI1_CallbackRegister,
 };
 
-const uint32_t drvSPI0remapDataBits[]= { 0x0, 0x10, 0x20, 0x30, 0x40, 0x50, 0x60, 0x70, 0x80 };
+const uint32_t drvSPI0remapDataBits[]= { 0x0, 0x10, 0x20, 0x30, 0x40, 0x50, 0x60, 0x70, 0x80, 0xFFFFFFFF };
 const uint32_t drvSPI0remapClockPolarity[] = { 0x0, 0x1 };
 const uint32_t drvSPI0remapClockPhase[] = { 0x0, 0x2 };
 
@@ -169,7 +169,8 @@ void SYS_Initialize ( void* data )
   
     MMU_Initialize();
     CLK_Initialize();
-	PIO_Initialize();
+    PIO_Initialize();
+
 
 
 
