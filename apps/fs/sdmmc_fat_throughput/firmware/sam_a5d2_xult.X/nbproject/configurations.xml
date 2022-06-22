@@ -356,6 +356,7 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app.c</itemPath>
+      <itemPath>../src/config/sam_a5d2_xult/pin_configurations.csv</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -371,12 +372,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <languageToolchainVersion>4.10</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.5.53"/>
+        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.6.69"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
@@ -446,7 +447,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_a5d2_xult;../src/packs/ATSAMA5D27_DFP;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/CMSIS/;;../src/config/sam_a5d2_xult/system/fs/fat_fs/file_system;../src/config/sam_a5d2_xult/system/fs/fat_fs/hardware_access;"/>
+                  value="../src;../src/config/sam_a5d2_xult;../src/config/sam_a5d2_xult/system/fs/fat_fs/file_system;../src/config/sam_a5d2_xult/system/fs/fat_fs/hardware_access;../src/packs/ATSAMA5D27_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -458,6 +459,7 @@
         <property key="preprocessor-macros" value=""/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
+        <property key="tentative-definitions" value="-fno-common"/>
         <property key="toplevel-reordering" value=""/>
         <property key="unaligned-access" value=""/>
         <property key="use-cci" value="false"/>
@@ -490,6 +492,7 @@
       </C32-AS>
       <C32-CO>
         <property key="coverage-enable" value="false"/>
+        <property key="stack-guidance" value="false"/>
       </C32-CO>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
@@ -522,7 +525,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros" value=";"/>
+        <property key="preprocessor-macros" value=""/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -546,7 +549,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_a5d2_xult;../src/packs/ATSAMA5D27_DFP;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/CMSIS/;;../src/config/sam_a5d2_xult/system/fs/fat_fs/file_system;../src/config/sam_a5d2_xult/system/fs/fat_fs/hardware_access;"/>
+                  value="../src;../src/config/sam_a5d2_xult;../src/config/sam_a5d2_xult/system/fs/fat_fs/file_system;../src/config/sam_a5d2_xult/system/fs/fat_fs/hardware_access;../src/packs/ATSAMA5D27_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -574,6 +577,7 @@
         <property key="omit-pack-options" value="1"/>
         <property key="relaxed-math" value="false"/>
         <property key="save-temps" value="false"/>
+        <property key="stack-smashing" value=""/>
         <property key="wpo-lto" value="false"/>
       </C32Global>
       <PICkit3PlatformTool>
