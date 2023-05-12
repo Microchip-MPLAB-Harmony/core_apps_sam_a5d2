@@ -62,17 +62,21 @@
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 11.1 */
+/* MISRA C-2012 Rule 11.3 */
+/* MISRA C-2012 Rule 11.8 */
 /* SPI PLIB Interface Initialization for AT25DF Driver */
-const DRV_AT25DF_PLIB_INTERFACE drvAT25DFPlibAPI = {
+static const DRV_AT25DF_PLIB_INTERFACE drvAT25DFPlibAPI = {
 
     /* SPI PLIB WriteRead function */
     .writeRead = (DRV_AT25DF_PLIB_WRITE_READ)SPI0_WriteRead,
 
     /* SPI PLIB Write function */
-    .write = (DRV_AT25DF_PLIB_WRITE)SPI0_Write,
+    .write_t = (DRV_AT25DF_PLIB_WRITE)SPI0_Write,
 
     /* SPI PLIB Read function */
-    .read = (DRV_AT25DF_PLIB_READ)SPI0_Read,
+    .read_t = (DRV_AT25DF_PLIB_READ)SPI0_Read,
 
     /* SPI PLIB Transfer Status function */
     .isBusy = (DRV_AT25DF_PLIB_IS_BUSY)SPI0_IsBusy,
@@ -82,7 +86,7 @@ const DRV_AT25DF_PLIB_INTERFACE drvAT25DFPlibAPI = {
 };
 
 /* AT25DF Driver Initialization Data */
-const DRV_AT25DF_INIT drvAT25DFInitData =
+static const DRV_AT25DF_INIT drvAT25DFInitData =
 {
     /* SPI PLIB API  interface*/
     .spiPlib = &drvAT25DFPlibAPI,
@@ -100,6 +104,7 @@ const DRV_AT25DF_INIT drvAT25DFInitData =
 
     .chipSelectPin = DRV_AT25DF_CHIP_SELECT_PIN_IDX
 };
+
 
 
 
@@ -132,7 +137,7 @@ SYSTEM_OBJECTS sysObj;
 // *****************************************************************************
 // *****************************************************************************
 
-
+/* MISRAC 2012 deviation block end */
 
 /*******************************************************************************
   Function:
@@ -146,12 +151,13 @@ SYSTEM_OBJECTS sysObj;
 
 void SYS_Initialize ( void* data )
 {
+    /* MISRAC 2012 deviation block start */
+    /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
 
   
     MMU_Initialize();
     CLK_Initialize();
     PIO_Initialize();
-
 
 
 
@@ -167,14 +173,24 @@ void SYS_Initialize ( void* data )
 	SPI0_Initialize();
 
 
+
+    /* MISRAC 2012 deviation block start */
+    /* Following MISRA-C rules deviated in this block  */
+    /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
+    /* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+
     sysObj.drvAT25DF = DRV_AT25DF_Initialize(DRV_AT25DF_INDEX, (SYS_MODULE_INIT *)&drvAT25DFInitData);
 
 
 
 
+    /* MISRAC 2012 deviation block end */
     APP_Initialize();
 
 
+
+
+    /* MISRAC 2012 deviation block end */
 
 }
 
