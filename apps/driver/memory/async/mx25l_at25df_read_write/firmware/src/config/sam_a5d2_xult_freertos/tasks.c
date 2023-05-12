@@ -52,6 +52,7 @@
 
 #include "configuration.h"
 #include "definitions.h"
+#include "sys_tasks.h"
 
 
 // *****************************************************************************
@@ -59,18 +60,18 @@
 // Section: RTOS "Tasks" Routine
 // *****************************************************************************
 // *****************************************************************************
-void _DRV_MEMORY_1_Tasks(  void *pvParameters  )
+static void lDRV_MEMORY_1_Tasks(  void *pvParameters  )
 {
-    while(1)
+    while(true)
     {
         DRV_MEMORY_Tasks(sysObj.drvMemory1);
         vTaskDelay(DRV_MEMORY_RTOS_DELAY_IDX1 / portTICK_PERIOD_MS);
     }
 }
 
-void _DRV_MEMORY_0_Tasks(  void *pvParameters  )
+static void lDRV_MEMORY_0_Tasks(  void *pvParameters  )
 {
-    while(1)
+    while(true)
     {
         DRV_MEMORY_Tasks(sysObj.drvMemory0);
         vTaskDelay(DRV_MEMORY_RTOS_DELAY_IDX0 / portTICK_PERIOD_MS);
@@ -80,34 +81,34 @@ void _DRV_MEMORY_0_Tasks(  void *pvParameters  )
 /* Handle for the APP_MX25L_Tasks. */
 TaskHandle_t xAPP_MX25L_Tasks;
 
-void _APP_MX25L_Tasks(  void *pvParameters  )
+static void lAPP_MX25L_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP_MX25L_Tasks();
-        vTaskDelay(5 / portTICK_PERIOD_MS);
+        vTaskDelay(5U / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the APP_AT25DF_Tasks. */
 TaskHandle_t xAPP_AT25DF_Tasks;
 
-void _APP_AT25DF_Tasks(  void *pvParameters  )
+static void lAPP_AT25DF_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP_AT25DF_Tasks();
-        vTaskDelay(5 / portTICK_PERIOD_MS);
+        vTaskDelay(5U / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the APP_MONITOR_Tasks. */
 TaskHandle_t xAPP_MONITOR_Tasks;
 
-void _APP_MONITOR_Tasks(  void *pvParameters  )
+static void lAPP_MONITOR_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP_MONITOR_Tasks();
-        vTaskDelay(50 / portTICK_PERIOD_MS);
+        vTaskDelay(50U / portTICK_PERIOD_MS);
     }
 }
 
@@ -133,7 +134,7 @@ void SYS_Tasks ( void )
     
 
     /* Maintain Device Drivers */
-        xTaskCreate( _DRV_MEMORY_1_Tasks,
+        (void)xTaskCreate( lDRV_MEMORY_1_Tasks,
         "DRV_MEM_1_TASKS",
         DRV_MEMORY_STACK_SIZE_IDX1,
         (void*)NULL,
@@ -141,7 +142,7 @@ void SYS_Tasks ( void )
         (TaskHandle_t*)NULL
     );
 
-    xTaskCreate( _DRV_MEMORY_0_Tasks,
+    (void)xTaskCreate( lDRV_MEMORY_0_Tasks,
         "DRV_MEM_0_TASKS",
         DRV_MEMORY_STACK_SIZE_IDX0,
         (void*)NULL,
@@ -156,7 +157,7 @@ void SYS_Tasks ( void )
 
     /* Maintain the application's state machine. */
         /* Create OS Thread for APP_MX25L_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP_MX25L_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP_MX25L_Tasks,
                 "APP_MX25L_Tasks",
                 1024,
                 NULL,
@@ -164,7 +165,7 @@ void SYS_Tasks ( void )
                 &xAPP_MX25L_Tasks);
 
     /* Create OS Thread for APP_AT25DF_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP_AT25DF_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP_AT25DF_Tasks,
                 "APP_AT25DF_Tasks",
                 1024,
                 NULL,
@@ -172,7 +173,7 @@ void SYS_Tasks ( void )
                 &xAPP_AT25DF_Tasks);
 
     /* Create OS Thread for APP_MONITOR_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP_MONITOR_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP_MONITOR_Tasks,
                 "APP_MONITOR_Tasks",
                 1024,
                 NULL,

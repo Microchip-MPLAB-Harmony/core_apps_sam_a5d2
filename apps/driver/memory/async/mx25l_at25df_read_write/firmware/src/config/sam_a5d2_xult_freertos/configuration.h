@@ -96,35 +96,33 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 /* MX25L Driver Instance Configuration */
-#define DRV_MX25L_INDEX                       0
-#define DRV_MX25L_CLIENTS_NUMBER              1
-#define DRV_MX25L_START_ADDRESS               0x0
-#define DRV_MX25L_PAGE_SIZE                   256
-#define DRV_MX25L_ERASE_BUFFER_SIZE           4096
+#define DRV_MX25L_INDEX                       (0U)
+#define DRV_MX25L_CLIENTS_NUMBER              (1U)
+#define DRV_MX25L_START_ADDRESS               (0x0U)
+#define DRV_MX25L_PAGE_SIZE                   (256U)
+#define DRV_MX25L_ERASE_BUFFER_SIZE           (4096U)
 
 /* Memory Driver Global Configuration Options */
-#define DRV_MEMORY_INSTANCES_NUMBER          2
+#define DRV_MEMORY_INSTANCES_NUMBER          (2U)
 
 /* Memory Driver Instance 1 Configuration */
 #define DRV_MEMORY_INDEX_1                   1
 #define DRV_MEMORY_CLIENTS_NUMBER_IDX1       1
-#define DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX1    1
-
+#define DRV_MEMORY_BUF_Q_SIZE_IDX1    1
 /* Memory Driver Instance 1 RTOS Configurations*/
-#define DRV_MEMORY_STACK_SIZE_IDX1           1024
-#define DRV_MEMORY_PRIORITY_IDX1             1
-#define DRV_MEMORY_RTOS_DELAY_IDX1                         10
+#define DRV_MEMORY_STACK_SIZE_IDX1               1024
+#define DRV_MEMORY_PRIORITY_IDX1                 1
+#define DRV_MEMORY_RTOS_DELAY_IDX1               10U
 
 
 /* Memory Driver Instance 0 Configuration */
 #define DRV_MEMORY_INDEX_0                   0
 #define DRV_MEMORY_CLIENTS_NUMBER_IDX0       1
-#define DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0    1
-
+#define DRV_MEMORY_BUF_Q_SIZE_IDX0    1
 /* Memory Driver Instance 0 RTOS Configurations*/
-#define DRV_MEMORY_STACK_SIZE_IDX0           1024
-#define DRV_MEMORY_PRIORITY_IDX0             1
-#define DRV_MEMORY_RTOS_DELAY_IDX0                         10
+#define DRV_MEMORY_STACK_SIZE_IDX0               1024
+#define DRV_MEMORY_PRIORITY_IDX0                 1
+#define DRV_MEMORY_RTOS_DELAY_IDX0               10U
 
 /* AT25DF Driver Configuration Options */
 #define DRV_AT25DF_INSTANCES_NUMBER              1

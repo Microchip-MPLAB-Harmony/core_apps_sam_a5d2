@@ -58,12 +58,12 @@
 #include "driver/memory/drv_memory.h"
 #include "peripheral/tc/plib_tc0.h"
 #include "system/time/sys_time.h"
-#include "peripheral/qspi/plib_qspi0.h"
 #include "bsp/bsp.h"
+#include "peripheral/qspi/plib_qspi0.h"
 #include "peripheral/spi/spi_master/plib_spi0_master.h"
+#include "driver/spi_flash/at25df/drv_at25df.h"
 #include "FreeRTOS.h"
 #include "task.h"
-#include "driver/spi_flash/at25df/drv_at25df.h"
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
 #include "system/cache/sys_cache.h"
@@ -82,6 +82,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAMA5D27"
+#define DEVICE_ARCH			 "CORTEX-A5"
+#define DEVICE_FAMILY		 "SAMA5"
+#define DEVICE_SERIES		 "SAMA5D2"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 498000000
