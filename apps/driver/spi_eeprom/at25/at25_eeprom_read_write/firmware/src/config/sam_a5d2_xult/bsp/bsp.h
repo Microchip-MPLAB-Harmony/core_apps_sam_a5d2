@@ -40,8 +40,8 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
-#ifndef _BSP_H
-#define _BSP_H
+#ifndef BSP_H
+#define BSP_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -60,6 +60,9 @@
 // Section: BSP Macros
 // *****************************************************************************
 // *****************************************************************************
+#define sam_a5d2_xult
+#define BSP_NAME             "sam_a5d2_xult"
+
 /*PIOA base address */
 #define PIOA_REGS   ((pio_group_registers_t*)(&(PIO_REGS->PIO_GROUP[0])))
 /*PIOB base address */
@@ -70,20 +73,20 @@
 #define PIOD_REGS   ((pio_group_registers_t*)(&(PIO_REGS->PIO_GROUP[3])))
 
 /*** LED Macros for LED_GREEN ***/
-#define LED_GREEN_Toggle() do { PIOB_REGS->PIO_MSKR = (1U<<5); (PIOB_REGS->PIO_ODSR ^= (1U<<5)); } while (0)
+#define LED_GREEN_Toggle() do { PIOB_REGS->PIO_MSKR = (1UL<<5); (PIOB_REGS->PIO_ODSR ^= (1UL<<5)); } while (0)
 #define LED_GREEN_Get() ((PIOB_REGS->PIO_PDSR >> 5) & 0x1)
-#define LED_GREEN_On() (PIOB_REGS->PIO_CODR = (1U<<5))
-#define LED_GREEN_Off() (PIOB_REGS->PIO_SODR = (1U<<5))
+#define LED_GREEN_On() (PIOB_REGS->PIO_CODR = (1UL<<5))
+#define LED_GREEN_Off() (PIOB_REGS->PIO_SODR = (1UL<<5))
 /*** LED Macros for LED_RED ***/
-#define LED_RED_Toggle() do { PIOB_REGS->PIO_MSKR = (1U<<6); (PIOB_REGS->PIO_ODSR ^= (1U<<6)); } while (0)
+#define LED_RED_Toggle() do { PIOB_REGS->PIO_MSKR = (1UL<<6); (PIOB_REGS->PIO_ODSR ^= (1UL<<6)); } while (0)
 #define LED_RED_Get() ((PIOB_REGS->PIO_PDSR >> 6) & 0x1)
-#define LED_RED_On() (PIOB_REGS->PIO_CODR = (1U<<6))
-#define LED_RED_Off() (PIOB_REGS->PIO_SODR = (1U<<6))
+#define LED_RED_On() (PIOB_REGS->PIO_CODR = (1UL<<6))
+#define LED_RED_Off() (PIOB_REGS->PIO_SODR = (1UL<<6))
 /*** LED Macros for LED_BLUE ***/
-#define LED_BLUE_Toggle() do { PIOB_REGS->PIO_MSKR = (1U<<0); (PIOB_REGS->PIO_ODSR ^= (1U<<0)); } while (0)
+#define LED_BLUE_Toggle() do { PIOB_REGS->PIO_MSKR = (1UL<<0); (PIOB_REGS->PIO_ODSR ^= (1UL<<0)); } while (0)
 #define LED_BLUE_Get() ((PIOB_REGS->PIO_PDSR >> 0) & 0x1)
-#define LED_BLUE_On() (PIOB_REGS->PIO_CODR = (1U<<0))
-#define LED_BLUE_Off() (PIOB_REGS->PIO_SODR = (1U<<0))
+#define LED_BLUE_On() (PIOB_REGS->PIO_CODR = (1UL<<0))
+#define LED_BLUE_Off() (PIOB_REGS->PIO_SODR = (1UL<<0))
 
 
 
@@ -117,7 +120,6 @@
 
   Example:
     <code>
-    //Initialize the BSP
     BSP_Initialize();
     </code>
 
@@ -127,7 +129,7 @@
 
 void BSP_Initialize(void);
 
-#endif // _BSP_H
+#endif // BSP_H
 
 /*******************************************************************************
  End of File
