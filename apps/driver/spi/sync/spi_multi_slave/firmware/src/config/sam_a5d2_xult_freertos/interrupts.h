@@ -57,6 +57,13 @@
 // *****************************************************************************
 // *****************************************************************************
 
+void FreeRTOS_Tick_Handler (void);
+void XDMAC0_InterruptHandler (void);
+void SPI1_InterruptHandler (void);
+
+
+/* Interrupt Handler for spurious interrupts */
+void SPURIOUS_INTERRUPT_Handler (void);
 
 
 #endif // INTERRUPTS_H
