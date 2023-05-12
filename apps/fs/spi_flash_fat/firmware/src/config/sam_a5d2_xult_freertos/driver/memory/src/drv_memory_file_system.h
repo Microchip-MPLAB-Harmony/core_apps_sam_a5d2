@@ -1,23 +1,24 @@
-/*******************************************************************************
-  Interrupt System Service Mapping File
+/******************************************************************************
+  MEMORY Driver File System Interface Implementation
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    sys_int_mapping.h
+    drv_memory_file_system.h
 
   Summary:
-    Interrupt System Service mapping file.
+    MEMORY Driver Interface Definition
 
   Description:
-    This header file contains the mapping of the APIs defined in the API header
-    to either the function implementations or macro implementation or the
-    specific variant implementation.
+    The MEMORY Driver provides a interface to access the MEMORY on the PIC32
+    microcontroller. This file implements the MEMORY Driver file system interface.
+    This file should be included in the project if MEMORY driver functionality with
+    File system is needed.
 *******************************************************************************/
 
 //DOM-IGNORE-BEGIN
-/******************************************************************************
+/*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
@@ -40,19 +41,41 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 //DOM-IGNORE-END
-
-#ifndef SYS_INT_MAPPING_H
-#define SYS_INT_MAPPING_H
+#ifndef DRV_MEMORY_FILE_SYSTEM_H
+#define DRV_MEMORY_FILE_SYSTEM_H
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Interrupt System Service Mapping
+// Section: Include Files
 // *****************************************************************************
 // *****************************************************************************
 
-/* MISRA C-2012 Rule 5.8 deviated:6 Deviation record ID -  H3_MISRAC_2012_R_5_8_DR_1 */
+#include "driver/memory/src/drv_memory_local.h"
+#include "system/fs/sys_fs_media_manager.h"
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+    extern "C" {
+#endif
+// DOM-IGNORE-END
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Global objects
+// *****************************************************************************
+// *****************************************************************************
 
 
-/* MISRAC 2012 deviation block end */
+// *****************************************************************************
+// *****************************************************************************
+// Section: MEMORY Driver File system interface Routines
+// *****************************************************************************
+// *****************************************************************************
 
-#endif // SYS_INT_MAPPING_H
+void DRV_MEMORY_RegisterWithSysFs( const SYS_MODULE_INDEX drvIndex, uint8_t mediaType);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif //#ifndef DRV_MEMORY_FILE_SYSTEM_H
