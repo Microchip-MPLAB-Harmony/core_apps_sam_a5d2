@@ -62,15 +62,19 @@
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 11.1 */
+/* MISRA C-2012 Rule 11.3 */
+/* MISRA C-2012 Rule 11.8 */
 // <editor-fold defaultstate="collapsed" desc="DRV_MEMORY Instance 0 Initialization Data">
 
 static uint8_t gDrvMemory0EraseBuffer[DRV_AT25DF_ERASE_BUFFER_SIZE] CACHE_ALIGN;
 
 static DRV_MEMORY_CLIENT_OBJECT gDrvMemory0ClientObject[DRV_MEMORY_CLIENTS_NUMBER_IDX0];
 
-static DRV_MEMORY_BUFFER_OBJECT gDrvMemory0BufferObject[DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0];
+static DRV_MEMORY_BUFFER_OBJECT gDrvMemory0BufferObject[DRV_MEMORY_BUF_Q_SIZE_IDX0];
 
-const DRV_MEMORY_DEVICE_INTERFACE drvMemory0DeviceAPI = {
+static const DRV_MEMORY_DEVICE_INTERFACE drvMemory0DeviceAPI = {
     .Open               = DRV_AT25DF_Open,
     .Close              = DRV_AT25DF_Close,
     .Status             = DRV_AT25DF_Status,
@@ -81,8 +85,7 @@ const DRV_MEMORY_DEVICE_INTERFACE drvMemory0DeviceAPI = {
     .GeometryGet        = (DRV_MEMORY_DEVICE_GEOMETRY_GET)DRV_AT25DF_GeometryGet,
     .TransferStatusGet  = (DRV_MEMORY_DEVICE_TRANSFER_STATUS_GET)DRV_AT25DF_TransferStatusGet
 };
-
-const DRV_MEMORY_INIT drvMemory0InitData =
+static const DRV_MEMORY_INIT drvMemory0InitData =
 {
     .memDevIndex                = DRV_AT25DF_INDEX,
     .memoryDevice               = &drvMemory0DeviceAPI,
@@ -92,22 +95,22 @@ const DRV_MEMORY_INIT drvMemory0InitData =
     .ewBuffer                   = &gDrvMemory0EraseBuffer[0],
     .clientObjPool              = (uintptr_t)&gDrvMemory0ClientObject[0],
     .bufferObj                  = (uintptr_t)&gDrvMemory0BufferObject[0],
-    .queueSize                  = DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0,
+    .queueSize                  = DRV_MEMORY_BUF_Q_SIZE_IDX0,
     .nClientsMax                = DRV_MEMORY_CLIENTS_NUMBER_IDX0
 };
 
 // </editor-fold>
 /* SPI PLIB Interface Initialization for AT25DF Driver */
-const DRV_AT25DF_PLIB_INTERFACE drvAT25DFPlibAPI = {
+static const DRV_AT25DF_PLIB_INTERFACE drvAT25DFPlibAPI = {
 
     /* SPI PLIB WriteRead function */
     .writeRead = (DRV_AT25DF_PLIB_WRITE_READ)SPI0_WriteRead,
 
     /* SPI PLIB Write function */
-    .write = (DRV_AT25DF_PLIB_WRITE)SPI0_Write,
+    .write_t = (DRV_AT25DF_PLIB_WRITE)SPI0_Write,
 
     /* SPI PLIB Read function */
-    .read = (DRV_AT25DF_PLIB_READ)SPI0_Read,
+    .read_t = (DRV_AT25DF_PLIB_READ)SPI0_Read,
 
     /* SPI PLIB Transfer Status function */
     .isBusy = (DRV_AT25DF_PLIB_IS_BUSY)SPI0_IsBusy,
@@ -117,7 +120,7 @@ const DRV_AT25DF_PLIB_INTERFACE drvAT25DFPlibAPI = {
 };
 
 /* AT25DF Driver Initialization Data */
-const DRV_AT25DF_INIT drvAT25DFInitData =
+static const DRV_AT25DF_INIT drvAT25DFInitData =
 {
     /* SPI PLIB API  interface*/
     .spiPlib = &drvAT25DFPlibAPI,
@@ -135,6 +138,7 @@ const DRV_AT25DF_INIT drvAT25DFInitData =
 
     .chipSelectPin = DRV_AT25DF_CHIP_SELECT_PIN_IDX
 };
+
 
 
 
@@ -159,12 +163,12 @@ const SYS_FS_MEDIA_MOUNT_DATA sysfsMountTable[SYS_FS_VOLUME_NUMBER] =
     {NULL}
 };
 
-const SYS_FS_FUNCTIONS FatFsFunctions =
+static const SYS_FS_FUNCTIONS FatFsFunctions =
 {
     .mount             = FATFS_mount,
     .unmount           = FATFS_unmount,
     .open              = FATFS_open,
-    .read              = FATFS_read,
+    .read_t              = FATFS_read,
     .close             = FATFS_close,
     .seek              = FATFS_lseek,
     .fstat             = FATFS_stat,
@@ -176,17 +180,17 @@ const SYS_FS_FUNCTIONS FatFsFunctions =
     .closeDir          = FATFS_closedir,
     .chdir             = FATFS_chdir,
     .chdrive           = FATFS_chdrive,
-    .write             = FATFS_write,
+    .write_t             = FATFS_write,
     .tell              = FATFS_tell,
     .eof               = FATFS_eof,
     .size              = FATFS_size,
     .mkdir             = FATFS_mkdir,
-    .remove            = FATFS_unlink,
+    .remove_t            = FATFS_unlink,
     .setlabel          = FATFS_setlabel,
     .truncate          = FATFS_truncate,
     .chmode            = FATFS_chmod,
     .chtime            = FATFS_utime,
-    .rename            = FATFS_rename,
+    .rename_t            = FATFS_rename,
     .sync              = FATFS_sync,
     .putchr            = FATFS_putc,
     .putstrn           = FATFS_puts,
@@ -199,15 +203,14 @@ const SYS_FS_FUNCTIONS FatFsFunctions =
 
 
 
-const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
+
+static const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
 {
     {
         .nativeFileSystemType = FAT,
         .nativeFileSystemFunctions = &FatFsFunctions
-    },
+    }
 };
-
-
 // </editor-fold>
 
 
@@ -226,7 +229,7 @@ const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
 // *****************************************************************************
 // *****************************************************************************
 
-
+/* MISRAC 2012 deviation block end */
 
 /*******************************************************************************
   Function:
@@ -240,12 +243,13 @@ const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
 
 void SYS_Initialize ( void* data )
 {
+    /* MISRAC 2012 deviation block start */
+    /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
 
   
     MMU_Initialize();
     CLK_Initialize();
     PIO_Initialize();
-
 
 
 
@@ -259,6 +263,13 @@ void SYS_Initialize ( void* data )
 	SPI0_Initialize();
 
 
+
+    /* MISRAC 2012 deviation block start */
+    /* Following MISRA-C rules deviated in this block  */
+    /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
+    /* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+
+
     sysObj.drvMemory0 = DRV_MEMORY_Initialize((SYS_MODULE_INDEX)DRV_MEMORY_INDEX_0, (SYS_MODULE_INIT *)&drvMemory0InitData);
 
     sysObj.drvAT25DF = DRV_AT25DF_Initialize(DRV_AT25DF_INDEX, (SYS_MODULE_INIT *)&drvAT25DFInitData);
@@ -266,12 +277,16 @@ void SYS_Initialize ( void* data )
 
 
     /*** File System Service Initialization Code ***/
-    SYS_FS_Initialize( (const void *) sysFSInit );
+    (void) SYS_FS_Initialize( (const void *) sysFSInit );
 
 
+    /* MISRAC 2012 deviation block end */
     APP_Initialize();
 
 
+
+
+    /* MISRAC 2012 deviation block end */
 
 }
 
