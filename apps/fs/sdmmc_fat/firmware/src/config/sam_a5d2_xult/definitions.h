@@ -49,13 +49,13 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include "bsp/bsp.h"
-#include "driver/sdmmc/drv_sdmmc.h"
 #include "system/fs/sys_fs.h"
 #include "system/fs/sys_fs_media_manager.h"
 #include "system/fs/sys_fs_fat_interface.h"
 #include "system/fs/fat_fs/file_system/ff.h"
 #include "system/fs/fat_fs/file_system/ffconf.h"
 #include "system/fs/fat_fs/hardware_access/diskio.h"
+#include "driver/sdmmc/drv_sdmmc.h"
 #include "peripheral/mmu/plib_mmu.h"
 #include "peripheral/matrix/plib_matrix.h"
 #include "peripheral/l2cc/plib_l2cc.h"
@@ -80,6 +80,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAMA5D27"
+#define DEVICE_ARCH			 "CORTEX-A5"
+#define DEVICE_FAMILY		 "SAMA5"
+#define DEVICE_SERIES		 "SAMA5D2"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 498000000
