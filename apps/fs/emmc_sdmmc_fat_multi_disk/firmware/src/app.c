@@ -92,10 +92,10 @@
 APP_DATA appData;
 
 /* Application data buffer */
-uint8_t BUFFER_ATTRIBUTES dataBuffer[APP_DATA_LEN];
+static uint8_t BUFFER_ATTRIBUTES dataBuffer[APP_DATA_LEN];
 
 /* Work buffer used by FAT FS during Format */
-uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
+static uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
 
 SYS_FS_FORMAT_PARAM formatOpt;
 // *****************************************************************************

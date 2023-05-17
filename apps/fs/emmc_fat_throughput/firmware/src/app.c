@@ -92,12 +92,12 @@
 APP_DATA appData;
 
 /* Application data buffer. Adding 1 to size to use it for Unaligned throughput */
-uint8_t CACHE_ALIGN dataBuffer[BUFFER_SIZE + 1];
+static uint8_t CACHE_ALIGN dataBuffer[BUFFER_SIZE + 1];
 
 uint8_t *dataPtr = NULL;
 
 /* Work buffer used by FAT FS during Format */
-uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
+static uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
 
 SYS_FS_FORMAT_PARAM formatOpt;
 
