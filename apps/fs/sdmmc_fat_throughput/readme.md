@@ -61,33 +61,24 @@ The following table shows the target hardware for the application projects.
 - SD Card with FAT32 file system
     - The SD Card should have atleast 10MB of free space for the demo to work
 
-#### Setting up the SD Card
-
-- Download harmony MPU bootstrap loader from this [location](firmware/at91bootstrap_sam_a5d2_xult.X/binaries/boot.bin)
-- Copy the downloaded boot loader binary( boot.bin) onto the SD card
-
 #### Setting up the board
 
-- SDMMC slot used for bootloading the application is SDMMC1
+- Insert the SD card into SDMMC slot on the board
 - Short jumper JP2 (DEBUG_DIS)
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ## Running the Application
 
 1. Build the application using its IDE
-2. Copy the output binary (named 'harmony.bin') onto the SD Card (Refer to the 'Setting up hardware' section above for setting up the SD card)
-3. Insert the SD card into SDMMC slot on the board (Refer to the 'Setting up hardware' section for the correct SDMMC slot)
-
-4. Open the Terminal application (Ex.:Tera term) on the computer.
-5. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
+2. Open the Terminal application (Ex.:Tera term) on the computer.
+3. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
     - Baud : 115200
     - Data : 8 Bits
     - Parity : None
     - Stop : 1 Bit
     - Flow Control : None
 
-6. Reset the board to run the application
-7. The LED is turned ON if there was no error during the file operations
+4. The LED is turned ON if there was no error during the file operations
 
     Refer to the following table for LED name:
 
@@ -96,7 +87,7 @@ The following table shows the target hardware for the application projects.
     |  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | RGB_LED(Green) |
     |||
 
-7. Calculated throughput values for Aligned and Un-Aligned buffers are dispalyed on console as below:
+5. Calculated throughput values for Aligned and Un-Aligned buffers are dispalyed on console as below:
     - **Note:** The Values showed in the below output may differ slightly when demo is run
 
    ![output](images/sdmmc_fat_throughput_output.png)
