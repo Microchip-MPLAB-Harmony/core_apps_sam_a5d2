@@ -99,6 +99,7 @@
           <itemPath>../src/config/sam_a5d2_xult_freertos/user.h</itemPath>
           <itemPath>../src/config/sam_a5d2_xult_freertos/configuration.h</itemPath>
           <itemPath>../src/config/sam_a5d2_xult_freertos/interrupts.h</itemPath>
+          <itemPath>../src/config/sam_a5d2_xult_freertos/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
