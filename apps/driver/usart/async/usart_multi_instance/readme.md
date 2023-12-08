@@ -27,7 +27,6 @@ To build the application, refer to the following table and open the project usin
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
 | sam_a5d2_xult.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
-| sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
 ## Setting up AT91Bootstrap loader
@@ -40,7 +39,7 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_a5d2_xult.X <br> sam_a5d2_xult_freertos.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
@@ -51,23 +50,23 @@ The following table shows the target hardware for the application projects.
 
 #### Setting up the board
 
-- Connect [USB UART CLICK](https://www.mikroe.com/usb-uart-click) board to the evaluation kit using the pin connections described below:
+- Connect a FTDI cable from UART Debug (J28) port to computer.
+- Connect [USB UART CLICK](https://www.mikroe.com/usb-uart-click) board to the curiosity board using the pin connections described below:
 
-    | SAM A5D2 Xplained Ultra board Pins | USB UART Click board Pins  |
+    | SAM A5D2 curiosity board Pins 	 | USB UART Click board Pins  |
     | ---------------------------------- | -------------------------- |
-    | F0_TXD, J22 connector              | RX                         |
-    | F0_RXD, J22 connector              | TX                         |
-    | PIN 20, XPRO EXT2 connector        | 3.3V                       |
-    | PIN 19, XPRO EXT2 connector        | GND                        |
+    | PIN 5, J8 connector                | RX                         |
+    | PIN 4, J8 connector                | TX                         |
+    | PIN 7, J19 connector               | 3.3V                       |
+    | PIN 1, J8 connector                | GND                        |
 
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the USB_A port on board to the computer using a USB-C type cable
 
 ## Running the Application
 
 1. Build the application using its IDE
 2. Open the Terminal application (Ex.:Tera term) on the computer for both ports
-3. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
+3. Connect to the Virtual COM ports and configure the serial settings as follows:
     - Baud : 115200
     - Data : 8 Bits
     - Parity : None
