@@ -1,26 +1,21 @@
 /*******************************************************************************
-  MPLAB Harmony Application Source File
+  Board Support Package Header File.
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    app_monitor.c
+    bsp.h
 
   Summary:
-    This file contains the source code for the MPLAB Harmony application.
+    Board Support Package Header File 
 
   Description:
-    This file contains the source code for the MPLAB Harmony application.  It
-    implements the logic of the application's state machine and it may call
-    API routines of other MPLAB Harmony modules in the system, such as drivers,
-    system services, and middleware.  However, it does not call any of the
-    system interfaces (such as the "Initialize" and "Tasks" functions) of any of
-    the modules in the system or make any assumptions about when those functions
-    are called.  That is the responsibility of the configuration-specific system
-    files.
- *******************************************************************************/
+    This file contains constants, macros, type definitions and function
+    declarations 
+*******************************************************************************/
 
+// DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -43,6 +38,10 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
+// DOM-IGNORE-END
+
+#ifndef BSP_H
+#define BSP_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -50,89 +49,92 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include "app_monitor.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include "device.h"
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Global Data Definitions
+// Section: BSP Macros
+// *****************************************************************************
+// *****************************************************************************
+#define sam_a5d2_curiosity
+#define BSP_NAME             "sam_a5d2_curiosity"
+
+/*PIOA base address */
+#define PIOA_REGS   ((pio_group_registers_t*)(&(PIO_REGS->PIO_GROUP[0])))
+/*PIOB base address */
+#define PIOB_REGS   ((pio_group_registers_t*)(&(PIO_REGS->PIO_GROUP[1])))
+/*PIOC base address */
+#define PIOC_REGS   ((pio_group_registers_t*)(&(PIO_REGS->PIO_GROUP[2])))
+/*PIOD base address */
+#define PIOD_REGS   ((pio_group_registers_t*)(&(PIO_REGS->PIO_GROUP[3])))
+
+/*** LED Macros for LED_GREEN ***/
+#define LED_GREEN_Toggle() do { PIOA_REGS->PIO_MSKR = (1UL<<8); (PIOA_REGS->PIO_ODSR ^= (1UL<<8)); } while (0)
+#define LED_GREEN_Get() ((PIOA_REGS->PIO_PDSR >> 8) & 0x1)
+#define LED_GREEN_On() (PIOA_REGS->PIO_SODR = (1UL<<8))
+#define LED_GREEN_Off() (PIOA_REGS->PIO_CODR = (1UL<<8))
+/*** LED Macros for LED_BLUE ***/
+#define LED_BLUE_Toggle() do { PIOA_REGS->PIO_MSKR = (1UL<<9); (PIOA_REGS->PIO_ODSR ^= (1UL<<9)); } while (0)
+#define LED_BLUE_Get() ((PIOA_REGS->PIO_PDSR >> 9) & 0x1)
+#define LED_BLUE_On() (PIOA_REGS->PIO_SODR = (1UL<<9))
+#define LED_BLUE_Off() (PIOA_REGS->PIO_CODR = (1UL<<9))
+/*** LED Macros for LED_RED ***/
+#define LED_RED_Toggle() do { PIOA_REGS->PIO_MSKR = (1UL<<7); (PIOA_REGS->PIO_ODSR ^= (1UL<<7)); } while (0)
+#define LED_RED_Get() ((PIOA_REGS->PIO_PDSR >> 7) & 0x1)
+#define LED_RED_On() (PIOA_REGS->PIO_SODR = (1UL<<7))
+#define LED_RED_Off() (PIOA_REGS->PIO_CODR = (1UL<<7))
+/*** SWITCH Macros for SW1 ***/
+#define SW1_Get() ((PIOA_REGS->PIO_PDSR >> 17) & 0x1)
+#define SW1_STATE_PRESSED 0
+#define SW1_STATE_RELEASED 1
+
+
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
 // *****************************************************************************
-/* Application Data
+/* Function:
+    void BSP_Initialize(void)
 
   Summary:
-    Holds application data
+    Performs the necessary actions to initialize a board
 
   Description:
-    This structure holds the application's data.
+    This function initializes the LED and Switch ports on the board.  This
+    function must be called by the user before using any APIs present on this
+    BSP.
+
+  Precondition:
+    None.
+
+  Parameters:
+    None
+
+  Returns:
+    None.
+
+  Example:
+    <code>
+    BSP_Initialize();
+    </code>
 
   Remarks:
-    This structure should be initialized by the APP_MONITOR_Initialize function.
-
-    Application strings and buffers are be defined outside this structure.
+    None
 */
 
-APP_MONITOR_DATA app_monitorData;
+void BSP_Initialize(void);
 
-// *****************************************************************************
-// *****************************************************************************
-// Section: Application Callback Functions
-// *****************************************************************************
-// *****************************************************************************
-
-/* TODO:  Add any necessary callback functions.
-*/
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Application Local Functions
-// *****************************************************************************
-// *****************************************************************************
-
-
-/* TODO:  Add any necessary local functions.
-*/
-
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Application Initialization and State Machine Functions
-// *****************************************************************************
-// *****************************************************************************
-
-/*******************************************************************************
-  Function:
-    void APP_MONITOR_Initialize ( void )
-
-  Remarks:
-    See prototype in app_monitor.h.
- */
-
-void APP_MONITOR_Initialize ( void )
-{
-    LED_OFF();
-}
-
-
-/******************************************************************************
-  Function:
-    void APP_MONITOR_Tasks ( void )
-
-  Remarks:
-    See prototype in app_monitor.h.
- */
-
-void APP_MONITOR_Tasks ( void )
-{
-    if((APP_EEPROM1_TransferStatus() == APP_SUCCESS) && (APP_EEPROM2_TransferStatus() == APP_SUCCESS))
-    {
-        LED_ON();
-    }    
-}
-
+#endif // BSP_H
 
 /*******************************************************************************
  End of File
- */
-
+*/
