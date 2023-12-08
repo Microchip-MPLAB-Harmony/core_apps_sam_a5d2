@@ -39,7 +39,7 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_a5d2_xult_freertos.X  | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult_freertos.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
@@ -48,33 +48,32 @@ The following table shows the target hardware for the application projects.
 
 - [USB UART CLICK](https://www.mikroe.com/usb-uart-click) board
 
-
 #### Setting up the board
 
-- Connect [USB UART CLICK](https://www.mikroe.com/usb-uart-click) board to the evaluation kit using the pin connections described below:
+- Connect a FTDI cable from UART Debug (J28) port to computer.
+- Connect [USB UART CLICK](https://www.mikroe.com/usb-uart-click) board to the curiosity board using the pin connections described below:
 
-    | SAM A5D2 Xplained Ultra board Pins | USB UART Click board Pins  |
+    | SAM A5D2 curiosity board Pins 	 | USB UART Click board Pins  |
     | ---------------------------------- | -------------------------- |
-    | F0_TXD, J22 connector              | RX                         |
-    | F0_RXD, J22 connector              | TX                         |
-    | PIN 20, XPRO EXT2 connector        | 3.3V                       |
-    | PIN 19, XPRO EXT2 connector        | GND                        |
+    | PIN 5, J8 connector                | RX                         |
+    | PIN 4, J8 connector                | TX                         |
+    | PIN 7, J19 connector               | 3.3V                       |
+    | PIN 1, J8 connector                | GND                        |
 
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the USB_A port on board to the computer using a USB-C type cable
 
 ## Running the Application
 
-1. Build the application using its IDE
+1. Build and program the application using its IDE
 2. Open the Terminal application (Ex.:Tera term) on the computer for both ports
-3. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
+3. Connect to the Virtual COM ports and configure the serial settings as follows:
     - Baud : 115200
     - Data : 8 Bits
     - Parity : None
     - Stop : 1 Bit
     - Flow Control : None
-4. Type ten characters and observe the output on the two consoles as shown below:
-    - If success, when ten characters are typed it will be echoed back on the console and LED is toggled every time the characters are echoed
+4. Type a character and observe the output on the two consoles as shown below:
+    - If success the character typed echoes back and an LED toggles on each time the character is echoed
     - **Console 1**
 
     ![output_sync_usart_multi_instance_console_1](./images/output_sync_usart_multi_instance_console_1.png)
@@ -88,4 +87,3 @@ Refer to the following table for LED name:
 | Board | LED Name |
 | ----- | -------- |
 |  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | RGB_LED(Green) |
-|||
