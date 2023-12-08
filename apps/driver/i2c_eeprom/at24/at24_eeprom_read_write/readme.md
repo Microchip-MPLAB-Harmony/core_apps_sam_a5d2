@@ -48,23 +48,31 @@ The following table shows the target hardware for the application projects.
 #### Addtional hardware required
 
 - One [EEPROM 3 Click](https://www.mikroe.com/eeprom-3-click) board
-- [mikroBUS Xplained Pro](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) board
+
 
 #### Setting up the board
 
-- Install the [EEPROM 3 Click](https://www.mikroe.com/eeprom-3-click) board on to the [mikroBUS Xplained Pro](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) board
-- Connect the [mikroBUS Xplained Pro](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) board to the EXT1 header
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the USB_A port on board to the computer using a USB-C type cable
+- Connect EEPROM Click 3 Board to MikroBus1 (J19) connector on the board as per below Pin Connections table
+
+| J19 MikroBus1 Pins | EEPROM 3 CLICK Pins |
+| -------------------- | ------------------- |
+| PIN 11 (PD4) | SDA |
+| PIN 12 (PD5) | SCL |
+| PIN 19 | GND |
+| PIN 20 | 3V3 |
+|||
 
 ## Running the Application
 
 1. Build the application using its IDE
-2. LED is turned ON when the data read from EEPROM matches with the written data
+2. LED indicates the success or failure:
+    - LED is turned ON when the value read from the EEPROM matched with the written value
+    - LED is turned OFF when the value read from the EEPROM did not match with the written value
 
-Refer to the following table for LED name:
+Following table provides the LED name:
 
-| Board | LED Name |
-| ----- | -------- |
-|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | RGB_LED(Green) |
+| Board      | LED Name                                    |
+| ----------------- | ---------------------------------------------- |
+| [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |RGB_LED(Green)  |
 |||
