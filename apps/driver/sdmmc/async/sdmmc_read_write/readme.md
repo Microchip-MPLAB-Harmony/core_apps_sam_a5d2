@@ -47,19 +47,14 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
 
-#### Addtional hardware required
-
-- SD Card with FAT32 file system
-
 #### Setting up the board
 
-- Insert the SD card into SDMMC1 slot on the board
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the USB_A port on board to the computer using a USB-C type cable.
+- Insert SD Card in µSD BOOT (J6) slot. SDMMC0 is configured for testing in application 
 
 ## Running the Application
 
-1. Build the application using its IDE
+1. Build and program the application using its IDE
 2. The LED is turned ON when the read data from the SD Card matches with the written data
 
 *NOTE: This demo application performs a raw read-write operation on the SD card. This causes the partition information to be overwritten causing the SD card file system to be corrupted. Hence resetting the board will not re-run the application demo (Board will fail to boot since it cannot find a valid partition). To repeat the demo we need to reformat SD card and prepare it as defined by the hardware setup.*
