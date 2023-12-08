@@ -56,28 +56,21 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
 
-#### Addtional hardware required
-
-- SD Card with FAT32 file system
-    - The SD Card should have atleast 10MB of free space for the demo to work
-
 #### Setting up the board
 
-- Insert the SD card into SDMMC slot on the board
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the USB_A port on board to the computer using a USB-C type cable.
+- Insert SD card into Micro-SD Card slot (J6) provided under the board.
 
 ## Running the Application
 
-1. Build the application using its IDE
-2. Open the Terminal application (Ex.:Tera term) on the computer.
-3. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
+1. Open the Terminal application (Ex.:Tera term) on the computer.
+2. Connect to the Virtual COM port and configure the serial settings as follows:
     - Baud : 115200
     - Data : 8 Bits
     - Parity : None
     - Stop : 1 Bit
     - Flow Control : None
-
+3. Build and program the application using its IDE
 4. The LED is turned ON if there was no error during the file operations
 
     Refer to the following table for LED name:
