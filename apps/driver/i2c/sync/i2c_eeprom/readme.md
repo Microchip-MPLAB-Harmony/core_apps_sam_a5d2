@@ -1,19 +1,21 @@
 ---
 parent: Harmony 3 driver and system service application examples for SAM A5D2 family
-title: I2C driver synchronous - I2C EEPROM 
+title: I2C Driver Synchronous - I2C EEPROM 
 has_children: false
 has_toc: false
 ---
 
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# I2C driver synchronous - I2C EEPROM
+# I2C Driver Synchronous - I2C EEPROM
 
-This example application shows how to use the I2C driver in synchronous mode to perform operations on the EEPROM.
+This example application demonstrates how to use the I2C driver in synchronous mode to perform read/write operations on an EEPROM.
 
 ## Description
 
-This example uses the I2C driver in synchronous mode to communicate with the EEPROM to perform write and read operations in Bare-Metal environment. This application uses I2C driver to read and write data from an on-Board AT24MAC402 EEPROM device.
+This example uses the I2C driver in synchronous mode to communicate with an EEPROM to perform read and write operations.
+
+The application communicates with the [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) that has AT24CM02 EEPROM on it.
 
 ## Downloading and building the application
 
@@ -31,7 +33,7 @@ To build the application, refer to the following table and open the project usin
 
 ## Setting up AT91Bootstrap loader
 
-To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the [at91bootstrap loader documentation](../../../../docs/readme_bootstrap.md) for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries.
+To load the application binary onto the target device, we need to use at91bootstrap loader. Refer to the [at91bootstrap loader documentation](../../docs/readme_bootstrap.md) for details on how to configure, build and run bootstrap loader project and use it to bootstrap the application binaries.
 
 ## Setting up the hardware
 
@@ -42,21 +44,23 @@ The following table shows the target hardware for the application projects.
 | sam_a5d2_xult_freertos.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
+- To run the demo, the following additional hardware are required:
+    - [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click)
+
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
 
-#### Setting up the board
-
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) to the MikroBus1 (J19) header of the [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
+- Connect the USB_A port on board to the computer using a USB-C type cable.
 
 ## Running the Application
 
-1. Build the application using its IDE
-2. The LED is turned ON when the value read from the EEPROM matched with the written value
+1. Build and program the application using its IDE.
+2. The LED indicates the success or failure.
+    - The LED is turned ON when the data read from EEPROM matches with the written data
 
 Refer to the following table for LED name:
 
 | Board | LED Name |
 | ----- | -------- |
-|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | RGB_LED(Green) |
+|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) | RGB_LED(Green) |
 |||
