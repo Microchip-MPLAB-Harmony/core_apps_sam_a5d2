@@ -38,7 +38,6 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_a5d27_som1_ek_freertos.X | MPLABX project for [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1) |
 | sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
@@ -53,51 +52,40 @@ The following table shows the target hardware for the application projects.
 | Project Name| Board|
 |:---------|:---------:|
 | sam_a5d2_xult_freertos.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
-| sam_a5d27_som1_ek_freertos.X | [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1) |
 |||
-
-### Setting up [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1)
-
-#### Setting up the board
-
-- Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
 
-#### Setting up the board
-
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect a FTDI cable from UART Debug (J28) port to computer.
+- Connect the USB_A port on board to the computer using a USB-C type cable.
 
 ## Running the Application
 
-1. Build the application using its IDE
+1. Build and program the application using its IDE
 2. Open the Terminal application (Ex.:Tera term) on the computer.
-3. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
+3. Connect to the Virtual COM port and configure the serial settings as follows:
     - Baud : 115200
     - Data : 8 Bits
     - Parity : None
     - Stop : 1 Bit
     - Flow Control : None
-4. Reset the board to run the application
-5. Observe the following message getting printed on the console every two seconds
+4. Observe the following message getting printed on the console every two seconds
 
     ![output_sys_time_multiclient_1](images/output_sys_time_multiclient_1.png)
 
-6. Press the switch and observe the following output on the terminal (highlighted in red box)
+5. Press the switch and observe the following output on the terminal (highlighted in red box)
 
     ![output_sys_time_multiclient_2](images/output_sys_time_multiclient_2.png)
 
     - "Delay time = 500 ms" indicates the amount of time spent during the delay
     - "Single shot timer of 100 ms expired" is printed only once on every switch press
 
-7. LED indicates the periodic timer functionality
+6. LED indicates the periodic timer functionality
     - LED is toggled periodically every one second
 
 Refer to the following table for switch and LED name:
 
 | Board | Switch Name | LED Name |
 | ----- | ----------- | -------- |
-|  [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1)  | USER | D5(Blue) |
-|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | PB_USER | RGB_LED(Blue) |
+|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | USER | RGB_LED(Blue) |
 ||||
