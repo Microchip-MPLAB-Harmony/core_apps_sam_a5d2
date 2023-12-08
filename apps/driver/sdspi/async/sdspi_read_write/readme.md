@@ -44,21 +44,18 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
 
-#### Addtional hardware required
-
-- [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
-- Micro-SD card
+- SD Card with FAT32 file system
+- [Micro-SD click board](https://www.mikroe.com/microsd-click)
 
 #### Setting up the board
 
-- Connect the [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO) to the EXT1 header
-- Insert microSD card on the [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Insert SD Card in the [Micro-SD click board](https://www.mikroe.com/microsd-click) card slot. 
+- Connect the [Micro-SD click board](https://www.mikroe.com/microsd-click) to MikroBus1 (J19) connector
+- Connect the USB_A port on board to the computer using a USB-C type cable.
 
 ## Running the Application
 
-1. Build the application using its IDE
+1. Build and program the application using its IDE
 2. The LED is turned ON when the read data from the SD card matches with the written data
 
 Refer to the following table for LED name:
