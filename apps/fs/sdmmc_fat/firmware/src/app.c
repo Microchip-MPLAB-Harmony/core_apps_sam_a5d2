@@ -84,7 +84,7 @@
 APP_DATA appData;
 
 /* Application data buffer */
-static uint8_t BUFFER_ATTRIBUTES dataBuffer[APP_DATA_LEN];
+uint8_t BUFFER_ATTRIBUTES dataBuffer[APP_DATA_LEN];
 
 // *****************************************************************************
 // *****************************************************************************

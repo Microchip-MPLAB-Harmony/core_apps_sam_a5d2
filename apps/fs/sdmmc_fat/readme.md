@@ -38,7 +38,6 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_a5d27_som1_ek_freertos.X | MPLABX project for [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1) |
 | sam_a5d2_xult.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 | sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
@@ -54,23 +53,7 @@ The following table shows the target hardware for the application projects.
 | Project Name| Board|
 |:---------|:---------:|
 | sam_a5d2_xult.X <br> sam_a5d2_xult_freertos.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
-| sam_a5d27_som1_ek_freertos.X | [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1) |
 |||
-
-### Setting up [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1)
-
-#### Addtional hardware required
-
-- SD Card with FAT32 file system
-
-#### Setting up the SD Card
-
-- Create a new JPEG file in the SD Card with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG
-
-#### Setting up the board
-
-- Insert the SD card into SDMMC slot
-- Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
 
@@ -84,20 +67,18 @@ The following table shows the target hardware for the application projects.
 
 #### Setting up the board
 
-- Insert the SD card into SDMMC slot
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the USB_A port on board to the computer using a USB-C type cable.
+- Insert SD Card into Micro-SD card slot (J6) present under the board.
 
 ## Running the Application
 
-1. Build the application using its IDE
-2. The LED is turned ON if there was no error during creating the directory and copying the file into it
+1. Build and program the application using its IDE
+2. The LED is turned ON if there was no error during creating the directory and copying the file into it.
 
 
 Refer to the following table for LED name:
 
 | Board | LED Name |
 | ----- | -------- |
-|  [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1)  | D5(Green) |
 |  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | RGB_LED(Green) |
 |||
