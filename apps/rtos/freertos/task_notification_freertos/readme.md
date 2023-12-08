@@ -50,16 +50,12 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
 
-#### Setting up the board
-
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect USB_A port on board to the computer using a USB-C type cable
 
 ## Running the Application
 
-1. Build the application using its IDE
-2. Reset the board to run the application
-3. The LED toggles on success for every 500ms
+1. Build and program the application using its IDE
+2. The LED toggles on success for every 500ms
 
 Refer to the following table for LED name:
 
