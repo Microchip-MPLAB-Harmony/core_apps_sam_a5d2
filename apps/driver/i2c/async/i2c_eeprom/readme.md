@@ -9,11 +9,13 @@ has_toc: false
 
 # I2C driver asynchronous - I2C EEPROM
 
-This example application shows how to use the I2C driver in asynchronous mode to perform operations on the EEPROM.
+This example application demonstrates how to use the I2C driver in asynchronous mode to perform read/write operations on an EEPROM.
 
 ## Description
 
-This example uses the I2C driver in asynchronous mode to communicate with the EEPROM to perform write and read operations in Bare-Metal environment. This application uses I2C driver to read and write data from an on-Board AT24MAC402 EEPROM device.
+This example uses the I2C driver in asynchronous mode to communicate with an EEPROM to perform read and write operations.
+
+The application communicates with the [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) that has AT24CM02 EEPROM on it.
 
 ## Downloading and building the application
 
@@ -26,7 +28,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_curiosity.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
 ## Setting up AT91Bootstrap loader
@@ -39,22 +41,18 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_a5d2_xult_freertos.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_curiosity.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
 
-
-#### Setting up the board
-
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect the [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) to the MikroBus1 (J19) header of the [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
+- Connect the USB_A port on board to the computer using a USB-C type cable.
 
 ## Running the Application
 
-1. Build the application using its IDE
-2. Reset the board to run the application
-3. The LED is turned ON when the value read from the EEPROM matched with the written value
+1. Build and program the application using its IDE
+2. The LED is turned ON when the value read from the EEPROM matched with the written value
 
 Refer to the following table for LED name:
 
