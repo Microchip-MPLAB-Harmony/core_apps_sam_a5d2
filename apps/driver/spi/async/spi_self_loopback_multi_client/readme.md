@@ -35,7 +35,6 @@ To build the application, refer to the following table and open the project usin
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
 | sam_a5d2_xult.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
-| sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
 ## Setting up AT91Bootstrap loader
@@ -48,22 +47,19 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_a5d2_xult.X <br> sam_a5d2_xult_freertos.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
 |||
 
 ### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
 
-#### Setting up the board
-
-- Use jumper wire to Connect "Pin 16 of EXT1 header" to "Pin 17 of EXT1 header"
-  - SPI1 MOSI signal is mapped to PD26 that is routed to "Pin 16 of EXT1 header"
-  - SPI1 MISO signal is mapped to PD27 that is routed to "Pin 17 of EXT1 header"
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Use jumper wire to Connect "Pin 6 of MikroBus1 (J19) header" to "Pin 5 of MikroBus1 (J19) header"
+  - SPI1 MOSI signal is mapped to PC02 that is routed to "Pin 6 of MikroBus1 (J19) header"
+  - SPI1 MISO signal is mapped to PC03 that is routed to "Pin 5 of MikroBus1 (J19) header"
+- Connect the USB_A port on board to the computer using a USB-C type cable.
 
 ## Running the Application
 
-1. Build the application using its IDE
+1. Build and program the application using its IDE
 2. LED is turned ON on Success
 
 Refer to the following table for LED name:
