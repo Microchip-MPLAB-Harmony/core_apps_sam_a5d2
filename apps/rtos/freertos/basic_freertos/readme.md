@@ -62,13 +62,13 @@ The following table shows the target hardware for the application projects.
 
 #### Setting up the board
 
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect a FTDI cable from UART Debug (J28) port to computer.
+- Connect the USB_A port on board to the computer using a USB-C type cable
 
 ## Running the Application
 
 1. Open the Terminal application (Ex.:Tera Term) on the computer.
-2. Connect to the EDBG Virtual COM port and configure the serial settings as follows:
+2. Connect to the Virtual COM port and configure the serial settings as follows:
 
     Baud : 115200
 
@@ -79,20 +79,18 @@ The following table shows the target hardware for the application projects.
     Stop : 1 Bit
     
     Flow Control : None
-3. Build the application using its IDE
-
-4. Reset the board to run the application
-5. Observe the following output on the terminal.
+3. Build and program the application using its IDE
+4. Observe the following output on the terminal.
 
    ![output](images/output1.png)
 
-6. Enter any character on the terminal to run task3. Notice how task1 and task2 are pre-empted by task3 as task3 is of higher priority than task1 and task2. Pressing character 'l' or "L' toggles the on board LED. Notice how task1 and task2 are not run when characters are entered continuously on the terminal.
+5. Enter any character on the terminal to run task3. Notice how task1 and task2 are pre-empted by task3 as task3 is of higher priority than task1 and task2. Pressing character 'l' or "L' toggles the on board LED. Notice how task1 and task2 are not run when characters are entered continuously on the terminal.
 
    ![output](images/output2.png)
 
    ![output](images/output2_1.png)
 
-7. Press the user switch on the board to run task4. Notice how task4 preempts all other tasks as it is of highest priority.
+6. Press the user switch on the board to run task4. Notice how task4 preempts all other tasks as it is of highest priority.
 
    ![output](images/output3.png)
 
@@ -100,5 +98,5 @@ Refer to the following table for LED and Switch name:
 
 | Board | LED Name | Switch Name |
 | ----- | -------- | ----------- |
-|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | RGB_LED(Green) | PB_USER |
+|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | RGB_LED(Green) | USER |
 |||

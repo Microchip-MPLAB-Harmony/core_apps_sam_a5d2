@@ -150,9 +150,9 @@ void TASK3_Tasks ( void )
     bool status = false;
     TickType_t timeNow;
 
-    UART1_ReadCallbackRegister(uartReadEventHandler, 0);
-    UART1_ReadThresholdSet(1);
-    UART1_ReadNotificationEnable(true, false);
+    UART0_ReadCallbackRegister(uartReadEventHandler, 0);
+    UART0_ReadThresholdSet(1);
+    UART0_ReadNotificationEnable(true, false);
 
     dataRxSemaphore = xSemaphoreCreateBinary();
 
@@ -168,11 +168,11 @@ void TASK3_Tasks ( void )
         {
             /* Task3 is running (<-) now */
             xSemaphoreTake(uartMutexLock, portMAX_DELAY);
-            UART1_Write((uint8_t*)"                      Tsk3-P3 <-\r\n", 34);
+            UART0_Write((uint8_t*)"                      Tsk3-P3 <-\r\n", 34);
             xSemaphoreGive(uartMutexLock);
 
             /* Toggle an LED if character received is 'L' or 'l' */
-            while (UART1_Read(&readByte, 1) == true)
+            while (UART0_Read(&readByte, 1) == true)
             {
                 if (readByte == 'L' || readByte == 'l')
                 {
@@ -186,7 +186,7 @@ void TASK3_Tasks ( void )
 
             /* Task3 is exiting (->) now */
             xSemaphoreTake(uartMutexLock, portMAX_DELAY);
-            UART1_Write((uint8_t*)"                      Tsk3-P3 ->\r\n", 34);
+            UART0_Write((uint8_t*)"                      Tsk3-P3 ->\r\n", 34);
             xSemaphoreGive(uartMutexLock);
         }
     }

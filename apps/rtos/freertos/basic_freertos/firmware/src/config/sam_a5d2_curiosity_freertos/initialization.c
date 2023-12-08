@@ -1,5 +1,21 @@
 /*******************************************************************************
-* Copyright (C) 2020 Microchip Technology Inc. and its subsidiaries.
+  System Initialization File
+
+  File Name:
+    initialization.c
+
+  Summary:
+    This file contains source code necessary to initialize the system.
+
+  Description:
+    This file contains source code necessary to initialize the system.  It
+    implements the "SYS_Initialize" function, defines the configuration bits,
+    and allocates any necessary global system resources,
+ *******************************************************************************/
+
+// DOM-IGNORE-BEGIN
+/*******************************************************************************
+* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -19,145 +35,126 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
-*******************************************************************************/
-
-/*******************************************************************************
-  MPLAB Harmony Application Source File
-
-  Company:
-    Microchip Technology Inc.
-
-  File Name:
-    task2.c
-
-  Summary:
-    This file contains the source code for the MPLAB Harmony application.
-
-  Description:
-    This file contains the source code for the MPLAB Harmony application.  It
-    implements the logic of the application's state machine and it may call
-    API routines of other MPLAB Harmony modules in the system, such as drivers,
-    system services, and middleware.  However, it does not call any of the
-    system interfaces (such as the "Initialize" and "Tasks" functions) of any of
-    the modules in the system or make any assumptions about when those functions
-    are called.  That is the responsibility of the configuration-specific system
-    files.
  *******************************************************************************/
+// DOM-IGNORE-END
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
-#include "task2.h"
+#include "configuration.h"
 #include "definitions.h"
-#include <string.h>
-// *****************************************************************************
-// *****************************************************************************
-// Section: Global Data Definitions
-// *****************************************************************************
-// *****************************************************************************
-
-// *****************************************************************************
-/* Application Data
-
-  Summary:
-    Holds application data
-
-  Description:
-    This structure holds the application's data.
-
-  Remarks:
-    This structure should be initialized by the TASK2_Initialize function.
-
-    Application strings and buffers are be defined outside this structure.
-*/
-
-TASK2_DATA task2Data;
-extern SemaphoreHandle_t uartMutexLock;
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Application Callback Functions
-// *****************************************************************************
-// *****************************************************************************
-
-/* TODO:  Add any necessary callback functions.
-*/
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Application Local Functions
-// *****************************************************************************
-// *****************************************************************************
+#include "device.h"
 
 
-/* TODO:  Add any necessary local functions.
-*/
+// ****************************************************************************
+// ****************************************************************************
+// Section: Configuration Bits
+// ****************************************************************************
+// ****************************************************************************
+
 
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Application Initialization and State Machine Functions
+// Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 11.1 */
+/* MISRA C-2012 Rule 11.3 */
+/* MISRA C-2012 Rule 11.8 */
+
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Data
+// *****************************************************************************
+// *****************************************************************************
+/* Structure to hold the object handles for the modules in the system. */
+SYSTEM_OBJECTS sysObj;
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Library/Stack Initialization Data
+// *****************************************************************************
+// *****************************************************************************
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Initialization
+// *****************************************************************************
+// *****************************************************************************
+
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Local initialization functions
+// *****************************************************************************
+// *****************************************************************************
+
+/* MISRAC 2012 deviation block end */
 
 /*******************************************************************************
   Function:
-    void TASK2_Initialize ( void )
+    void SYS_Initialize ( void *data )
+
+  Summary:
+    Initializes the board, services, drivers, application and other modules.
 
   Remarks:
-    See prototype in task2.h.
  */
 
-void TASK2_Initialize ( void )
+void SYS_Initialize ( void* data )
 {
-    /* Place the App state machine in its initial state. */
-    task2Data.state = TASK2_STATE_INIT;
+
+    /* MISRAC 2012 deviation block start */
+    /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
+
+  
+    MMU_Initialize();
+    CLK_Initialize();
+    PIO_Initialize();
 
 
 
-    /* TODO: Initialize your application's state machine and other
-     * parameters.
-     */
-}
+	BSP_Initialize();
+	PIT_TimerInitialize();
 
+	UART0_Initialize();
 
-/******************************************************************************
-  Function:
-    void TASK2_Tasks ( void )
+    Matrix_Initialize();
 
-  Remarks:
-    See prototype in task2.h.
- */
-
-void TASK2_Tasks ( void )
-{
-    TickType_t timeNow;
+    AIC_INT_Initialize();
     
-    while (1)
-    {        
-        /* Task2 is running (<-) now */
-        xSemaphoreTake(uartMutexLock, portMAX_DELAY);        
-        UART0_Write((uint8_t*)"           Tsk2-P2 <-\r\n", 23);
-        xSemaphoreGive(uartMutexLock); 
-        
-        /* Work done by task2 for 10 ticks */
-        timeNow = xTaskGetTickCount();
-        while ((xTaskGetTickCount() - timeNow) < 10);
-        
-        /* Task2 is exiting (->) now */
-        xSemaphoreTake(uartMutexLock, portMAX_DELAY);        
-        UART0_Write((uint8_t*)"           Tsk2-P2 ->\r\n", 23);
-        xSemaphoreGive(uartMutexLock);   
-        
-        /* Run the task again after 250 msec */
-        vTaskDelay(250 / portTICK_PERIOD_MS );        
-    }
-}
+	WDT_REGS->WDT_MR = WDT_MR_WDDIS_Msk; 		// Disable WDT 
 
+
+
+    /* MISRAC 2012 deviation block start */
+    /* Following MISRA-C rules deviated in this block  */
+    /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
+    /* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+
+
+
+
+    /* MISRAC 2012 deviation block end */
+    TASK1_Initialize();
+    TASK2_Initialize();
+    TASK3_Initialize();
+    TASK4_Initialize();
+
+
+
+
+    /* MISRAC 2012 deviation block end */
+}
 
 /*******************************************************************************
  End of File
- */
+*/
