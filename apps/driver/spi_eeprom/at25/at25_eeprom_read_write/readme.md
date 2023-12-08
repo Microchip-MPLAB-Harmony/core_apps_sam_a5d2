@@ -13,7 +13,7 @@ This example application shows how to use the AT25 driver to perform read and wr
 
 ## Description
 
-This example uses the AT25 driver to communicate with the SPI based AT25 series of external EEPROMs to perform write and read operations in Bare-Metal environment.
+This example uses the AT25 driver to communicate with the SPI based AT25 series of external EEPROMs to perform write and read operations in Bare-Metal and RTOS environment.
 
 ## Downloading and building the application
 
@@ -48,14 +48,11 @@ The following table shows the target hardware for the application projects.
 #### Addtional hardware required
 
 - [EEPROM 4 Click](https://www.mikroe.com/eeprom-4-click) board
-- [mikroBUS Xplained Pro](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) board
 
 #### Setting up the board
 
-- Install an [EEPROM 4 Click](https://www.mikroe.com/eeprom-4-click) board on to the [mikroBUS Xplained Pro](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) board
-- Connect [mikroBUS Xplained Pro](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) board to the EXT1 header
-- Short jumper JP2 (DEBUG_DIS)
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Install an [EEPROM 4 Click](https://www.mikroe.com/eeprom-4-click) board on the MikroBus1 (J19) header
+- Connect the Debug USB port on the board to the computer using a USB-C cable
 
 ## Running the Application
 
