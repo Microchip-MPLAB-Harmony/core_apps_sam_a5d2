@@ -1,0 +1,80 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.2.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_a5d2_rtos_freertos_task_notification_freertos_sam_a5d2_curiosity_freertos",
+		"version": "3.4.0",
+		"displayName": "FreeRTOS Task Notification Example for SAM A5D2x Family",
+		"projectName": "task_notification_freertos_sam_a5d2_curiosity_freertos",
+		"shortDescription": "This example application is to illustrate the FreeRTOS Task Notification feature which is used as a light weight binary semaphore.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.15.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.35.0"
+			}
+		],
+		"dfp": {
+			"name": "SAMA5D2_DFP",
+			"semverRange": "^1.9.108"
+		},
+		"configurator": {
+			"name": "MCC",
+			"semverRange": ">=5.4.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAMA5D29",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"SAMA5D29 Curiosity Board"
+			],
+			[
+				"Harmony",
+				"RTOS",
+				"FreeRTOS",
+				"TASK_NOTIFICATION_FREERTOS"
+			],
+			[
+				"RTOS",
+				"FreeRTOS",
+				"TASK_NOTIFICATION_FREERTOS"
+			]
+		],
+		"peripherals": [
+			"TASK_NOTIFICATION_FREERTOS"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"RTOS",
+			"FreeRTOS",
+			"ATSAMA5D29",
+			"SAM A5D2x Family"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

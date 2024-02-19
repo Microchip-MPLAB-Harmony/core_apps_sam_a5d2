@@ -26,7 +26,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Curiosity Board](https://www.microchip.com/en-us/development-tool/EV07R15A) |
 |||
 
 ## Setting up AT91Bootstrap loader
@@ -39,10 +39,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_a5d2_xult_freertos.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult_freertos.X | [SAMA5D2 Curiosity Board](https://www.microchip.com/en-us/development-tool/EV07R15A) |
 |||
 
-### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
+### Setting up [SAMA5D2 Curiosity Board](https://www.microchip.com/en-us/development-tool/EV07R15A)
 
 #### Addtional hardware required
 
@@ -86,4 +86,4 @@ Refer to the following table for LED name:
 
 | Board | LED Name |
 | ----- | -------- |
-|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)  | RGB_LED(Green) |
+|  [SAMA5D2 Curiosity Board](https://www.microchip.com/en-us/development-tool/EV07R15A)  | RGB_LED(Green) |

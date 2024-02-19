@@ -28,7 +28,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult_freertos.X | MPLABX project for [SAMA5D2 Curiosity Board](https://www.microchip.com/en-us/development-tool/EV07R15A) |
 |||
 
 ## Setting up AT91Bootstrap loader
@@ -41,15 +41,15 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_a5d2_xult_freertos.X | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) |
+| sam_a5d2_xult_freertos.X | [SAMA5D2 Curiosity Board](https://www.microchip.com/en-us/development-tool/EV07R15A) |
 |||
 
 - To run the demo, the following additional hardware are required:
     - [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click)
 
-### Setting up [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
+### Setting up [SAMA5D2 Curiosity Board](https://www.microchip.com/en-us/development-tool/EV07R15A)
 
-- Connect the [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) to the MikroBus1 (J19) header of the [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT)
+- Connect the [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) to the MikroBus1 (J19) header of the [SAMA5D2 Curiosity Board](https://www.microchip.com/en-us/development-tool/EV07R15A)
 - Connect the USB_A port on board to the computer using a USB-C type cable.
 
 ## Running the Application
@@ -62,5 +62,5 @@ Refer to the following table for LED name:
 
 | Board | LED Name |
 | ----- | -------- |
-|  [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) | RGB_LED(Green) |
+|  [SAMA5D2 Curiosity Board](https://www.microchip.com/en-us/development-tool/EV07R15A) | RGB_LED(Green) |
 |||
