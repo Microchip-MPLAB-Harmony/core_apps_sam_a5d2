@@ -14,11 +14,19 @@ nav_order: 99
 
 Following table provides number of peripheral library examples available for different development kits.
 
+<<<<<<< HEAD
 | Development Kits  | MPLAB X applications |
 |:-----------------:|:-------------------:|
 | [SAMA5D2 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/ATSAMA5D2C-XULT) | 39 |
 | [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1) | 5 |
 | [ATSAMA5D27-WLSOM1 Evaluation Kit](https://www.microchip.com/en-us/development-tool/DM320117) | 1 |
+=======
+| Development Kits  | MPLAB X applications | IAR applications |
+|:-----------------:|:-------------------:|:----------------:|
+| [SAMA5D29 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/EV07R15A) | 39 | 0 |
+| [SAMA5D27-SOM1-EK1](https://www.microchip.com/DevelopmentTools/ProductDetails/atsama5d27-som1-ek1) | 5 | 0 |
+| [ATSAMA5D27-WLSOM1 Evaluation Kit](https://www.microchip.com/en-us/development-tool/DM320117) | 1 | 0 |
+>>>>>>> 3af84829 ([Docs] Update board name in readme files)
 
 ### New Features
 
@@ -30,11 +38,19 @@ Following table provides number of peripheral library examples available for dif
 
 ### Development Tools
 
+<<<<<<< HEAD
 - [MPLAB® X IDE v6.05](https://www.microchip.com/mplab/mplab-x-ide)
 - MPLAB® X IDE plug-ins:
   - MPLAB® Code Configurator (MCC) v5.3.0
 - [MPLAB® XC32 C/C++ Compiler v4.21](https://www.microchip.com/mplab/compilers)
 
+=======
+- [MPLAB® X IDE v6.20](https://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® X IDE plug-ins:
+  - MPLAB® Code Configurator (MCC) v5.4.1
+- [MPLAB® XC32 C/C++ Compiler v4.10](https://www.microchip.com/mplab/compilers)
+- [IAR Embedded workbench for ARM v9.10 or above](https://www.iar.com/iar-embedded-workbench/#!?architecture=Arm)
+>>>>>>> 3af84829 ([Docs] Update board name in readme files)
 
 ## Harmony 3 peripheral library application examples for SAMA5D2 family  v3.3.0
 

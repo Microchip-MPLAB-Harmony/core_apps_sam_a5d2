@@ -12,12 +12,41 @@ MPU harmony3 applications are compiled and linked to execute from external DRAM 
 
 We have deployed the following pre-built bootstrap binaries inside our application repositories. They can be found under deps folder at the root of the repository.
 
+<<<<<<< HEAD
 | Binary Name      | Description                                    |
 | ---------------- | ---------------------------------------------- |
 | at91bootstrap.elf | Bootstrap which allows debug or run application using MPLABx |
 | boot.bin  | Bootstrap which allows booting application using an SD Card |
 
 To use at91boostrap to load and run harmony applications from MPLABx, it should be build with "bkpt_none_defconfig" configuration. If you are intrested in building at91bootstrap using MPLABx, you can read about it [here](readme_bootstrap_build.md).
+=======
+To facilitate the debugging and running of the MPU application, each application in this repository is bundled with its own copy of the AT91Bootstrap project. Each copy of the bootstrap project can be found under same folder as the application project and is named and is prefixed with "at91bootstrap_". For eg: if the application folder name is sam_a5d29_curiosity.X, then bootstrap project folder will be named at91bootstrap_sam_a5d29_curiosity.X and will be present at the same folder level.
+
+Bootstrap project is configured to load and execute a raw binary file named "harmony.bin" from the SD card. SD card slot to be used shall vary with the evaluation kit.
+
+Each application project is configured with a post build step which will generate the necessary binary file named "harmony.bin" at the end of each build.
+
+If you are only interested in running or debugging the MPU applications in this repository , you can skip the following sections and  and jump straight to [Debugging MPU application using MPLABx](#debugging-mpu-applications-using-mplabx). Each copy of the bootstrap project in this repository is preconfigured to the correct evaluation kit.Also, the bootstrap binary files required to program and run the  applications are checked into the repository.
+
+## Building AT91Bootstrap project
+
+- Bootstrap project can be configured using MPLABx using its KCONFIG menu. To do this, open the project in MPLABx, right click on the project and select  "properties". In categories, select "Kconfig" as shown below:
+
+    ![kconfig](images/kconfig.png)
+
+- Click on "LOAD" button and navigate to the boards folder inside the project. Choose the a  default configuration file (defconfig) config file to select a target evaluation board and boot method
+  - For eg: If you want to boot harmony.bin file from sd card for SAMA5D29 Curiosity kit, navigate to board/sama5d29_curiosity folder and select "sama5d29_curiositysd_harmony_defconfig" file
+
+- Click on "Apply" and "OK" buttons to configure the project
+
+- Build the project to generate the bootstrap binaries
+
+- *Note: At91bootstrap project requires arm-gcc to build it. XC32 toolchain is not supported yet*
+
+## Configure MPLABx application to use AT91Bootstrap loader
+
+MPLABx debugger relies on AT91Bootstrap to configure the board before programming the application binaries. To configure an application to use AT91Bootstrap, follow the steps detailed below:
+>>>>>>> 3af84829 ([Docs] Update board name in readme files)
 
 ### Configure a debug tool
 
