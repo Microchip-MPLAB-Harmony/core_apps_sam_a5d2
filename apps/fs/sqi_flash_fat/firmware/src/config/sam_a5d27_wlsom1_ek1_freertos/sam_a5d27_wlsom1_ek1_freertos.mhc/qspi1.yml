@@ -1,0 +1,69 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: qspi1}
+children:
+- type: Symbols
+  children:
+  - type: Comment
+    attributes: {id: QSPI_CLK_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: text}
+        children:
+        - {type: Value, value: '*** QSPI Clock Frequency Is Set To 54.666666 MHz for
+            Master Clock Frequency At 164.0 MHz'}
+  - type: Integer
+    attributes: {id: QSPI_CLK_FREQ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi1, value: '54666666'}
+  - type: KeyValueSet
+    attributes: {id: QSPI_CPOL}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi1, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: QSPI_SMM}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi1, value: '0'}
+- type: Attachments
+  children:
+  - type: DirectCapability
+    attributes: {id: QSPI1_SPI}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: DirectCapability
+    attributes: {id: QSPI1_SQI}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: drv_sst26}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: drv_sst26_SQI_dependency}
+- type: ElementPosition
+  attributes: {x: '23', y: '334', id: qspi1}
