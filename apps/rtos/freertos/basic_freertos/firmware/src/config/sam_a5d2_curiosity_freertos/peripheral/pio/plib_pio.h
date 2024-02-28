@@ -91,21 +91,21 @@
 
 
 /*** Macros for PB_USER pin ***/
-#define PB_USER_Set()               (PIOA_REGS->PIO_SODR = (1<<17))
-#define PB_USER_Clear()             (PIOA_REGS->PIO_CODR = (1<<17))
+#define PB_USER_Set()               (PIOA_REGS->PIO_SODR = ((uint32_t)1U<<17U))
+#define PB_USER_Clear()             (PIOA_REGS->PIO_CODR = ((uint32_t)1U<<17U))
 #define PB_USER_Toggle()            do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<17); \
-                                            PIOA_REGS->PIO_ODSR ^= (1<<17);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<17U); \
+                                            PIOA_REGS->PIO_ODSR ^= ((uint32_t)1U<<17U);\
                                         } while (0)
 #define PB_USER_OutputEnable()      do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<17); \
-                                            PIOA_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<17U); \
+                                            PIOA_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define PB_USER_InputEnable()       do { \
-                                            PIOA_REGS->PIO_MSKR = (1<<17); \
-                                            PIOA_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<17U); \
+                                            PIOA_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define PB_USER_Get()               ((PIOA_REGS->PIO_PDSR >> 17) & 0x1)
+#define PB_USER_Get()               ((PIOA_REGS->PIO_PDSR >> 17U) & 0x1U)
 #define PB_USER_PIN                  PIO_PIN_PA17
 #define PB_USER_InterruptEnable()   (PIOA_REGS->PIO_IER = (1<<17))
 #define PB_USER_InterruptDisable()  (PIOA_REGS->PIO_IDR = (1<<17))
