@@ -91,21 +91,21 @@
 
 
 /*** Macros for GPIO_PC4 pin ***/
-#define GPIO_PC4_Set()               (PIOC_REGS->PIO_SODR = (1<<4))
-#define GPIO_PC4_Clear()             (PIOC_REGS->PIO_CODR = (1<<4))
+#define GPIO_PC4_Set()               (PIOC_REGS->PIO_SODR = ((uint32_t)1U<<4U))
+#define GPIO_PC4_Clear()             (PIOC_REGS->PIO_CODR = ((uint32_t)1U<<4U))
 #define GPIO_PC4_Toggle()            do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_ODSR ^= (1<<4);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_ODSR ^= ((uint32_t)1U<<4U);\
                                         } while (0)
 #define GPIO_PC4_OutputEnable()      do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define GPIO_PC4_InputEnable()       do { \
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define GPIO_PC4_Get()               ((PIOC_REGS->PIO_PDSR >> 4) & 0x1)
+#define GPIO_PC4_Get()               ((PIOC_REGS->PIO_PDSR >> 4U) & 0x1U)
 #define GPIO_PC4_PIN                  PIO_PIN_PC4
 // *****************************************************************************
 /* PIO Ports
