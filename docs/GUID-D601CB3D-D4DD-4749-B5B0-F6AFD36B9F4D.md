@@ -1,0 +1,62 @@
+# SPI Driver Synchronous - Multi Client
+
+This example demonstrates how to use single instance of the SPI driver in synchronous<br /> mode to communicate with multiple EEPROMs in an RTOS environment.
+
+**Parent topic:**[Harmony 3 Driver and System Service Application Examples for SAMA5D2 Family](GUID-89743DCD-F235-4D2D-AE19-B9D1B98911AD.md)
+
+## Description
+
+This example writes and reads data to and from two separate EEPROMs connected over<br /> the same SPI bus by using the multi client feature of a synchronous SPI driver. The<br /> example also demonstrates how to setup two different client transfers at two<br /> different baud rates.
+
+The example has three RTOS threads for the purpose:
+
+-   **APP\_EEPROM1\_Tasks**: This thread performs write-read operation on the first EEPROM
+-   **APP\_EEPROM2\_Tasks**: This thread performs write-read operation on the second EEPROM
+-   **APP\_MONITOR\_Tasks**: This thread checks the status of the EEPROM transfers and turns on the LED if the transfers are successful
+
+## Downloading and Building the Application
+
+To clone or download this application from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_a5d2) and then<br /> click Clone button to clone this repository or download as zip file. This content<br /> can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki).
+
+Path of the application within the repository is<br /> **apps/driver/spi/sync/spi\_multi\_slave/firmware**.
+
+To build the application, refer to the following table and open the project using its<br /> IDE.
+
+|Project Name|Description|
+|------------|-----------|
+|sam\_a5d2\_curiosity\_freertos.X|MPLABX project for [SAMA5D29 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/EV07R15A)|
+
+## Setting Up AT91Bootstrap loader
+
+To load the application binary onto the target device, we need to use at91bootstrap<br /> loader. Refer to the [at91bootstrap loader documentation](GUID-EC647FFE-720B-413C-81C5-6ACA67E7CC7B.md) for details on how to<br /> configure, build and run bootstrap loader project and use it to bootstrap the<br /> application binaries.
+
+## Setting Up the Hardware
+
+The following table shows the target hardware for the application projects.
+
+|Project Name|Description|
+|------------|-----------|
+|sam\_a5d2\_curiosity\_freertos.X|[SAMA5D29 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/EV07R15A)|
+
+### Setting Up SAMA5D29 Curiosity Development Board
+
+**ADDTIONAL HARDWARE REQUIRED**
+
+-   Two [EEPROM 4 Click](https://www.mikroe.com/eeprom-4-click) boards
+
+**SETTING UP THE BOARD**
+
+-   Install [EEPROM 4 Click](https://www.mikroe.com/eeprom-4-click) boards on to the "MikroBus1 \(J19\)" and "MikroBus2 \(J22\)" connectors.
+-   Connect the USB\_A port on board to the computer using a USB-C type cable.
+
+## Running the Application
+
+1.  Build and program the application using its IDE
+2.  The LED turns ON when the data read from the EEPROMs matches with the data written to the EEPROMs.
+
+Refer to the following table for LED name:
+
+|Board|LED Name|
+|-----|--------|
+|[SAMA5D29 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/EV07R15A)|RGB\_LED \(Green\)|
+
