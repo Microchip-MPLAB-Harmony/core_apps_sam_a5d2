@@ -55,11 +55,11 @@
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/aic/plib_aic.h"
 #include "peripheral/twihs/master/plib_twihs1_master.h"
+#include "driver/i2c/drv_i2c.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
-#include "driver/i2c/drv_i2c.h"
 #include "app.h"
 
 
