@@ -91,57 +91,57 @@
 
 
 /*** Macros for WP pin ***/
-#define WP_Set()               (PIOA_REGS->PIO_SODR = (1<<16))
-#define WP_Clear()             (PIOA_REGS->PIO_CODR = (1<<16))
+#define WP_Set()               (PIOA_REGS->PIO_SODR = ((uint32_t)1U<<16U))
+#define WP_Clear()             (PIOA_REGS->PIO_CODR = ((uint32_t)1U<<16U))
 #define WP_Toggle()            do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<16); \
-                                            PIOA_REGS->PIO_ODSR ^= (1<<16);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<16U); \
+                                            PIOA_REGS->PIO_ODSR ^= ((uint32_t)1U<<16U);\
                                         } while (0)
 #define WP_OutputEnable()      do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<16); \
-                                            PIOA_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<16U); \
+                                            PIOA_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define WP_InputEnable()       do { \
-                                            PIOA_REGS->PIO_MSKR = (1<<16); \
-                                            PIOA_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<16U); \
+                                            PIOA_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define WP_Get()               ((PIOA_REGS->PIO_PDSR >> 16) & 0x1)
+#define WP_Get()               ((PIOA_REGS->PIO_PDSR >> 16U) & 0x1U)
 #define WP_PIN                  PIO_PIN_PA16
 
 /*** Macros for CS pin ***/
-#define CS_Set()               (PIOC_REGS->PIO_SODR = (1<<4))
-#define CS_Clear()             (PIOC_REGS->PIO_CODR = (1<<4))
+#define CS_Set()               (PIOC_REGS->PIO_SODR = ((uint32_t)1U<<4U))
+#define CS_Clear()             (PIOC_REGS->PIO_CODR = ((uint32_t)1U<<4U))
 #define CS_Toggle()            do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_ODSR ^= (1<<4);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_ODSR ^= ((uint32_t)1U<<4U);\
                                         } while (0)
 #define CS_OutputEnable()      do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define CS_InputEnable()       do { \
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define CS_Get()               ((PIOC_REGS->PIO_PDSR >> 4) & 0x1)
+#define CS_Get()               ((PIOC_REGS->PIO_PDSR >> 4U) & 0x1U)
 #define CS_PIN                  PIO_PIN_PC4
 
 /*** Macros for HOLD pin ***/
-#define HOLD_Set()               (PIOA_REGS->PIO_SODR = (1<<31))
-#define HOLD_Clear()             (PIOA_REGS->PIO_CODR = (1<<31))
+#define HOLD_Set()               (PIOA_REGS->PIO_SODR = ((uint32_t)1U<<31U))
+#define HOLD_Clear()             (PIOA_REGS->PIO_CODR = ((uint32_t)1U<<31U))
 #define HOLD_Toggle()            do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<31); \
-                                            PIOA_REGS->PIO_ODSR ^= (1<<31);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<31U); \
+                                            PIOA_REGS->PIO_ODSR ^= ((uint32_t)1U<<31U);\
                                         } while (0)
 #define HOLD_OutputEnable()      do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<31); \
-                                            PIOA_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<31U); \
+                                            PIOA_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define HOLD_InputEnable()       do { \
-                                            PIOA_REGS->PIO_MSKR = (1<<31); \
-                                            PIOA_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<31U); \
+                                            PIOA_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define HOLD_Get()               ((PIOA_REGS->PIO_PDSR >> 31) & 0x1)
+#define HOLD_Get()               ((PIOA_REGS->PIO_PDSR >> 31U) & 0x1U)
 #define HOLD_PIN                  PIO_PIN_PA31
 // *****************************************************************************
 /* PIO Ports
