@@ -48,8 +48,8 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#include "bsp/bsp.h"
 #include "driver/sdmmc/drv_sdmmc.h"
+#include "bsp/bsp.h"
 #include "peripheral/pit/plib_pit.h"
 #include "peripheral/mmu/plib_mmu.h"
 #include "peripheral/matrix/plib_matrix.h"
