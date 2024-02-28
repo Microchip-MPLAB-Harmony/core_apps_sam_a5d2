@@ -91,93 +91,93 @@
 
 
 /*** Macros for APP_EEPROM2_HOLD pin ***/
-#define APP_EEPROM2_HOLD_Set()               (PIOB_REGS->PIO_SODR = (1<<0))
-#define APP_EEPROM2_HOLD_Clear()             (PIOB_REGS->PIO_CODR = (1<<0))
+#define APP_EEPROM2_HOLD_Set()               (PIOB_REGS->PIO_SODR = ((uint32_t)1U<<0U))
+#define APP_EEPROM2_HOLD_Clear()             (PIOB_REGS->PIO_CODR = ((uint32_t)1U<<0U))
 #define APP_EEPROM2_HOLD_Toggle()            do {\
-                                            PIOB_REGS->PIO_MSKR = (1<<0); \
-                                            PIOB_REGS->PIO_ODSR ^= (1<<0);\
+                                            PIOB_REGS->PIO_MSKR = ((uint32_t)1U<<0U); \
+                                            PIOB_REGS->PIO_ODSR ^= ((uint32_t)1U<<0U);\
                                         } while (0)
 #define APP_EEPROM2_HOLD_OutputEnable()      do {\
-                                            PIOB_REGS->PIO_MSKR = (1<<0); \
-                                            PIOB_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOB_REGS->PIO_MSKR = ((uint32_t)1U<<0U); \
+                                            PIOB_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define APP_EEPROM2_HOLD_InputEnable()       do { \
-                                            PIOB_REGS->PIO_MSKR = (1<<0); \
-                                            PIOB_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOB_REGS->PIO_MSKR = ((uint32_t)1U<<0U); \
+                                            PIOB_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define APP_EEPROM2_HOLD_Get()               ((PIOB_REGS->PIO_PDSR >> 0) & 0x1)
+#define APP_EEPROM2_HOLD_Get()               ((PIOB_REGS->PIO_PDSR >> 0U) & 0x1U)
 #define APP_EEPROM2_HOLD_PIN                  PIO_PIN_PB0
 
 /*** Macros for APP_EEPROM2_CS pin ***/
-#define APP_EEPROM2_CS_Set()               (PIOC_REGS->PIO_SODR = (1<<5))
-#define APP_EEPROM2_CS_Clear()             (PIOC_REGS->PIO_CODR = (1<<5))
+#define APP_EEPROM2_CS_Set()               (PIOC_REGS->PIO_SODR = ((uint32_t)1U<<5U))
+#define APP_EEPROM2_CS_Clear()             (PIOC_REGS->PIO_CODR = ((uint32_t)1U<<5U))
 #define APP_EEPROM2_CS_Toggle()            do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<5); \
-                                            PIOC_REGS->PIO_ODSR ^= (1<<5);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<5U); \
+                                            PIOC_REGS->PIO_ODSR ^= ((uint32_t)1U<<5U);\
                                         } while (0)
 #define APP_EEPROM2_CS_OutputEnable()      do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<5); \
-                                            PIOC_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<5U); \
+                                            PIOC_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define APP_EEPROM2_CS_InputEnable()       do { \
-                                            PIOC_REGS->PIO_MSKR = (1<<5); \
-                                            PIOC_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<5U); \
+                                            PIOC_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define APP_EEPROM2_CS_Get()               ((PIOC_REGS->PIO_PDSR >> 5) & 0x1)
+#define APP_EEPROM2_CS_Get()               ((PIOC_REGS->PIO_PDSR >> 5U) & 0x1U)
 #define APP_EEPROM2_CS_PIN                  PIO_PIN_PC5
 
 /*** Macros for APP_EEPROM_WP pin ***/
-#define APP_EEPROM_WP_Set()               (PIOA_REGS->PIO_SODR = (1<<16))
-#define APP_EEPROM_WP_Clear()             (PIOA_REGS->PIO_CODR = (1<<16))
+#define APP_EEPROM_WP_Set()               (PIOA_REGS->PIO_SODR = ((uint32_t)1U<<16U))
+#define APP_EEPROM_WP_Clear()             (PIOA_REGS->PIO_CODR = ((uint32_t)1U<<16U))
 #define APP_EEPROM_WP_Toggle()            do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<16); \
-                                            PIOA_REGS->PIO_ODSR ^= (1<<16);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<16U); \
+                                            PIOA_REGS->PIO_ODSR ^= ((uint32_t)1U<<16U);\
                                         } while (0)
 #define APP_EEPROM_WP_OutputEnable()      do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<16); \
-                                            PIOA_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<16U); \
+                                            PIOA_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define APP_EEPROM_WP_InputEnable()       do { \
-                                            PIOA_REGS->PIO_MSKR = (1<<16); \
-                                            PIOA_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<16U); \
+                                            PIOA_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define APP_EEPROM_WP_Get()               ((PIOA_REGS->PIO_PDSR >> 16) & 0x1)
+#define APP_EEPROM_WP_Get()               ((PIOA_REGS->PIO_PDSR >> 16U) & 0x1U)
 #define APP_EEPROM_WP_PIN                  PIO_PIN_PA16
 
 /*** Macros for APP_EEPROM1_CS pin ***/
-#define APP_EEPROM1_CS_Set()               (PIOC_REGS->PIO_SODR = (1<<4))
-#define APP_EEPROM1_CS_Clear()             (PIOC_REGS->PIO_CODR = (1<<4))
+#define APP_EEPROM1_CS_Set()               (PIOC_REGS->PIO_SODR = ((uint32_t)1U<<4U))
+#define APP_EEPROM1_CS_Clear()             (PIOC_REGS->PIO_CODR = ((uint32_t)1U<<4U))
 #define APP_EEPROM1_CS_Toggle()            do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_ODSR ^= (1<<4);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_ODSR ^= ((uint32_t)1U<<4U);\
                                         } while (0)
 #define APP_EEPROM1_CS_OutputEnable()      do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define APP_EEPROM1_CS_InputEnable()       do { \
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define APP_EEPROM1_CS_Get()               ((PIOC_REGS->PIO_PDSR >> 4) & 0x1)
+#define APP_EEPROM1_CS_Get()               ((PIOC_REGS->PIO_PDSR >> 4U) & 0x1U)
 #define APP_EEPROM1_CS_PIN                  PIO_PIN_PC4
 
 /*** Macros for APP_EEPROM1_HOLD pin ***/
-#define APP_EEPROM1_HOLD_Set()               (PIOA_REGS->PIO_SODR = (1<<31))
-#define APP_EEPROM1_HOLD_Clear()             (PIOA_REGS->PIO_CODR = (1<<31))
+#define APP_EEPROM1_HOLD_Set()               (PIOA_REGS->PIO_SODR = ((uint32_t)1U<<31U))
+#define APP_EEPROM1_HOLD_Clear()             (PIOA_REGS->PIO_CODR = ((uint32_t)1U<<31U))
 #define APP_EEPROM1_HOLD_Toggle()            do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<31); \
-                                            PIOA_REGS->PIO_ODSR ^= (1<<31);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<31U); \
+                                            PIOA_REGS->PIO_ODSR ^= ((uint32_t)1U<<31U);\
                                         } while (0)
 #define APP_EEPROM1_HOLD_OutputEnable()      do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<31); \
-                                            PIOA_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<31U); \
+                                            PIOA_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define APP_EEPROM1_HOLD_InputEnable()       do { \
-                                            PIOA_REGS->PIO_MSKR = (1<<31); \
-                                            PIOA_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<31U); \
+                                            PIOA_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define APP_EEPROM1_HOLD_Get()               ((PIOA_REGS->PIO_PDSR >> 31) & 0x1)
+#define APP_EEPROM1_HOLD_Get()               ((PIOA_REGS->PIO_PDSR >> 31U) & 0x1U)
 #define APP_EEPROM1_HOLD_PIN                  PIO_PIN_PA31
 // *****************************************************************************
 /* PIO Ports
