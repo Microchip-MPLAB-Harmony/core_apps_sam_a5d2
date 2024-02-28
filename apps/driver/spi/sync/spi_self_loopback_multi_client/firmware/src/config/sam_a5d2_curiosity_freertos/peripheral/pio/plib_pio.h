@@ -91,39 +91,39 @@
 
 
 /*** Macros for APP_CLIENT2_CS pin ***/
-#define APP_CLIENT2_CS_Set()               (PIOC_REGS->PIO_SODR = (1<<5))
-#define APP_CLIENT2_CS_Clear()             (PIOC_REGS->PIO_CODR = (1<<5))
+#define APP_CLIENT2_CS_Set()               (PIOC_REGS->PIO_SODR = ((uint32_t)1U<<5U))
+#define APP_CLIENT2_CS_Clear()             (PIOC_REGS->PIO_CODR = ((uint32_t)1U<<5U))
 #define APP_CLIENT2_CS_Toggle()            do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<5); \
-                                            PIOC_REGS->PIO_ODSR ^= (1<<5);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<5U); \
+                                            PIOC_REGS->PIO_ODSR ^= ((uint32_t)1U<<5U);\
                                         } while (0)
 #define APP_CLIENT2_CS_OutputEnable()      do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<5); \
-                                            PIOC_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<5U); \
+                                            PIOC_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define APP_CLIENT2_CS_InputEnable()       do { \
-                                            PIOC_REGS->PIO_MSKR = (1<<5); \
-                                            PIOC_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<5U); \
+                                            PIOC_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define APP_CLIENT2_CS_Get()               ((PIOC_REGS->PIO_PDSR >> 5) & 0x1)
+#define APP_CLIENT2_CS_Get()               ((PIOC_REGS->PIO_PDSR >> 5U) & 0x1U)
 #define APP_CLIENT2_CS_PIN                  PIO_PIN_PC5
 
 /*** Macros for APP_CLIENT1_CS pin ***/
-#define APP_CLIENT1_CS_Set()               (PIOC_REGS->PIO_SODR = (1<<4))
-#define APP_CLIENT1_CS_Clear()             (PIOC_REGS->PIO_CODR = (1<<4))
+#define APP_CLIENT1_CS_Set()               (PIOC_REGS->PIO_SODR = ((uint32_t)1U<<4U))
+#define APP_CLIENT1_CS_Clear()             (PIOC_REGS->PIO_CODR = ((uint32_t)1U<<4U))
 #define APP_CLIENT1_CS_Toggle()            do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_ODSR ^= (1<<4);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_ODSR ^= ((uint32_t)1U<<4U);\
                                         } while (0)
 #define APP_CLIENT1_CS_OutputEnable()      do {\
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define APP_CLIENT1_CS_InputEnable()       do { \
-                                            PIOC_REGS->PIO_MSKR = (1<<4); \
-                                            PIOC_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOC_REGS->PIO_MSKR = ((uint32_t)1U<<4U); \
+                                            PIOC_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define APP_CLIENT1_CS_Get()               ((PIOC_REGS->PIO_PDSR >> 4) & 0x1)
+#define APP_CLIENT1_CS_Get()               ((PIOC_REGS->PIO_PDSR >> 4U) & 0x1U)
 #define APP_CLIENT1_CS_PIN                  PIO_PIN_PC4
 // *****************************************************************************
 /* PIO Ports
