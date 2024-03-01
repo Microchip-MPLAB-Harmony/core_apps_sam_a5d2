@@ -9,15 +9,6 @@ package:
   dependencies:
     - name: "csp"
       type: "package"
-<<<<<<< HEAD
-      version: "v3.17.0"
-    - name: "dev_packs"
-      type: "package"
-      version: "v3.17.0"
-    - name: "core"
-      type: "package"
-      version: "v3.13.0"
-=======
       version: "3.18.3"
     - name: "dev_packs"
       type: "package"
@@ -25,4 +16,4 @@ package:
     - name: "core"
       type: "package"
       version: "3.13.3"
->>>>>>> ed4136be ([Docs] Add SDL Documentation for core apps of sam_a5d2_curiosity)
+
