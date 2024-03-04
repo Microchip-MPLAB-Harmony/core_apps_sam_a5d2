@@ -16,3 +16,4 @@ compiler: XC32 (v4.35)
 modules:
     - {name: "core", version: "v3.13.3"}
     - {name: "CMSIS_5", version: "5.8.0"}
+    - {name: "bsp", version: "v3.18.0"}
