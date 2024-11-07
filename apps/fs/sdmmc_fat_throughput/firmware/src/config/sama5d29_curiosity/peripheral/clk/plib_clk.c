@@ -27,6 +27,7 @@
 
 
 
+
 /*********************************************************************************
 Initialize AUDIO PLL
 *********************************************************************************/
@@ -56,6 +57,8 @@ Initialize Generic clock
 
 static void CLK_GenericClockInitialize(void)
 {
+    /* Enable GCLK for peripheral ID 24 */
+    PMC_REGS->PMC_PCR = PMC_PCR_PID(24) | PMC_PCR_GCKCSS(0x1) | PMC_PCR_CMD_Msk | PMC_PCR_GCKDIV(0) | PMC_PCR_EN_Msk | PMC_PCR_GCKEN_Msk;
     /* Enable GCLK for peripheral ID 31 */
     PMC_REGS->PMC_PCR = PMC_PCR_PID(31) | PMC_PCR_GCKCSS(0x5) | PMC_PCR_CMD_Msk | PMC_PCR_GCKDIV(0) | PMC_PCR_EN_Msk | PMC_PCR_GCKEN_Msk;
 }
@@ -75,6 +78,7 @@ static void CLK_PeripheralClockInitialize(void)
     PMC_REGS->PMC_PCER1=0x8U;
     PMC_REGS->PMC_PCDR1=~0x8U;
 }
+
 
 
 
