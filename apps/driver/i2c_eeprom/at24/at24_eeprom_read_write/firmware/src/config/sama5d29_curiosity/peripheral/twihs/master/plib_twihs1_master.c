@@ -118,7 +118,7 @@ static void TWIHS1_InitiateRead( void )
 
 static bool TWIHS1_InitiateTransfer( uint16_t address, bool type )
 {
-    uint32_t timeoutCntr = 99600;
+    uint32_t timeoutCntr = 199200;
 
     // 10-bit Slave Address
     if( address > 0x007FU )
