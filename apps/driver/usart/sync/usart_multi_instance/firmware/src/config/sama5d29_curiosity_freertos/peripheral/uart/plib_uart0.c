@@ -186,10 +186,10 @@ void UART0_Initialize( void )
     UART0_REGS->UART_CR = (UART_CR_TXEN_Msk | UART_CR_RXEN_Msk);
 
     /* Configure UART0 mode */
-    UART0_REGS->UART_MR = ((UART_MR_BRSRCCK_PERIPH_CLK) | (UART_MR_PAR_NO) | (0U << UART_MR_FILTER_Pos));
+    UART0_REGS->UART_MR = ((UART_MR_BRSRCCK_GCLK) | (UART_MR_PAR_NO) | (0U << UART_MR_FILTER_Pos));
 
     /* Configure UART0 Baud Rate */
-    UART0_REGS->UART_BRGR = UART_BRGR_CD(45);
+    UART0_REGS->UART_BRGR = UART_BRGR_CD(13);
 
     /* Initialize instance object */
     uart0Obj.rxBuffer = NULL;
