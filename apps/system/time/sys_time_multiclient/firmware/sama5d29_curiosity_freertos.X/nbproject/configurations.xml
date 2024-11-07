@@ -94,6 +94,7 @@
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/croutine.h</itemPath>
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/list.h</itemPath>
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h</itemPath>
           </logicalFolder>
           <logicalFolder name="portable" displayName="portable" projectFiles="true">
             <logicalFolder name="XC32" displayName="XC32" projectFiles="true">
@@ -227,6 +228,13 @@
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/adc.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/classd.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pwm.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/s_pio_ctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/piod.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pio_ctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/s_pio.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pioc.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMA5D29_DFP/pio/sama5d29.h</itemPath>
@@ -367,11 +375,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>j32</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.35</languageToolchainVersion>
+        <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.10.213"/>
+        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.11.228"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>

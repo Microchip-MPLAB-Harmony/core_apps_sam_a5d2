@@ -29,10 +29,16 @@
 
 
 
+
 /*********************************************************************************
 Initialize Generic clock
 *********************************************************************************/
 
+static void CLK_GenericClockInitialize(void)
+{
+    /* Enable GCLK for peripheral ID 24 */
+    PMC_REGS->PMC_PCR = PMC_PCR_PID(24) | PMC_PCR_GCKCSS(0x1) | PMC_PCR_CMD_Msk | PMC_PCR_GCKDIV(0) | PMC_PCR_EN_Msk | PMC_PCR_GCKEN_Msk;
+}
 
 
 
@@ -52,12 +58,16 @@ static void CLK_PeripheralClockInitialize(void)
 
 
 
+
 /*********************************************************************************
 Clock Initialize
 *********************************************************************************/
 
 void CLK_Initialize( void )
 {
+    /* Initialize Generic Clock */
+    CLK_GenericClockInitialize();
+
     /* Initialize Peripheral Clock */
     CLK_PeripheralClockInitialize();
 

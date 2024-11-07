@@ -50,8 +50,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include "bsp/bsp.h"
-#include "peripheral/uart/plib_uart0.h"
 #include "peripheral/pit/plib_pit.h"
+#include "peripheral/uart/plib_uart0.h"
 #include "peripheral/mmu/plib_mmu.h"
 #include "peripheral/matrix/plib_matrix.h"
 #include "peripheral/clk/plib_clk.h"
@@ -60,11 +60,11 @@
 #include "peripheral/tc/plib_tc0.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "system/time/sys_time.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
-#include "system/time/sys_time.h"
 #include "app.h"
 
 
@@ -78,13 +78,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "ATSAMA5D29"
-#define DEVICE_ARCH			 "CORTEX-A5"
-#define DEVICE_FAMILY		 "SAMA"
-#define DEVICE_SERIES		 "SAMA5D"
+#define DEVICE_NAME          "ATSAMA5D29"
+#define DEVICE_ARCH          "CORTEX-A5"
+#define DEVICE_FAMILY        "SAMA"
+#define DEVICE_SERIES        "SAMA5D2"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 498000000
+#define CPU_CLOCK_FREQUENCY 996000000U
 
 // *****************************************************************************
 // *****************************************************************************
