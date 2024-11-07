@@ -50,8 +50,8 @@
 #include <stdbool.h>
 #include "bsp/bsp.h"
 #include "driver/usart/drv_usart.h"
-#include "peripheral/uart/plib_uart0.h"
 #include "peripheral/pit/plib_pit.h"
+#include "peripheral/uart/plib_uart0.h"
 #include "peripheral/mmu/plib_mmu.h"
 #include "peripheral/matrix/plib_matrix.h"
 #include "peripheral/clk/plib_clk.h"
@@ -76,13 +76,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "ATSAMA5D29"
-#define DEVICE_ARCH			 "CORTEX-A5"
-#define DEVICE_FAMILY		 "SAMA"
-#define DEVICE_SERIES		 "SAMA5D"
+#define DEVICE_NAME          "ATSAMA5D29"
+#define DEVICE_ARCH          "CORTEX-A5"
+#define DEVICE_FAMILY        "SAMA"
+#define DEVICE_SERIES        "SAMA5D2"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 498000000
+#define CPU_CLOCK_FREQUENCY 996000000U
 
 // *****************************************************************************
 // *****************************************************************************
