@@ -55,11 +55,11 @@
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/aic/plib_aic.h"
 #include "peripheral/twihs/master/plib_twihs1_master.h"
-#include "driver/i2c/drv_i2c.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
+#include "driver/i2c/drv_i2c.h"
 #include "app.h"
 
 
@@ -73,13 +73,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "ATSAMA5D29"
-#define DEVICE_ARCH			 "CORTEX-A5"
-#define DEVICE_FAMILY		 "SAMA"
-#define DEVICE_SERIES		 "SAMA5D"
+#define DEVICE_NAME          "ATSAMA5D29"
+#define DEVICE_ARCH          "CORTEX-A5"
+#define DEVICE_FAMILY        "SAMA"
+#define DEVICE_SERIES        "SAMA5D2"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 498000000
+#define CPU_CLOCK_FREQUENCY 996000000U
 
 // *****************************************************************************
 // *****************************************************************************
