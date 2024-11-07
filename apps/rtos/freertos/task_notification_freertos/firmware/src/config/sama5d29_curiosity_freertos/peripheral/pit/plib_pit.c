@@ -49,7 +49,8 @@
 #include "plib_pit.h"
 #include "interrupts.h"
 
-#define PIT_COUNTER_FREQUENCY       (83000000U / 16U)
+#define PIT_COUNTER_FREQUENCY       (166000000U / 16U)
+#define PIT_INTERRUPT_PERIOD_IN_US  (1000U)
 
 // *****************************************************************************
 // *****************************************************************************
@@ -74,7 +75,7 @@ volatile static PIT_OBJECT pit;
 void PIT_TimerInitialize(void)
 {
     PIT_REGS->PIT_PIVR;
-    PIT_REGS->PIT_MR = PIT_MR_PIV(5186U) | PIT_MR_PITIEN_Msk;
+    PIT_REGS->PIT_MR = PIT_MR_PIV(10374U) | PIT_MR_PITIEN_Msk;
 }
 
 void PIT_TimerRestart(void)
