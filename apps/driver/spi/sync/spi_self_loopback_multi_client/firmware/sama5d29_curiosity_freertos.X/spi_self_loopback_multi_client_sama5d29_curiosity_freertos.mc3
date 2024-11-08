@@ -1,4 +1,4 @@
-<config configName="sama5d29_curiosity_freertos" projectName="spi_self_loopback_multi_client_sama5d29_curiosity_freertos" configVersion="1.1" device="ATSAMA5D29" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.6.1">
+<config configName="sama5d29_curiosity_freertos" projectName="spi_self_loopback_multi_client_sama5d29_curiosity_freertos" configVersion="1.1" device="ATSAMA5D29" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -43,7 +43,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.4.0"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.3"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -6827,7 +6827,7 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\FreeRTOSConfig.h</file>
-         <hash>839ae45aa1c147470cbf702e19dad07dab9c96c4ebf67ca08b7bf8825a912f72</hash>
+         <hash>f77661f7ee39929d5d276e9f99c237c56ad54e86d905a3de2318ff21cce6601e</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\bsp\bsp.c</file>
@@ -6835,7 +6835,7 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\bsp\bsp.h</file>
-         <hash>a8bb8b67f921122cf5cae266ec8fbb16d2655f2498ca74bf6eb0793b996cc37f</hash>
+         <hash>23ac2e039ea486940b840312fa57152c7b8767e8f9425a57dbc11a4d913e9c27</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\configuration.h</file>
@@ -6851,7 +6851,7 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\definitions.h</file>
-         <hash>ef67239ccf01cfbe8f8cd3dced8c6629554ee115c1e662e71692721ffb34f54f</hash>
+         <hash>ba1a506ba04fa68baa6229ed49f4e892b96d20e76426e92fd40bded041c0afc8</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\device.h</file>
@@ -6891,11 +6891,11 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\freertos_hooks.c</file>
-         <hash>ee4a4dfc44aa3d45b99065a3d972818fcbd019d39450a67f168aa7f047f55149</hash>
+         <hash>c97b8f92ad60ff513a27ac7a27b3c6824b75005eb8f7b85fe5ae18deaf568c4e</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\initialization.c</file>
-         <hash>6e6d5f435cd9e5815499e2e45d26e619cf45db569da8b4a12e0b1228c35a899c</hash>
+         <hash>c601d5f0a5f65508e581011d4924a865766b25816c88b97deeb1bd5e270c9659</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\interrupts.c</file>
@@ -6907,7 +6907,7 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\osal\osal.h</file>
-         <hash>8404fbe44807fa0484ffb38843a72cb9af8e31c9c30bd1b2594e609b8ea317d9</hash>
+         <hash>1cfe3b61d9693b2369922041eef33fe16b3c1ccd9c85d4ded808b805f90a869c</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\osal\osal_definitions.h</file>
@@ -6915,23 +6915,23 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\osal\osal_freertos.c</file>
-         <hash>8092bb557d244984ab601e36d3dc25408c8b57f3c8f090aac491891b4a32cb28</hash>
+         <hash>565c6dc54044f91bfd235f3f240e2ddf0ff49189d692fe5be50862d2b6c296f0</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\osal\osal_freertos.h</file>
-         <hash>7ad9faa903d8587bab9490660328f134b8e027f9c24bca47201f3f96f3b99474</hash>
+         <hash>f9d8c97ce37bbb7516242ec37c4b0db387090cfed54580af683bc0ce126094e0</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\peripheral\aic\plib_aic.c</file>
-         <hash>9b4a389739d90d32e75dced4dc9b8d7cf958376bd458a19cc6f1e260cdac4174</hash>
+         <hash>255539f627c3c879db3874db1fc0f8b2e7e187af7d81f3b2eb8fd9595b1e809c</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\peripheral\aic\plib_aic.h</file>
-         <hash>9ff729f3819887a6769c1a4386db9727e6e88fe6bee25960985d9ccd09229a7d</hash>
+         <hash>150e39620b72b62d7b11a7338040d2c28c888d8714bbaa7462063932076b9081</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\peripheral\clk\plib_clk.c</file>
-         <hash>72d2c6dad006b6676cc8bb90a74418dbf9205a3110f07290405f1e876cb77d5c</hash>
+         <hash>30be65b5b3ccf7843fe9412a138e10ce07cb47a819c0ccc16ac7f006ab511aca</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\peripheral\clk\plib_clk.h</file>
@@ -6963,11 +6963,11 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\peripheral\pit\plib_pit.c</file>
-         <hash>34f9ac6db6da4af56e20af5eb32994eaa62addd85416fb44235656507b141fe5</hash>
+         <hash>a635ee2b45e961f9bdddce189286615ce60841d5ec6eb75198bec611b7644c83</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\peripheral\pit\plib_pit.h</file>
-         <hash>08e39e4be113daaa2c0c9e535401aa5874dea30d75197e4374d18ea65e1f7a0d</hash>
+         <hash>a57d7f083c0934c099d205aefb6bb8c00b24aa27291fecdccad79dba5316bf50</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\peripheral\spi\spi_master\plib_spi1_master.c</file>
@@ -6991,7 +6991,7 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\peripheral\xdmac\plib_xdmac_common.h</file>
-         <hash>e5a0dc5bf08198069d8bf3ab33895344fc92b184bf5fa23efdbad2940827693e</hash>
+         <hash>487e50cc7068ca884cba3f7319525d76466ced2e2ab8253c38c6909615e47f21</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\pin_configurations.csv</file>
@@ -7015,7 +7015,7 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\system\debug\sys_debug.h</file>
-         <hash>9ee0362649aa389b355ecff1ce0e64d124f8f83eda7e40a0c5195ee099c1a0ff</hash>
+         <hash>4162d9e1fab93b8b33f6c8a24726f5dc287ea05c31e3ab984c3c920c725d0882</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\system\dma\sys_dma.c</file>
@@ -7043,7 +7043,7 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\system\ports\sys_ports.h</file>
-         <hash>5d03e7b83c3397aee8508915fc9d1f991033f1153e8533352af7688b89ef0051</hash>
+         <hash>f45e9e0d816312da9ef63415c5a1c7ca299fcb89930f0478f156969161152583</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\system\ports\sys_ports_mapping.h</file>
@@ -7063,7 +7063,7 @@
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\tasks.c</file>
-         <hash>f34cfae1ccb6d738f440cbb8d2eaf9d281f35f7970bc8894a3666a4fb0cbb0ff</hash>
+         <hash>d49abac81e954d0f7a9ddfeb946ff0a4fd7bdc08a715ff78b2109687eeb612f2</hash>
       </entry>
       <entry>
          <file>..\src\config\sama5d29_curiosity_freertos\toolchain_specifics.h</file>
@@ -7079,467 +7079,495 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\acc.h</file>
-         <hash>c66874c0efb349a4c620e35cfc9a0047c1ec0c6453ec2ff5c904767a3c09e20a</hash>
+         <hash>d9592caeb130b5b7fed849865a2637ae5bf4c4a98477acc81591f6aed7d51b79</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\adc.h</file>
-         <hash>7c2211f5b2036a5686f51786ac130366236739693e518b7928dada271670b20e</hash>
+         <hash>ae49ae2213cc57936b9c056cb899f90f36e79efdb560d19e59833d189597524f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\aes.h</file>
-         <hash>5dd5eb5fefa400092eedadaf3f0fe9f7d56de2c4c988111b9ead3c7fbcc49850</hash>
+         <hash>758fa5eb468a474ef427a20780cc039af57a0aa39506d322661b40f1c567d5ca</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\aesb.h</file>
-         <hash>9118887556377ac2b169ff024819384148766fd3fefb4450a676752d5ed77c6d</hash>
+         <hash>6d977000adc44d6038e5f21c2dfae624371d52e158ab90ff05212ad072e6eb94</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\aic.h</file>
-         <hash>7d3b36e063b29b7e23b4b7b4f002612671ef2a4f85be509192affc2de54d1101</hash>
+         <hash>6b2fbc6f69ee9638e201959826d626af08b32302aa03239a70d2ac1bf4a92692</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\aximx.h</file>
-         <hash>fe04e0608a04d1722dad23b372057e94b5307d23af394fff3a59b76b476f8379</hash>
+         <hash>13c1525e09ef665827dbdab35749f0c5dd9881b5b3e89d3d380da81ef3146bb5</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\chipid.h</file>
-         <hash>19c216001e1dd64df7ee0f58fd9b0ffdbcea1915d58320675ec8d6268a2d5574</hash>
+         <hash>a366eb660823e9a4bfad23850722adf6ac65b77081a2f13190e170befe556579</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\classd.h</file>
-         <hash>798e41d13c4b87c37c1c6e2bc9063b1db4074e91d9a3699b56f96e5fd05ddbc9</hash>
+         <hash>1460f8b2294490364c8eac5428912bbd6a258bdbcd5451b883f3dd85f6980856</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\flexcom.h</file>
-         <hash>6216188b20795fe96ff0f38ebd008f73ac9f0cdfacb6d572576a706d3c6cf345</hash>
+         <hash>2429fe69a29f2235ae0e2dd1b92dd4e8f8febe9d70e5808cada214d8a11efd81</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\gmac.h</file>
-         <hash>a148df21d61412b8c0e933be8f7d1e2c815d7c83c6a04011143e7ea36c8c1dfd</hash>
+         <hash>1b5584b8da50af874e10e3c6fa117f3332b4397be24ea1e5ff02f077167f87e3</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\i2sc.h</file>
-         <hash>9a14c7dd80a66113b1369e8e7996faceabb020cc162ebefa7c746b9674c06b63</hash>
+         <hash>fa6d4546f93da23b2ee3a4a0e2f795b7ecb448b03487c5d16460a79c50f47826</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\icm.h</file>
-         <hash>5a269d7f49e642de708313a73b478bb0636b6165243befac5e435a20e2f24ba0</hash>
+         <hash>380e7e5c4d31ba62b437f3ae8ae50c270459fa158b5158bb778fe5b6baecc52f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\isc.h</file>
-         <hash>2f2eeaff59547a397bbf5bcb8eb104eaa221df8a3134d8b04e73022427275b61</hash>
+         <hash>495c70a06c88adaece49ea4414966d2e4958466c76fd8f5b249f5ce8bde927ca</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\l2cc.h</file>
-         <hash>042be1a60e8825f39e7d9f0b92b98cc5cab536e35f31775296d53971e5d82c31</hash>
+         <hash>42a03db79c813c4d5d080b27d20045aac3ec5f39ffd79a46f58ec0b674f6d949</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\lcdc.h</file>
-         <hash>af308bf45b88e4074d51a378100e5e2022db2906a38b555e7f76b7316354e83b</hash>
+         <hash>eee9314a0633d61aabb2b53d85ad9b4a0ccea152cca4f57e6df3a539f9889441</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\matrix.h</file>
-         <hash>4ec36fdbed087c7e5477a0a61b7b9afc5041205628c1fb1c95664adcb980da7f</hash>
+         <hash>7486a10ff8d6589ca2f204c3d794b25373f576d3e2c4f47a90137c0fafd8b602</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\mcan.h</file>
-         <hash>30d02f54de934fc8c9c8207db30c7dc5a4b0878cc6f98e6c15fdc6245b8d4772</hash>
+         <hash>54039842b32d121b6c5bb8e86bb964ea2472cf7fd631cff7f737084747260cb7</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\mpddrc.h</file>
-         <hash>d5106f22497606774929ebbf3a95a78406a645ecc0d867880e8d9c6ae8599d3b</hash>
+         <hash>c0fedd71c22dc726396c95b9d672e8e40ea33261202427e6095e1331eb5ec723</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\pdmic.h</file>
-         <hash>e9aa401b6f9457b477ac01609b91d33b94af80c234dc764fae010dc43a77c273</hash>
+         <hash>502c2b234a3c177aa70ed228407637674abe397e58c124b6b58ad5ed091f4de1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\pio.h</file>
-         <hash>39e1464311105e9163e2953d244c103faf4a078cbd8e7937e322f895f13a3edb</hash>
+         <hash>8c1d9e9569e50b05895fdb8fec314904ad0286fefc086b80f46e1d62e2d94c5c</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\pit.h</file>
-         <hash>896db15db3ecc675536c570354c36d6475f657b10a8da9c875b361fd451a5290</hash>
+         <hash>68933620bb797cfe8ba67834b0af74cf576c0591ce68dcac9bbd611f34b37b08</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\pmc.h</file>
-         <hash>ed49bb552badc6228714b7862196284dda8967835778205ff45efa96c730ae68</hash>
+         <hash>2dde8592e788e0c002dc710195669bc0ec6f361ba6706cb3ccad4e5ae203afb1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\ptc.h</file>
-         <hash>54f2929ae9f018da49b7d84edfb63e13dc6eec607e63f4ed5e8685358a27cb1b</hash>
+         <hash>ccb0f035ad884d1df1a2164b310b9217fb64ae393a988d7c76dbcae8eb0a2ef4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\pwm.h</file>
-         <hash>5ccbe14e67d9c517508b480d3053f709ab45272429777ae87972f13980e850b1</hash>
+         <hash>02a7684251c3999ecf1dbad058986e3ba12c237773246a468b267dba606e72b3</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\qspi.h</file>
-         <hash>b0323d54cce0660b9297597f40864899398242fbbbe111b779c471a492f2622b</hash>
+         <hash>407409db76bc214fbd0801bcc2c847433eae661941a251604e20e0a27ac78583</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\rstc.h</file>
-         <hash>77395f64dd24c22337e43c1e5eff06d04ac03d6b58d5af381dd7d4aed642e112</hash>
+         <hash>b61490fb36ef8f9af6b74f9a266e72c375b4c841135276332cf1847e3a1bbb27</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\rtc.h</file>
-         <hash>9b6a0d11ba95f802ceb5c5cd7ae701277942b37eb98f1cff6266c878b36adc5d</hash>
+         <hash>9cf3f1031f448acc257d3f9203afa08f3fb745162e71adc08c0589ee831eb0a6</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\rxlp.h</file>
-         <hash>dfd70f0e5f88a075e81329b577aa67c1477e7ce1f0fc227b57e15a53b6fe6011</hash>
+         <hash>3c1ebc3b4c5f2d4e95b6180280aa8cbc1252cdd85d1147f20a6f26514394db9e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\sckc.h</file>
-         <hash>06f3b72eb9f1a83971112d14cccbb5e53b00f14ae7d0274bb613c443e18ac612</hash>
+         <hash>e9dae8973a9189d0161b7d9b795fb9eae82f8cfc3fc81cf9e0fa7ddf1fd15a44</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\sdmmc.h</file>
-         <hash>130c858d04d18e67a4abeda146977a55afdba61f071bb8f748f35e6fbbd2d915</hash>
+         <hash>a4ad7508a1687ddffed5cbd87d8f52d98c5d4943c67ec99b91753d8f64b7922a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\secumod.h</file>
-         <hash>a465a8ac835aa71ed4bd4fb1907218fa498ada8fba22d20a2d5af0eb2e13b99f</hash>
+         <hash>a3b1f259221c5931328394999f1a4f7dd067a9c230352f088e9d01e8c9b96a54</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\sfc.h</file>
-         <hash>237e9fca11cb6fee6dcca395cb918c28330b1d8e3dcb9de6bd16b77902c7786f</hash>
+         <hash>69337dd873bd7528ff42cf470a2b92df202947988c7647414e9dc2f2c6d4bd95</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\sfr.h</file>
-         <hash>9be266d3c290278be6e012bd18fb08a36231a8b2529ee3aed963514befc0689f</hash>
+         <hash>603bc34ce084cec22dbaf023cc67089f344d07cbd2fe716b08829bf64f8a6b87</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\sfrbu.h</file>
-         <hash>7d53ff3cff1d79846ea16907c6c30a2bdf86ddb91724e605802834cac000c71d</hash>
+         <hash>2a061ae9caf993320e5f53c6dc6219fb3d991687942a7387cc28ee54c3d74ca8</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\sha.h</file>
-         <hash>fe00fd69324d528edd0172b4e0340018277956205d31d9b5e263f2fd543dd18c</hash>
+         <hash>377ba59a9f0575d1e18fcfccb0da427919f9c1a5f266c96f8ac82a0caf78a759</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\shdwc.h</file>
-         <hash>03b91acc62e55a2f3e8f6aab74597831318219cf0483073cc74fcb95643aa287</hash>
+         <hash>56282274b331e0c1eca45c9ab0e47495f26e48d18bfee499651ad048545f19ba</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\smc.h</file>
-         <hash>c63c8400795d5aba8cab4f0a737602ad922d69630392e40751a0446352e7a18a</hash>
+         <hash>bce8fd388eab6e06007ec9f14ba936fc66752e42e2fbb6da2e04b1ef5c94d269</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\spi.h</file>
-         <hash>e306f33684574c83c6d091e377c3832282d27d2502c01843696d42fd8040c79f</hash>
+         <hash>504d292478ac0e11871449543a4cd87fcb9cfd38ecd27357894d8a03537562cb</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\ssc.h</file>
-         <hash>82b26ca0aa58e225266d15b0d7808a09377145a63d6ad9157f2ce48783cd33d9</hash>
+         <hash>aabccc3a6ed556f2e760e8ec766968f906dd553cc784256273084102d2214907</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\tc.h</file>
-         <hash>e00a0e5b0a9ac388c6ae77c9c7c258ab2831a6aa4ee3bc04eb31a98f1315a593</hash>
+         <hash>283015b2866d313dfba13c4505afd0e425ffa8567277c2df053af1f3507a202a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\tdes.h</file>
-         <hash>fad02ffd64cad0a24f2b8c6a4ecc6767d875aa74b7c11bd142391e9d58c44294</hash>
+         <hash>4e72d1b0a29f083d4cf61233cf85e7badb55b5161f34b35d83952cc56e47f0c3</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\trng.h</file>
-         <hash>6e68c03c4efb9a75b9851365add7ce7126c31c19330f5b9c278bdad5024868b7</hash>
+         <hash>0d9c9894162476a6fb22a947ec82d7523da6e737a3cc7e33f605b477d4a4fe3a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\twihs.h</file>
-         <hash>ca9e241c0ec04f5f0318b53c049a8cf2754006e3843f92d92fb087c8dc003791</hash>
+         <hash>c722d7638d7043427bb63ca73081ed5363354145e480b21b61e6c38f70d342c8</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\uart.h</file>
-         <hash>47b604e90bd38b83cd12b9b5641a9d715339334487050df744dc90794d03f22b</hash>
+         <hash>d93106dc8e79295847132dffe108f101753175e2720b55ca16e04d53e3dfbc7d</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\udphs.h</file>
-         <hash>c420133ab3b890dfc93e5aad9377ecec7c70700def8f3001037445e0e7f8f333</hash>
+         <hash>3f8b03b568064994d79825038c1b457379fcc220de121902286816cc4bd9fa29</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\uhphs.h</file>
-         <hash>432b022171fdace36be36b43d80e0a51914c01a985116bbad3118ecc084cd2ad</hash>
+         <hash>4416a3d68b3a8e62644e91e27b4689f0e3c6bb6490393e4ff93be2b351dd5b28</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\wdt.h</file>
-         <hash>7da36ae6a1099a52a77dbd4711fa08e96a6244ddbbeffe278c8aca8edbe244b2</hash>
+         <hash>a83cd13ccc4123c679356807ca380ba6d630fdf8c68fdb76d565bd28091d890e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\component\xdmac.h</file>
-         <hash>d86d558e22657b6388d9423582a71af55d7fc510041d929f9c5ff4a8a77e2b58</hash>
+         <hash>df2b16033ccccf3cc62653faf8e5babb30d7e623df7bf34a0f24df87bd684561</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\acc.h</file>
-         <hash>9ba7240aff4db38659847d5dae77b69e6e1c86fe1c5db5f8bd737e9fd8dcf119</hash>
+         <hash>d77c2593b3a088b41359092f084effe4bb4b7240618049613290b76f31c8918b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\adc.h</file>
-         <hash>e2835003ef0069fe80794086bdaf1fbe688d7b53ccd37aac9b1a5cfd88b0c292</hash>
+         <hash>93c908c46682a727fd2d4e5394e73fe442a1abe1414f127cafb29a1195184557</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\aes.h</file>
-         <hash>ccf6f20c272c5fc5bbeed5e5296b0f4420f7a7fe3d4d3d455f220b7743842761</hash>
+         <hash>32fb593ae34693cfbc8a606f3799229df36160b2615bac340be0fd1268798178</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\aesb.h</file>
-         <hash>a1f98b7666722681e28d7fd1bb65703ed980efe49d31f3ab338b436741d02ab5</hash>
+         <hash>2284e883f1d08857bef39cb854f0f635c2679af545ccf5fd39eb3716971b7192</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\aic.h</file>
-         <hash>9c449871834036ae409e0c511adcf8008149b5cb849aec157979185180e41356</hash>
+         <hash>1bfbda49abaefaa505c87f31501b7ee17e48dbd5db070bbf46a6743e59428ae1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\aximx.h</file>
-         <hash>8459276298e7909795ceaa09ab3c06a7cb4461aea1913aef03725c18eda53c4a</hash>
+         <hash>4502dedb8437027e73cc212852047c27e6001198d245f91e7f8db982fd249933</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\chipid.h</file>
-         <hash>3d831aef5bd65d520e4a7019b02c03173b8686ca8dbf969bdf3ceca89aedc3ff</hash>
+         <hash>d08b2b7f72b6b5c795adb7a5c425bd7c7444e9d676765b454640f91c903cefdc</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\classd.h</file>
-         <hash>384d1d15ca379bbc1436918aa73db50304cfeb0778ea12acd21e92bf0f447f30</hash>
+         <hash>cf97725ae229858da165d7ed86b0a02b0c2a01621090ce4f2da4b8a12af978b7</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\flexcom0.h</file>
-         <hash>7590455a5978d27b6613f750eb73f520397a882cac1aaa960d699d98899eaf46</hash>
+         <hash>d9b59b82c0b69771eac6e924f56fca16ec9f5b48750eb1e894dd82684286dc8b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\flexcom1.h</file>
-         <hash>779a142ebb6a7e65a8b72a7e2b5e067de55cbb872210bc124f08311d6e5e4e04</hash>
+         <hash>52b8afbe1b0572dd793658c9a32916e61078920dec4f08b98fd8b90f1a103e8a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\flexcom2.h</file>
-         <hash>6c7a42e75c7d474b95541132f05b9eddd2f18b023279bb79e235a926c8a1ca78</hash>
+         <hash>a66124f5b5ec1c7014dbe3bb07eb8beab8cb299ce520a049c208bd4ff1af1e9d</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\flexcom3.h</file>
-         <hash>e4ddd08e9b69fc771d9abbf70a79fdc072acee709782674d691cdc39e5ffbd0e</hash>
+         <hash>7e1316712ee820c69b6f0cdad0dc18a81bb902d5cd1ef5e22fd3b9dda17e5536</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\flexcom4.h</file>
-         <hash>665a9833d38f4617a28654dc02465b127ce89e46bd021fdfc7ab3ce4f83366d3</hash>
+         <hash>12cf47df3ec5c45d2b447e7e07b99fab77ca8684d5f1e22e049cdeef98482514</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\gmac.h</file>
-         <hash>2cc568b4e9e9c43c5b61c472a383b6cfd1cd7ab7b13b5a0aa8c86bdd567c5a83</hash>
+         <hash>a653d6e852de2dfee248167c03b0395c7857f5bcdd6dcf1af5dcb1ae7c8c5c41</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\hsmc.h</file>
-         <hash>d90f3c40e26b6e42edefec16a95040a51739535fb30688ca0b4692dd44598c31</hash>
+         <hash>2b1ce315747589467aee85fb21990dcfd1db94ec59d6a36875e394e250db7b71</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\i2sc0.h</file>
-         <hash>0e1667af9efa960a7ad186d1161ebd6513e0d9293fdff5dece518e7d22959e26</hash>
+         <hash>a9a1975ddefa8d8515ec735b2534bfcd2c51ff69881a8e94f90a7eb2531cf71f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\i2sc1.h</file>
-         <hash>09d354580e6239f8187e709edb47ef19b13cc3870546bad02d7abf08c6f56b7d</hash>
+         <hash>e8bac09402ade8c0be9e1c3e6bcfce135c93c93f8f977b40ddac91a42ccf145d</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\icm.h</file>
-         <hash>edf8d70efb4ceffa8bccc04bb0bd3d580ff17f1323a8c0a6695febf47ea41c08</hash>
+         <hash>e7cede9695af3260827aea67d0448b6cd6f8656ef0d7bad19580f4b08af29c5f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\isc.h</file>
-         <hash>1751092f99e64496785e5a32d658549df021126ea33a6e6a9a6f836790363776</hash>
+         <hash>37a45fc10dc9c8b410f020ec57071d497d58f271578106dc9efd8c1bc304c908</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\l2cc.h</file>
-         <hash>357ef13913db9f76192666d2f5f239532c9eda7da375dde355a2daa31f3ec2de</hash>
+         <hash>d726bec5fdd3493fda24ccb70f245b41aa9a6a6f595ad5deb5420f746d13d702</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\lcdc.h</file>
-         <hash>27fa476dca1b93f25e9f10e1630d810a639444ae951cc52cb227b00a048ad822</hash>
+         <hash>df501530876ee07112311f83d68698e9d51ef7985051b7b6c039bed40e01ebf6</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\matrix0.h</file>
-         <hash>2d136b0c556f91abee60cca47fa0d388334ecf857bb56bc44d32c303214e2a2b</hash>
+         <hash>13bd01d30ddf3bda0d120d41a953269d6ccdc95695be25cc5b1b409ec1cc9b09</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\matrix1.h</file>
-         <hash>2e7f23f563d9034b690ee45dc40b2b0f66ad848605208da22fa686926911add2</hash>
+         <hash>d7311dbcfbc15692780b7dc8f2024e1a2a1cd14c1def5fb7516fb5706edf8fbd</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\mcan0.h</file>
-         <hash>303bf29a2b337a1af7209c441bb0c483927e20b23e3d47546a4b83c048bd1b87</hash>
+         <hash>bccc5b4fddc86e0e4846326716bbe891a3bd94c0a65d5282e6eb05597ceee0d2</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\mcan1.h</file>
-         <hash>9ac55db36dc37b636290a4adb753c43f06184439b73844a93fb00d4b494ede25</hash>
+         <hash>b238aa5328e71a7fea49c9806355d5ba40da4986807d9ae75bc87d4762839846</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\mpddrc.h</file>
-         <hash>0f81ec73116764c824e004857a74425b6314c88855f6f4c79f61f52126b5c96d</hash>
+         <hash>639c6de8fcacacc214b33ec71a32d9320094bb2fcf78e93ca09199a7788396d5</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\pdmic.h</file>
-         <hash>a214d41e3b1726c1cc30cf49ea9f8096ad4ce9fdd60d90c12acbc94132cfa08e</hash>
+         <hash>cc3f56f822262b84f4dbf3cea603040b51a6bfe5d7b1a0326ab062e91dbc5c59</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\pio.h</file>
-         <hash>264985fdfdad294e2dadea6ac67bf5aba8d7f634123746cd20998decd4bb0d6c</hash>
+         <hash>d6122b2dad239d1fa010ffecc45b325e208036cbec9b20a8137f31ffceffb49e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D29_DFP\instance\pio_ctrl.h</file>
+         <hash>0a3c4bf241188c227b662865ec086f95d6c5fc6a5d32eda3467f1c0490c6c439</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D29_DFP\instance\pioa.h</file>
+         <hash>c8132ac34653600d1da82b82dea1a047c11f840f3d990c35d17672e9eed82aa8</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D29_DFP\instance\piob.h</file>
+         <hash>79bd7f32f792a178616df789cdaa881d394719ac8d386c4f25b7e4edf33ef98d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D29_DFP\instance\pioc.h</file>
+         <hash>4c49ecdd420cea3edeeb942d3c2a5c0b6febfc0696160e26a888c1ceab2f7754</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D29_DFP\instance\piod.h</file>
+         <hash>1431e970c521b2fa57eba4870a284dc5400ad1123667a0d9c826399cb31cca7f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\pit.h</file>
-         <hash>27b5e0b900b9eaace7f3d9d506184cef3e7bd6bae89ac73be0af9170999bc51c</hash>
+         <hash>0fa3242095230cf322400f5890e634ff7cdcfc13d610ce4de556239408199722</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\pmc.h</file>
-         <hash>d7435558135c11f613aa90685e38cc3727b20e7d4cb4bbd644ab9b295772254f</hash>
+         <hash>6584953af9b6655bcd1678282ae7c4e2dc2cb48ee0452464d5a33a8ae052a873</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\ptc.h</file>
-         <hash>a395080bb6ecf461ca146a0f7b754d91617cd784517301638f19351c86f1dab4</hash>
+         <hash>dc6967589ac7a4921c5cb4a9f1480ceead9cc6a608577a06693a444589381a21</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\pwm.h</file>
-         <hash>719b4bbfc2761a6c416eeed190cb0ca7e7238949473d49bfd06c2c95aede323f</hash>
+         <hash>c305603b1d87fb135facefb895c741f47cdc2b1783968ac18baad3b7f80296d3</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\qspi0.h</file>
-         <hash>2ff285a4079a6488c4bf9e5dfcfb7c52754252ac4bc6c14838fd1ef74a9d8e44</hash>
+         <hash>31549c7e73e686a988b2b0432ca45c39de34950b5890bc578e6a6879f5dad2d3</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\qspi1.h</file>
-         <hash>58ac006b4abfab8de9f21ee75550ee5bc45bc2ccdc079b5ad3eb3b2d7ed2b153</hash>
+         <hash>8a62b2c1692d7cfb720719acf14783678c4661a9b4b0dbd7d939277f6a4f1507</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\rstc.h</file>
-         <hash>dbc9dd79517b5ba74fa9435a5ebd66004750246d1a48b335b6aab641d705ab9c</hash>
+         <hash>1b1f7daad8e9bd64fa3181beb5469c1f454dca68a97ff571b89eada35645d8d1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\rtc.h</file>
-         <hash>b9b3085f342be0354fd2175543580c83ced0fec109343b74c65ef9f9f6d25a8c</hash>
+         <hash>7478a0cabb1c4ac840d9b8ed8ebc5b24e53f9c5cf068a909555530a8a2decb6e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\rxlp.h</file>
-         <hash>7c80faa986b56da302c8562ff300f0c33ceecc6d0c37940668d703d76bc64309</hash>
+         <hash>1f60d8de4eccea31db271022c4e2df4dea412b53682c56836a1ed1e4c7603995</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D29_DFP\instance\s_pio.h</file>
+         <hash>0c33599f2f6a793876922043f24dd949d8fe044fbb5a4b4d3a5c817651681c26</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D29_DFP\instance\s_pio_ctrl.h</file>
+         <hash>c5ea22bdd652be0075ba2af6029bb4e9d41d7b43713507231e6e63fe085b488e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\saic.h</file>
-         <hash>711966b02b30bc019061c304feada5aa6fb07a2ab43a76c88745f091a147faf9</hash>
+         <hash>227426bb1201a97d86d41b12825045b9cd4fc76a2ecd9f7e73e37c463ca2534e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\sckc.h</file>
-         <hash>a11a59bc13be6826141cc32abcd21c7f721c3e671189eaba00163e1f62fba865</hash>
+         <hash>899e086e67a56148a73867670f90ed94d1ae18965edd9617ef3a661ea700162d</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\sdmmc0.h</file>
-         <hash>c212a78eb7b31518af2a7934016243070180b92ef0adf98444edf9954c842763</hash>
+         <hash>5796d3e1b44e51a189b66da941e54910796c09ff2eb81a353ede8727d098c1b4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\sdmmc1.h</file>
-         <hash>307f2d9b5d82026453da6fb9ef96dfe238d18978f42716d6d0f176e5e68d1339</hash>
+         <hash>e50e796005340a10396eff87f82bf9ef685cb3fc2fef3e6b8ab1d703e10334aa</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\secumod.h</file>
-         <hash>76c56c560333289b0cc9c481c997b12f3277d7d48ee358c82f6543300e6115a0</hash>
+         <hash>21cdd98895469934ce590db011e780090c68ae23ea6a5c576d406ac91e70ffaa</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\sfc.h</file>
-         <hash>ea06d85a8d8cbad138540c1e60e2145ea8c20419e689eef48e6825b5effaf7a4</hash>
+         <hash>7838939e92af08a502a2cf7064f52b9143a858291fd5ac5dc4f22ee263b116d4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\sfr.h</file>
-         <hash>024d8e1c3898c3dbf1a99844799af908fdeb8071d83d6635844bdd07387ede5f</hash>
+         <hash>c4d44fc211641020b59071adb16eadcf740fe11681e8f1815ac73253aa3c48d6</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\sfrbu.h</file>
-         <hash>e92973803354f6ccb562ba56f95e6026c79a51c1d5138210ed8b127e7e51ed58</hash>
+         <hash>1b3148e68a276ee106731cfa9d9441318d0ddcd2ebc74a1c6207fa36acc269d9</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\sha.h</file>
-         <hash>a1d3dd395068f9f0c27a3d2bf9a7eb99eb76b10ebbf11e63bbcd1ac244ea880e</hash>
+         <hash>234c6a5ba2c9e87c87ce975823f30a38ac7ea9b975ce16121cbf2e08a848143c</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\shdwc.h</file>
-         <hash>9d262f66117b7d26821b42fe169f685f4363cdaf84a53350dfeda6ac55ba17d0</hash>
+         <hash>a61341b632122c94972f550ae9e1a9f21880bd72f180db681020016efd8ed086</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\spi0.h</file>
-         <hash>ac8a7cd8d30dd56e45b7a328b175bc55b544f127a078bff766b82959805b2105</hash>
+         <hash>8b118229c1d32e0f46dba4425bd036d7e5de13af8fb67f7f363d1af58e2a7cc8</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\spi1.h</file>
-         <hash>1587682af23dae88b0d8b253761cebdda1b8cfddcc0854db57a4bf3ffeb8e499</hash>
+         <hash>a4174e67b9dcf8de484d0b9840901dcf20304901fc01351cdf89f32be585b95e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\ssc0.h</file>
-         <hash>9ad661dfcd2d02f3163752f722e69bb45143ea61bb067008ad03218ecbcea8de</hash>
+         <hash>98ca504337519efd90ed019ab7a4ead487d3035680278256621d3f6426655d15</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\ssc1.h</file>
-         <hash>9cc1b9f6335d56b62998b1abc15cda4a72f846c59274e2e49dbecf1cb073c158</hash>
+         <hash>a5b5e7b33fb00403995efe03b9c24e24cebd458885a5690d2df38863f220fef1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\tc0.h</file>
-         <hash>8c0647bded550cec471e2fac9790c2c9a90225d0efa828c81c40d4f360febffe</hash>
+         <hash>96e774564f9acac6f5dd54374738418704382da0c374f84ddb40b5ced8eb5835</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\tc1.h</file>
-         <hash>e6023cff1386282dccce81170acef16ee39e6cf661da3a6c2969ba2b808a02e4</hash>
+         <hash>e7f4d0170406e87dcf4faaefb0e5d5e3ae9a60b8badff2d117e86bcc25b0ace0</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\tdes.h</file>
-         <hash>020172f3e6e9e80de798923e5f5db8c6095d8a3addafcf86288823b7da8ea6f9</hash>
+         <hash>057af51b9bc991efc6eba27175fd1d72dafaa94d90bcd8321345672240ea7edb</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\trng.h</file>
-         <hash>c878993b5d9b8cebc0e3f325d0ae2083621467d6e5a5e25ce47d307af5fdaf64</hash>
+         <hash>c30d8e4bfeddea617ed9264d9c343909c033b53d202ce85dcfcbeab50c4c715c</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\twihs0.h</file>
-         <hash>16e6c3c168ce1c99c56fa3b721782cf5a0a04c58b566e761990c1545f4ff07d7</hash>
+         <hash>de40a5bd59a1f531aa8332c03a2a6a1573c8bb395cb76e0afc2aa7f5b459e7d2</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\twihs1.h</file>
-         <hash>6e349530db26e50b5dd811c38a6f4eee0f9f90b5c87ae76cb4a163cb6fb1a9eb</hash>
+         <hash>2780f047e6fbaa5e93297ed802c958847f33098bab0ab05675f075b79ca9c011</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\uart0.h</file>
-         <hash>6d86bdbffae9f032e07ffe4163824b352e1b290eb67cfc37b1724cce36a9d1ab</hash>
+         <hash>5005f6dc9580366ade053f14c1215472e026127597a2567665a3793b29131dae</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\uart1.h</file>
-         <hash>177166792b33e54068e3e3556c7a525581243a6ad44e0f7dcfbd1d1e4ecefea0</hash>
+         <hash>5ddc640a0d3a903d8f75f23b3208db2763e85c6d1fb45a76051ae47efada96ca</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\uart2.h</file>
-         <hash>32c3c94f5549fc11e72bb3963b3a7a85a9a3f1703a7c198cdcf51a34991e65f2</hash>
+         <hash>cd957c35ce75e505588fc5f2a22b283363beae32b9a579f9fd64dab33da83cf1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\uart3.h</file>
-         <hash>0b3ca0f07f0703d19a7325637e1e7602470645b311662b14744fde0091eda879</hash>
+         <hash>7702bb3cf6adfcd4ccb0b4695940ceecd0ee3e72716c856e035f6509ac45ed17</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\uart4.h</file>
-         <hash>b84e622995a4c29bcc86f79a6857b81061f45555c4d87e3429349b8c93ed8209</hash>
+         <hash>076fca3fc295a3bff47fe4a916d072b8bf8132fd98e280c18f54801b0f6d2e2e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\udphs.h</file>
-         <hash>4a0a2edde3b988ab55e0a1d72284d316f5f0b7b22e05d69a32b0e59063f14727</hash>
+         <hash>c480a4210da1a99d5bc0e77d948ea198d6616b7c4001b797aaff7c5ec82e65d3</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\wdt.h</file>
-         <hash>365f476816ea76a9bf0ab74c3bdf5b660a0f53c0baeb373da210ca972c748852</hash>
+         <hash>843368f5e4574dd61da32e0db23363acb1c72f61dd9110fe26d45b32a25b07de</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\xdmac0.h</file>
-         <hash>79ad64d3611eeab554836ee0e65d97ffb4d188cf9e31810b32f35a3261970daa</hash>
+         <hash>ec0444971eb5d7b4f848b022d516eadafbbc4d43c0ccf850d72a857b4399babc</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\instance\xdmac1.h</file>
-         <hash>d981b035e5e7b2cbfcb21a6d89a1835cf90daa2d97e0227d03fd149effb78309</hash>
+         <hash>f389da697f11db1fe55f319c950cbbce9d4de27bf7d1001fa5f6ee3bb1c737e7</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\pio\sama5d29.h</file>
-         <hash>6ae8a00b1e96f1cf2d425a09d7c79f540893f0f1841e2673276d4c057686eca5</hash>
+         <hash>4b95a5f1d13dd172dc8205c40ba086aff622ad5075f511e1d1b97468c0faf4af</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D29_DFP\sama5d29.h</file>
-         <hash>48e1170c9aa0a7ea3b1cd66dbedbb7c805d4cd85dfb28c7f71ff36f714ebf121</hash>
+         <hash>49ca30570c52b751d3968e5f8a92b0c73b088a58d525273d3153cd5995a4d491</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_compiler.h</file>
@@ -7551,7 +7579,7 @@
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_gcc.h</file>
-         <hash>a720d18d2dd2921d8fe308d21c1f2e9c8174549ec1a34447927db3dcc9505aa9</hash>
+         <hash>2a47e8836d3e5dc5a02866021af0271a3cb7ae53ca9cd847ac90d3a5e4a3dc20</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_iccarm.h</file>
@@ -7563,115 +7591,119 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c</file>
-         <hash>14020d617b96dd2814e1211f6e3b645bcf5e2bd3179c23fe7dd16bc666fe9463</hash>
+         <hash>b0e2349f8d150fcb569570d73cf8a80da4eee689039a9f291e8b3c36af6f97f4</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\croutine.c</file>
-         <hash>ebf0cdce261dc4a256c06c0d4ad2582e6026a6da0e973d4cb92092e94ce8f370</hash>
+         <hash>0ca8c178b698a6ad5ce3f6f1246ab287bfb5510f3c04e1d00e5cfb49c57fc66b</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\event_groups.c</file>
-         <hash>76e967b14d231e4f31f014f1564f359a7bfd36bfa263ee6f437afa8c056df657</hash>
+         <hash>42ca0bc7afdfb48e9089dff2b4b047e1515a93e7fce031756af6c49b2212c215</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
-         <hash>03e9c94aba57e3cf7f4f73bc2d3eb4a96ae38f3425eedb5450622ca286475a0b</hash>
+         <hash>7e29c7d9c773561ec4d0125409036f102f1f15162e213d32568ddf3d8ceddfeb</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
-         <hash>cf52c15fa26a8d4f82b55909b75ebfe2aab25468ba7780748912ddead9812b4e</hash>
+         <hash>b7060be39f6c8d0ffd169806382eed5a411776f0d69b0fb3ade6b07e678303f9</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
-         <hash>35000a143464bbbd8df7c9a6f066a64598a24da5174a7be33972e62bfbd75f4d</hash>
+         <hash>81d325362fc67518de04d5070609e537d0757e4cc6d6332e8118b4f81a4fdce7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h</file>
-         <hash>7b3dd12a50d649c124c1af8be742671b9965b6f924310bda7984fe1b65c7f54a</hash>
+         <hash>2399a780de0eefe95067f5b7744d5e213ad9c793fc6468a8535a8e604f85cbba</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
-         <hash>dc572f54391c0407fc25db360d912fca9118cddae7bd2e3099eb13f18804e5a9</hash>
+         <hash>0848dc9696a2d4d11bb6957fedb6ec5dfb1c2326dfb66af5ca848b1b32a86b66</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h</file>
-         <hash>9a8141d3d6c8044a57d7e448180c9bd2ed32e45ded32be288d095a39dced91ab</hash>
+         <hash>4883fce829d415b7d14d0567965cd97e41634339cd3a72a07b76baebedbc0a57</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
-         <hash>2b46a2511ce5d23a56bc83079333d8d0a2e33763e5829c9383252806887a3dc0</hash>
+         <hash>8cb02fee372e1cc1958022e054122d248c1c184cfc00eb3db6d0fbc0bfef87d1</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_syscall_numbers.h</file>
+         <hash>ae11f0a0ea07101af83b9fc387662703a188bc3dfd71784ee24e85cc2f518ce0</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h</file>
-         <hash>5014408cc33f0f616215f2b48c67b0d47ccc35bfd5f0044ac653b5bbc6cf5778</hash>
+         <hash>d99486024fd44173ff23c14ee8561b6e0ce6ee41ad6d6a7e7b17ea97a5023e8b</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\portable.h</file>
-         <hash>7ade8f368002778c723b3c4e14084910b7225cd36363ed0c948e9ea36c6f251f</hash>
+         <hash>d26267188226020346bd048c9dd0e767b91c7023e5ee0d5f9aa7c7c1864de180</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h</file>
-         <hash>8faf4220ded25b00fd72424a2fa4e63e154713ae7b42f7270f1e3289362a6312</hash>
+         <hash>3d37a1403a69a58a07e214f6a9759601cc0fbe53319c5b14e17f4de5fb8ec0b7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\queue.h</file>
-         <hash>1b61c1669091e59798a34c32c0f1e234d3f6a645f47641753eceeb7e1d9ce628</hash>
+         <hash>27b85dc3c610f83fee9208e0dd4d8dfa3168ea2259cbe1662e2f6a0ac55431f5</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
-         <hash>c624e8cdfc07844d4cf35382f3cc908c872375c7a3048482bdc110bda88cc4f2</hash>
+         <hash>89a46fcd718990d24f9fea16c681527eec502712ca2d1b0a4e8d6c205f7452e1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
-         <hash>3cddf2b3d47ae387e376ac75eb468f9d8ffb575d68c143e08d54af4087474cce</hash>
+         <hash>d167d886d199615eeeca0acb935bf5c99b42c30a322273363ddc8dec03a58174</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
-         <hash>b876d839460197d94d0f95fb93c6aeb457f6fc572d32258480fed7d4de686b6b</hash>
+         <hash>51da6d9a7cc2cf1504b4f1564e814f422efb9b688fc6e58946f41d0fe23d2d22</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
-         <hash>45f2245c914ed25ab26a1ea78ddd4ac74cb6522e1b26ac5c44b614ca4c8cee99</hash>
+         <hash>0d71440d1d81d990fa79677c0836712a3e2655ff3ad75478f5a221e2f0583cf8</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
-         <hash>ee0f596a54137e26ca806ebf067c4c6219a61348f1cbae8861a43d2d4891e1f9</hash>
+         <hash>19e373d04e2f01f9f69a9d3017a75a46b4f7b6e8016742702b10e112786d6181</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\list.c</file>
-         <hash>db5c169cf3efd68da1c6a923ac84eebc724d602c940bde0b9b5f01f05028fde4</hash>
+         <hash>55a947c8bd1eec01ebafcb46ccc96cd33090cbdcd3f0114b9ea6a61ebdd6ee7a</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_1.c</file>
-         <hash>286e3fee81c9107fc6dec40405f500cabdca56836d29747c182f0899bb8997fd</hash>
+         <hash>7155176186aff6591df2f5f82c3b3bfe8f94c96536b604dcdc4f54e0ad8eb6e9</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\XC32\SAM\CA5\FreeRTOS_tick_config.c</file>
-         <hash>7dfa8e99f15705cb87441702a4d7efb1ad9600963e8c4a08e80b598e78eb59f8</hash>
+         <hash>ecfe07b6a2880e940aeba51bdfa9cbdcb9ee09306e59ed4447b63ed1db38ecab</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\XC32\SAM\CA5\port.c</file>
-         <hash>a3370916c99ccf242b4b490fc576414f0d90263fb431f1298c9450c71d93b019</hash>
+         <hash>d1bfd6a3bcf87285ffc95bbfba847c7e485ccc5a4c3aea9f6e944b4e53967087</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\XC32\SAM\CA5\portASM.S</file>
-         <hash>b0bf121953899d9309c7ec29349637b549c53464b7b5f795342c6d8e35a4c630</hash>
+         <hash>2bf2893acf61b765aa751ee077d648de09cfa75d52853c457c0f14e807366417</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\XC32\SAM\CA5\portmacro.h</file>
-         <hash>9b57da74e18bd8a0c2082082f890a243d6b25695261b6283458bb934b50a4800</hash>
+         <hash>7c8d2763d1741b3d2d7d4695b9b0d2a6cdeb8314f56e5be8bdf9c15218bfc922</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
-         <hash>5cdf4fa35fe059446effff5bf20deaf83ddffb08921bc198fda106b1d17dd894</hash>
+         <hash>a4c20318c20a5f49a34fc757092818eb1065b19f142394a04889aa40d67a5023</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\stream_buffer.c</file>
-         <hash>0ec303ba296caca5de955dc470bcadd134fb15b192ddf61c9afc92070bc1039a</hash>
+         <hash>b825d6bccefea8a8c06b4a2022dede20af67f5bc2a2e4976947b376bc41613a7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
-         <hash>24962ef361f396aaa5e6e33776eeeddaf2fb251c87b6fe50602acc56c537b093</hash>
+         <hash>3b936fac70fa25b959b53990cd15c20fb85956cdbe22af4249fde0a94590ff01</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
