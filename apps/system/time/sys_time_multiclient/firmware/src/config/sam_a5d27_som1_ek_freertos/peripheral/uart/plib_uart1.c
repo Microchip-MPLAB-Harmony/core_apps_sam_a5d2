@@ -208,9 +208,9 @@ int UART1_ReadByte(void)
 
 void UART1_WriteByte( int data )
 {
-    while (UART_SR_TXRDY_Msk == (UART1_REGS->UART_SR & UART_SR_TXRDY_Msk))
+    while ((UART1_REGS->UART_SR & UART_SR_TXRDY_Msk) == 0U)
     {
-        /* Do Nothing */
+        /* Wait for TXRDY flag to rise */
     }
 
     UART1_REGS->UART_THR = (UART_THR_TXCHR(data) & UART_THR_TXCHR_Msk);
