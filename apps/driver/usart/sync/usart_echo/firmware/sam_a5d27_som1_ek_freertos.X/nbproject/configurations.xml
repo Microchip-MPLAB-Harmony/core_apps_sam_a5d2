@@ -93,6 +93,7 @@
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h</itemPath>
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h</itemPath>
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="portable" projectFiles="true">
             <logicalFolder name="f1" displayName="XC32" projectFiles="true">
@@ -204,7 +205,6 @@
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/sfrbu.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/sha.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/shdwc.h</itemPath>
-            <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/smc.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/spi0.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/spi1.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/ssc0.h</itemPath>
@@ -224,6 +224,13 @@
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/wdt.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/xdmac0.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/xdmac1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/s_pio_ctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/pioc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/s_pio.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/pio_ctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/piod.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/pio/sama5d27cd1g.h</itemPath>
@@ -361,12 +368,12 @@
         <targetPluginBoard/>
         <platformTool>jlink</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.21</languageToolchainVersion>
+        <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.9.106"/>
+        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.11.228"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
