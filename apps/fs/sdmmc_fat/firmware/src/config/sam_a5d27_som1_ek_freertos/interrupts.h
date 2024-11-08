@@ -57,7 +57,6 @@
 // *****************************************************************************
 // *****************************************************************************
 
-void FreeRTOS_Tick_Handler (void);
 void SDMMC0_InterruptHandler (void);
 void TC0_InterruptHandler (void);
 

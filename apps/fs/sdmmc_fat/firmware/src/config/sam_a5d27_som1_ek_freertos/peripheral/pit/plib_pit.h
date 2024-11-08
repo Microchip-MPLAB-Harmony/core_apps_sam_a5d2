@@ -1,5 +1,5 @@
 /*******************************************************************************
-  Periodic Interval Timer (PIT) 
+  Periodic Interval Timer (PIT)
 
   Company:
     Microchip Technology Inc.
@@ -59,6 +59,12 @@
 
 #endif
 
+typedef struct
+{ 
+    uint32_t start; 
+    uint32_t count; 
+}PIT_TIMEOUT;
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Data Types
@@ -98,7 +104,7 @@ typedef void (*PIT_CALLBACK)(uintptr_t context);
 
   Parameters:
     None.
-  
+
   Returns:
     None.
 */
@@ -119,7 +125,7 @@ void PIT_TimerInitialize(void);
 
   Parameters:
     None.
-  
+
   Returns:
     None.
 */
@@ -141,7 +147,7 @@ void PIT_TimerRestart(void);
 
   Parameters:
     None.
-  
+
   Returns:
     None.
 */
@@ -162,7 +168,7 @@ void PIT_TimerStart(void);
 
   Parameters:
     None.
-  
+
   Returns:
     None.
 */
@@ -182,8 +188,8 @@ void PIT_TimerStop(void);
     None.
 
   Parameters:
-   period       - The period (PIV) value of the PIT. 
-  
+   period       - The period (PIV) value of the PIT.
+
   Returns:
     None.
 */
@@ -204,7 +210,7 @@ void PIT_TimerPeriodSet(uint32_t period);
 
   Parameters:
     None.
-  
+
   Returns:
     None.
 */
@@ -225,7 +231,7 @@ uint32_t PIT_TimerPeriodGet(void);
 
   Parameters:
     None.
-  
+
   Returns:
     None.
 */
@@ -248,7 +254,7 @@ uint32_t PIT_TimerCounterGet(void);
 
   Parameters:
     None.
-  
+
   Returns:
     None.
 */
@@ -270,7 +276,7 @@ void PIT_TimerCompareSet( uint16_t compare );
 
   Parameters:
     None.
-  
+
   Returns:
     None.
 */
@@ -285,14 +291,14 @@ uint32_t PIT_TimerFrequencyGet(void);
 
   Description:
     Delays execution by using  the PIT timer to determine when given number of
-    milliseconds has expired.  
+    milliseconds has expired.
 
   Precondition:
     PIT is configured and enabled.  The PIT interrupt is also enabled.
 
   Parameters:
     delay_ms - number of milliseconds to delay
-  
+
   Returns:
     None.
 */
@@ -307,14 +313,14 @@ void PIT_DelayMs(uint32_t delay_ms);
 
   Description:
     Delays execution by using  the PIT timer to determine when given number of
-    microseconds has expired.  
+    microseconds has expired.
 
   Precondition:
     PIT is configured and enabled.  The PIT interrupt is also enabled.
 
   Parameters:
     delay_us - number of microseconds to delay
-  
+
   Returns:
     None.
 */
@@ -322,26 +328,25 @@ void PIT_DelayUs(uint32_t delay_us);
 
 // *****************************************************************************
 /* Function:
-    void PIT_TimerCallbackSet(PIT_CALLBACK callback, uintptr_t context);
+    bool PIT_TimerPeriodHasExpired(void);
 
   Summary:
-    Register callback for PIT interrupt.
+    Return whether or not the Timer Period has expired.
 
   Description:
-    When the timer interrupt occurs the given callback will called with the
-    given context.
+    Check the PIT Status register to determine if period has expired.
 
   Precondition:
     None.
 
   Parameters:
-    callback    - Callback function
-    context     - paramter to callback function
-  
-  Returns:
     None.
+
+  Returns:
+    True    - Indicates period has expired
+    False   - Indicates period has not expired
 */
-void PIT_TimerCallbackSet(PIT_CALLBACK callback, uintptr_t context);
+bool PIT_TimerPeriodHasExpired(void);
 
 // *****************************************************************************
 /* Function:
@@ -359,7 +364,7 @@ void PIT_TimerCallbackSet(PIT_CALLBACK callback, uintptr_t context);
 
   Parameters:
     None.
-  
+
   Returns:
     None.
 */
