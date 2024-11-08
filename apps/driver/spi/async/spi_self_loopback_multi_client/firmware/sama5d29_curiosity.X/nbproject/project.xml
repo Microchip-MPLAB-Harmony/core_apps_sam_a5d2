@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>spi_self_loopback_multi_client_sam_a5d29_curiosity</name>
+            <name>spi_self_loopback_multi_client_sama5d29_curiosity</name>
             <creation-uuid>ff731eab-9ae8-4e6a-97ed-2e4fa65553c6</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
@@ -11,7 +11,7 @@
             <sourceRootList/>
             <confList>
                 <confElem>
-                    <name>sam_a5d29_curiosity</name>
+                    <name>sama5d29_curiosity</name>
                     <type>2</type>
                 </confElem>
             </confList>

@@ -5,76 +5,76 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_a5d29_curiosity"
-                       displayName="sam_a5d29_curiosity"
+        <logicalFolder name="sama5d29_curiosity"
+                       displayName="sama5d29_curiosity"
                        projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
-            <itemPath>../src/config/sam_a5d29_curiosity/bsp/bsp.h</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/bsp/bsp.h</itemPath>
           </logicalFolder>
           <logicalFolder name="driver" displayName="driver" projectFiles="true">
             <logicalFolder name="spi" displayName="spi" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/driver/spi/src/drv_spi_local.h</itemPath>
-              <itemPath>../src/config/sam_a5d29_curiosity/driver/spi/drv_spi.h</itemPath>
-              <itemPath>../src/config/sam_a5d29_curiosity/driver/spi/drv_spi_definitions.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/driver/spi/src/drv_spi_local.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/driver/spi/drv_spi.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/driver/spi/drv_spi_definitions.h</itemPath>
             </logicalFolder>
-            <itemPath>../src/config/sam_a5d29_curiosity/driver/driver_common.h</itemPath>
-            <itemPath>../src/config/sam_a5d29_curiosity/driver/driver.h</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/driver/driver_common.h</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/driver/driver.h</itemPath>
           </logicalFolder>
           <logicalFolder name="osal" displayName="osal" projectFiles="true">
-            <itemPath>../src/config/sam_a5d29_curiosity/osal/osal.h</itemPath>
-            <itemPath>../src/config/sam_a5d29_curiosity/osal/osal_definitions.h</itemPath>
-            <itemPath>../src/config/sam_a5d29_curiosity/osal/osal_impl_basic.h</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/osal/osal.h</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/osal/osal_impl_basic.h</itemPath>
           </logicalFolder>
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="aic" displayName="aic" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/aic/plib_aic.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/aic/plib_aic.h</itemPath>
             </logicalFolder>
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/clk/plib_clk.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
             <logicalFolder name="matrix" displayName="matrix" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/matrix/plib_matrix.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/matrix/plib_matrix.h</itemPath>
             </logicalFolder>
             <logicalFolder name="mmu" displayName="mmu" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/mmu/plib_mmu.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/mmu/plib_mmu.h</itemPath>
             </logicalFolder>
             <logicalFolder name="pio" displayName="pio" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/pio/plib_pio.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/pio/plib_pio.h</itemPath>
             </logicalFolder>
             <logicalFolder name="spi" displayName="spi" projectFiles="true">
               <logicalFolder name="spi_master" displayName="spi_master" projectFiles="true">
-                <itemPath>../src/config/sam_a5d29_curiosity/peripheral/spi/spi_master/plib_spi_master_common.h</itemPath>
-                <itemPath>../src/config/sam_a5d29_curiosity/peripheral/spi/spi_master/plib_spi1_master.h</itemPath>
+                <itemPath>../src/config/sama5d29_curiosity/peripheral/spi/spi_master/plib_spi_master_common.h</itemPath>
+                <itemPath>../src/config/sama5d29_curiosity/peripheral/spi/spi_master/plib_spi1_master.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="system" displayName="system" projectFiles="true">
             <logicalFolder name="cache" displayName="cache" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/system/cache/sys_cache.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/system/cache/sys_cache.h</itemPath>
             </logicalFolder>
             <logicalFolder name="debug" displayName="debug" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/system/debug/sys_debug.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/system/debug/sys_debug.h</itemPath>
             </logicalFolder>
             <logicalFolder name="int" displayName="int" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/system/int/sys_int_mapping.h</itemPath>
-              <itemPath>../src/config/sam_a5d29_curiosity/system/int/sys_int.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/system/int/sys_int_mapping.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/system/int/sys_int.h</itemPath>
             </logicalFolder>
             <logicalFolder name="ports" displayName="ports" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/system/ports/sys_ports_mapping.h</itemPath>
-              <itemPath>../src/config/sam_a5d29_curiosity/system/ports/sys_ports.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/system/ports/sys_ports_mapping.h</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/system/ports/sys_ports.h</itemPath>
             </logicalFolder>
-            <itemPath>../src/config/sam_a5d29_curiosity/system/system_module.h</itemPath>
-            <itemPath>../src/config/sam_a5d29_curiosity/system/system_common.h</itemPath>
-            <itemPath>../src/config/sam_a5d29_curiosity/system/system.h</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/system/system_module.h</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/system/system_common.h</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/system/system.h</itemPath>
           </logicalFolder>
-          <itemPath>../src/config/sam_a5d29_curiosity/user.h</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/configuration.h</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/sys_tasks.h</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/toolchain_specifics.h</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/definitions.h</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/device.h</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/interrupts.h</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/device_cache.h</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/user.h</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/configuration.h</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/sys_tasks.h</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/toolchain_specifics.h</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/definitions.h</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/device.h</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/interrupts.h</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/device_cache.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
@@ -198,6 +198,13 @@
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/mcan0.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/uart1.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pdmic.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/piod.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pio_ctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/s_pio_ctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pioc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/s_pio.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pioa.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMA5D29_DFP/pio/sama5d29.h</itemPath>
@@ -226,16 +233,16 @@
                    displayName="Important Files"
                    projectFiles="true">
       <itemPath>Makefile</itemPath>
-      <itemPath>spi_self_loopback_multi_client_sam_a5d29_curiosity.mc3</itemPath>
+      <itemPath>spi_self_loopback_multi_client_sama5d29_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_a5d29_curiosity"
-                       displayName="sam_a5d29_curiosity"
+        <logicalFolder name="sama5d29_curiosity"
+                       displayName="sama5d29_curiosity"
                        projectFiles="true">
-          <itemPath>../src/config/sam_a5d29_curiosity/ddr.ld</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/ddr.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -243,67 +250,67 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_a5d29_curiosity"
-                       displayName="sam_a5d29_curiosity"
+        <logicalFolder name="sama5d29_curiosity"
+                       displayName="sama5d29_curiosity"
                        projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
-            <itemPath>../src/config/sam_a5d29_curiosity/bsp/bsp.c</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/bsp/bsp.c</itemPath>
           </logicalFolder>
           <logicalFolder name="driver" displayName="driver" projectFiles="true">
             <logicalFolder name="spi" displayName="spi" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/driver/spi/src/drv_spi.c</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/driver/spi/src/drv_spi.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="aic" displayName="aic" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/aic/plib_aic.c</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/aic/plib_aic.c</itemPath>
             </logicalFolder>
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/clk/plib_clk.c</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/clk/plib_clk.c</itemPath>
             </logicalFolder>
             <logicalFolder name="matrix" displayName="matrix" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/matrix/plib_matrix.c</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/matrix/plib_matrix.c</itemPath>
             </logicalFolder>
             <logicalFolder name="mmu" displayName="mmu" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/mmu/plib_mmu.c</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/mmu/plib_mmu.c</itemPath>
             </logicalFolder>
             <logicalFolder name="pio" displayName="pio" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/peripheral/pio/plib_pio.c</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/peripheral/pio/plib_pio.c</itemPath>
             </logicalFolder>
             <logicalFolder name="spi" displayName="spi" projectFiles="true">
               <logicalFolder name="spi_master" displayName="spi_master" projectFiles="true">
-                <itemPath>../src/config/sam_a5d29_curiosity/peripheral/spi/spi_master/plib_spi1_master.c</itemPath>
+                <itemPath>../src/config/sama5d29_curiosity/peripheral/spi/spi_master/plib_spi1_master.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="stdio" displayName="stdio" projectFiles="true">
-            <itemPath>../src/config/sam_a5d29_curiosity/stdio/xc32_monitor.c</itemPath>
+            <itemPath>../src/config/sama5d29_curiosity/stdio/xc32_monitor.c</itemPath>
           </logicalFolder>
           <logicalFolder name="system" displayName="system" projectFiles="true">
             <logicalFolder name="cache" displayName="cache" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/system/cache/sys_cache.c</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/system/cache/sys_cache.c</itemPath>
             </logicalFolder>
             <logicalFolder name="int" displayName="int" projectFiles="true">
-              <itemPath>../src/config/sam_a5d29_curiosity/system/int/src/sys_int.c</itemPath>
+              <itemPath>../src/config/sama5d29_curiosity/system/int/src/sys_int.c</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <itemPath>../src/config/sam_a5d29_curiosity/initialization.c</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/tasks.c</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/cstartup.S</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/interrupts.c</itemPath>
-          <itemPath>../src/config/sam_a5d29_curiosity/fault_handlers.c</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/initialization.c</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/tasks.c</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/cstartup.S</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/interrupts.c</itemPath>
+          <itemPath>../src/config/sama5d29_curiosity/fault_handlers.c</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app_client1.c</itemPath>
       <itemPath>../src/app_client2.c</itemPath>
-      <itemPath>../src/config/sam_a5d29_curiosity/pin_configurations.csv</itemPath>
+      <itemPath>../src/config/sama5d29_curiosity/pin_configurations.csv</itemPath>
       <itemPath>../src/app_monitor.c</itemPath>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
-    <conf name="sam_a5d29_curiosity" type="2">
+    <conf name="sama5d29_curiosity" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>ATSAMA5D29</targetDevice>
@@ -311,7 +318,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>j32</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.35</languageToolchainVersion>
+        <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -354,13 +361,14 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value="-marm"/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_a5d29_curiosity;../src/packs/ATSAMA5D29_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include"/>
+                  value="../src;../src/config/sama5d29_curiosity;../src/packs/ATSAMA5D29_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -378,6 +386,7 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
+        <appendMe value="-marm"/>
       </C32>
       <C32-AR>
         <property key="additional-options-chop-files" value="false"/>
@@ -410,6 +419,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -449,6 +459,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
@@ -458,7 +469,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_a5d29_curiosity;../src/packs/ATSAMA5D29_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include"/>
+                  value="../src;../src/config/sama5d29_curiosity;../src/packs/ATSAMA5D29_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
