@@ -57,8 +57,8 @@
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/aic/plib_aic.h"
 #include "peripheral/xdmac/plib_xdmac0.h"
-#include "peripheral/tc/plib_tc0.h"
 #include "peripheral/spi/spi_master/plib_spi1_master.h"
+#include "peripheral/tc/plib_tc0.h"
 #include "FreeRTOS.h"
 #include "task.h"
 #include "driver/sdspi/drv_sdspi.h"
@@ -82,13 +82,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "ATSAMA5D29"
-#define DEVICE_ARCH			 "CORTEX-A5"
-#define DEVICE_FAMILY		 "SAMA"
-#define DEVICE_SERIES		 "SAMA5D"
+#define DEVICE_NAME          "ATSAMA5D29"
+#define DEVICE_ARCH          "CORTEX-A5"
+#define DEVICE_FAMILY        "SAMA"
+#define DEVICE_SERIES        "SAMA5D2"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 498000000
+#define CPU_CLOCK_FREQUENCY 996000000U
 
 // *****************************************************************************
 // *****************************************************************************
