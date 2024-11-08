@@ -237,7 +237,7 @@
                    displayName="Important Files"
                    projectFiles="true">
       <itemPath>Makefile</itemPath>
-      <itemPath>sam_a5d2_curiosity.mc3</itemPath>
+      <itemPath>sama5d29_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -327,15 +327,15 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.10.213"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.11.228"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
         <ScriptingSetting key="boot.use" value="true"/>
         <ScriptingSetting key="boot.entry_adr" value=""/>
         <ScriptingSetting key="boot.path"
-                          value="C:\h3_core_apps\core_apps_sam_a5d2\deps\at91bootstrap_binaries\at91bootstrap.elf"/>
+                          value="${ProjectDir}\..\..\..\..\..\..\deps\at91bootstrap_binaries\at91bootstrap.elf"/>
         <ScriptingSetting key="boot.prj" value=""/>
       </ScriptingSettings>
       <compileType>
@@ -357,8 +357,8 @@
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
-        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStepEnabled>true</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep>${MP_CC_DIR}/xc32-objcopy -O binary ${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.elf ${DISTDIR}/harmony.bin</makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -541,8 +541,8 @@
         <property key="memories.programmemory.ranges" value="200000-23ffff"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programmerToGoFilePath"
-                  value="C:/h3_core_apps/core_apps_sam_a5d2/apps/driver/sdmmc/async/sdio_read_write/sam_a5d2_curiosity.X/debug/default/sam_a5d2_curiosity_ptg"/>
-        <property key="programmerToGoImageName" value="sam_a5d2_curiosity_ptg"/>
+                  value="C:/h3_core_apps/core_apps_sam_a5d2/apps/driver/sdmmc/async/sdio_read_write/sama5d29_curiosity.X/debug/default/sama5d29_curiosity_ptg"/>
+        <property key="programmerToGoImageName" value="sama5d29_curiosity_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>
@@ -614,7 +614,7 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0x200000-0x23ffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoImageName" value="sam_a5d2_curiosity_ptg"/>
+        <property key="programmerToGoImageName" value="sama5d29_curiosity_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="false"/>
         <property key="programoptions.ledbrightness" value="5"/>
@@ -650,6 +650,7 @@
                   value="toolpack.updateoptions.specifictoolpack"/>
         <property key="toolpack.updateoptions.packversion" value="2.3.327"/>
         <property key="voltagevalue" value="3.25"/>
+        <property key="x.recover.delay" value="100000"/>
       </Tool>
       <j32>
         <property key="AutoSelectMemRanges" value="auto"/>
@@ -684,6 +685,7 @@
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
+        <property key="x.recover.delay" value="100000"/>
       </j32>
     </conf>
   </confs>
