@@ -50,7 +50,7 @@
 #include "interrupts.h"
 
 #define PIT_COUNTER_FREQUENCY       (82000000U / 16U)
-
+#define PIT_INTERRUPT_PERIOD_IN_US  (1000U)
 
 // *****************************************************************************
 // *****************************************************************************
@@ -168,26 +168,10 @@ void PIT_DelayUs(uint32_t delay_us)
     }
 }
 
-void PIT_TimerCallbackSet(PIT_CALLBACK callback, uintptr_t context)
-{
-    pit.callback = callback;
-    pit.context = context;
-}
 
-void __attribute__((used)) PIT_InterruptHandler(void)
+bool PIT_TimerPeriodHasExpired(void)
 {
-    uint32_t interruptStatus = PIT_REGS->PIT_SR;
-    /* Additional temporary variable used to prevent MISRA violations (Rule 13.x) */
-    uintptr_t context = pit.context;
-    if(interruptStatus != 0U)
-	{
-        (void)PIT_REGS->PIT_PIVR;
-        pit.tickCounter++;
-        if((pit.callback) != NULL)
-        {
-            pit.callback(context);
-        }
-    }
+    return ((PIT_REGS->PIT_SR & PIT_SR_PITS_Msk) != 0U);
 }
 /*******************************************************************************
  End of File
