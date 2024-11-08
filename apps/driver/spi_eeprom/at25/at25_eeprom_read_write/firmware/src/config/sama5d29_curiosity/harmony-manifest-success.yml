@@ -4,16 +4,21 @@
 
 
 project: at25_eeprom_read_write
-creation_date: 2024-02-28T18:04:45.298+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2024-11-08T09:42:27.657+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
-mcc_mode: IDE            # [IDE|Standalone|Headless]
-mcc_version: v5.4.1
-mcc_core_version: v5.6.1
-mplabx_version: v6.15        # if MPLAB X plugin only
-harmony_version: v1.5.1
-compiler: XC32 (v4.35)
+mcc_mode: Headless            # [IDE|Standalone|Headless]
+mcc_version: v5.5.1
+mcc_core_version: v5.7.1
+mplabx_version: NA        # if MPLAB X plugin only
+harmony_version: v1.5.3
+compiler: NA
 
 modules:
-    - {name: "core", version: "v3.13.3"}
-    - {name: "bsp", version: "v3.18.0"}
-    - {name: "CMSIS_5", version: "5.8.0"}
+    - {name: "csp", version: "v3.20.0-rc.1-24-g81500f2"}
+    - {name: "core", version: "v3.13.5-51-g02657a7"}
+    - {name: "CMSIS_5", version: "5.9.0"}
+    - {name: "bsp", version: "v3.20.1-21-g8f1763d"}
+
+packs:
+    - {name: "SAMA5D2_DFP", version: "1.11.228"}
+
