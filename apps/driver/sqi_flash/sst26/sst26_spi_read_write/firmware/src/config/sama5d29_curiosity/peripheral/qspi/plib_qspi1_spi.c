@@ -211,7 +211,7 @@ bool QSPI1_TransferSetup (QSPI_TRANSFER_SETUP * setup, uint32_t spiSourceClock )
     if(spiSourceClock == 0U)
     {
         // Fetch Master Clock Frequency directly
-        spiSourceClock = 15090909;
+        spiSourceClock = 30181818;
     }
 
     scbr = spiSourceClock/setup->clockFrequency;
