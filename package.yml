@@ -1,18 +1,18 @@
 package:
   format-version: "1.0.0"
   name: "core_apps_sam_a5d2"
-  version: "v3.4.0"
+  version: "v3.6.0"
   type: "application"
   status: "production"
   required: false
 
   dependencies:
-    - name: "csp"
+    - name: "FreeRTOS-Kernel"
       type: "package"
-      version: "3.18.3"
-    - name: "core"
-      type: "package"
-      version: "3.13.3"
+      version: "V11.1.0"
     - name: "bsp"
       type: "package"
-      version: "3.18.0"
+      version: "v3.17.0"
+    - name: "core"
+      type: "package"
+      version: "v3.14.0"
