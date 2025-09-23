@@ -124,6 +124,7 @@
             <itemPath>../src/packs/ATSAMA5D29_DFP/component/pit.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/component/isc.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/component/spi.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/syscwp.h</itemPath>
           </logicalFolder>
           <logicalFolder name="instance" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/icm.h</itemPath>
@@ -192,13 +193,11 @@
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/mcan1.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/aesb.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/tc1.h</itemPath>
-            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/s_pio.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/piob.h</itemPath>
-            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/s_pio_ctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pio_ctrl.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pioa.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pioc.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/piod.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/syscwp.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMA5D29_DFP/pio/sama5d29.h</itemPath>
@@ -223,8 +222,21 @@
       <itemPath>../src/app_monitor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity" displayName="async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity" projectFiles="true">
+        <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/components/BSP_SAM_A5D29_Curiosity.yml</itemPath>
+          <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/components/HarmonyCore.yml</itemPath>
+          <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/components/cmsis.yml</itemPath>
+          <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/components/core.yml</itemPath>
+          <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/components/dfp.yml</itemPath>
+          <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/components/drv_memory.yml</itemPath>
+          <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/components/drv_memory_0.yml</itemPath>
+          <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/components/drv_sst26.yml</itemPath>
+          <itemPath>async_sst26_read_write_sama5d29_curiosity_sama5d29_curiosity/components/qspi1.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>async_sst26_read_write_sama5d29_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
@@ -301,12 +313,12 @@
         <targetPluginBoard/>
         <platformTool>j32</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
-        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.11.228"/>
+        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.14.264"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
