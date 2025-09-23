@@ -1,0 +1,880 @@
+generatedFiles:
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/driver/usart/drv_usart_definitions.h
+  projectFolder: config/sama5d29_curiosity_freertos/driver/usart
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/driver/usart/src/drv_usart.c
+  projectFolder: config/sama5d29_curiosity_freertos/driver/usart
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/driver/usart/src/drv_usart_local.h
+  projectFolder: config/sama5d29_curiosity_freertos/driver/usart
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/bsp/bsp.c
+  projectFolder: config/sama5d29_curiosity_freertos/bsp
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/bsp/bsp.h
+  projectFolder: config/sama5d29_curiosity_freertos/bsp
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/uart/plib_uart_common.h
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/uart
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/uart/plib_uart0.h
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/uart
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/uart/plib_uart0.c
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/uart
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/pit/plib_pit.h
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/pit
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/pit/plib_pit.c
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/pit
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/device_cache.h
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/toolchain_specifics.h
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/main.c
+  projectFolder: ''
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/definitions.h
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/initialization.c
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/interrupts.c
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/interrupts.h
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/stdio/xc32_monitor.c
+  projectFolder: config/sama5d29_curiosity_freertos/stdio
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/mmu/plib_mmu.c
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/mmu
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/mmu/plib_mmu.h
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/mmu
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/matrix/plib_matrix.c
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/matrix
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/matrix/plib_matrix.h
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/matrix
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/clk/plib_clk.h
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/clk
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/clk/plib_clk.c
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/clk
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/pio/plib_pio.h
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/pio
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/pio/plib_pio.c
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/pio
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/pin_configurations.csv
+  projectFolder: ''
+  type: Important Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/aic/plib_aic.c
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/aic
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/peripheral/aic/plib_aic.h
+  projectFolder: config/sama5d29_curiosity_freertos/peripheral/aic
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/cstartup.S
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/ddr.ld
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Linker Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/fault_handlers.c
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/device.h
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/acc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/adc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/aes.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/aesb.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/aic.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/aximx.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/chipid.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/classd.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/flexcom.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/gmac.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/i2sc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/icm.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/isc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/l2cc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/lcdc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/matrix.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/mcan.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/mpddrc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/pdmic.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/pio.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/pit.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/pmc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/ptc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/pwm.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/qspi.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/rstc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/rtc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/rxlp.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/sckc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/sdmmc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/secumod.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/sfc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/sfr.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/sfrbu.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/sha.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/shdwc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/smc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/spi.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/ssc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/syscwp.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/tc.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/tdes.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/trng.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/twihs.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/uart.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/udphs.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/uhphs.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/wdt.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/component/xdmac.h
+  projectFolder: packs/ATSAMA5D29_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/acc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/adc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/aes.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/aesb.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/aic.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/aximx.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/chipid.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/classd.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/flexcom0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/flexcom1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/flexcom2.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/flexcom3.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/flexcom4.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/gmac.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/hsmc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/i2sc0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/i2sc1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/icm.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/isc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/l2cc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/lcdc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/matrix0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/matrix1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/mcan0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/mcan1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/mpddrc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/pdmic.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/pio.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/pioa.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/piob.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/pioc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/piod.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/pit.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/pmc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/ptc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/pwm.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/qspi0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/qspi1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/rstc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/rtc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/rxlp.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/saic.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/sckc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/sdmmc0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/sdmmc1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/secumod.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/sfc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/sfr.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/sfrbu.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/sha.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/shdwc.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/spi0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/spi1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/ssc0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/ssc1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/syscwp.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/tc0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/tc1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/tdes.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/trng.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/twihs0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/twihs1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/uart0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/uart1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/uart2.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/uart3.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/uart4.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/udphs.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/wdt.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/xdmac0.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/instance/xdmac1.h
+  projectFolder: packs/ATSAMA5D29_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/sama5d29.h
+  projectFolder: packs/ATSAMA5D29_DFP
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/ATSAMA5D29_DFP/pio/sama5d29.h
+  projectFolder: packs/ATSAMA5D29_DFP/pio
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core_A/Include/cmsis_compiler.h
+  projectFolder: packs/CMSIS/CMSIS/Core_A/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core_A/Include/cmsis_gcc.h
+  projectFolder: packs/CMSIS/CMSIS/Core_A/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core_A/Include/cmsis_iccarm.h
+  projectFolder: packs/CMSIS/CMSIS/Core_A/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core_A/Include/cmsis_cp15.h
+  projectFolder: packs/CMSIS/CMSIS/Core_A/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core_A/Include/core_ca.h
+  projectFolder: packs/CMSIS/CMSIS/Core_A/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/FreeRTOSConfig.h
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/freertos_hooks.c
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/croutine.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/list.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/queue.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/timers.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/event_groups.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/stream_buffer.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c
+  projectFolder: FreeRTOS/Source/portable/MemMang
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/croutine.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/event_groups.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/list.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/portable.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/projdefs.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/queue.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/semphr.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/task.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/timers.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/XC32/SAM/CA5/port.c
+  projectFolder: FreeRTOS/Source/portable/XC32/SAM/CA5
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/XC32/SAM/CA5/portASM.S
+  projectFolder: FreeRTOS/Source/portable/XC32/SAM/CA5
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/XC32/SAM/CA5/portmacro.h
+  projectFolder: FreeRTOS/Source/portable/XC32/SAM/CA5
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/XC32/SAM/CA5/FreeRTOS_tick_config.c
+  projectFolder: FreeRTOS/Source/portable/XC32/SAM/CA5
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/driver/usart/drv_usart.h
+  projectFolder: config/sama5d29_curiosity_freertos/driver/usart
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/driver/driver.h
+  projectFolder: config/sama5d29_curiosity_freertos/driver
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/driver/driver_common.h
+  projectFolder: config/sama5d29_curiosity_freertos/driver
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/system/system.h
+  projectFolder: config/sama5d29_curiosity_freertos/system
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/system/system_common.h
+  projectFolder: config/sama5d29_curiosity_freertos/system
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/system/system_module.h
+  projectFolder: config/sama5d29_curiosity_freertos/system
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/system/int/sys_int.h
+  projectFolder: config/sama5d29_curiosity_freertos/system/int
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/system/int/sys_int_mapping.h
+  projectFolder: config/sama5d29_curiosity_freertos/system/int
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/system/int/src/sys_int.c
+  projectFolder: config/sama5d29_curiosity_freertos/system/int
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/system/cache/sys_cache.h
+  projectFolder: config/sama5d29_curiosity_freertos/system/cache
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/system/cache/sys_cache.c
+  projectFolder: config/sama5d29_curiosity_freertos/system/cache
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/osal/osal.h
+  projectFolder: config/sama5d29_curiosity_freertos/osal
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/osal/osal_definitions.h
+  projectFolder: config/sama5d29_curiosity_freertos/osal
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/osal/osal_freertos.h
+  projectFolder: config/sama5d29_curiosity_freertos/osal
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/osal/osal_freertos.c
+  projectFolder: config/sama5d29_curiosity_freertos/osal
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/app_usart_echo.c
+  projectFolder: ''
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/app_usart_echo.h
+  projectFolder: ''
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/user.h
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/configuration.h
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/sys_tasks.h
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/tasks.c
+  projectFolder: config/sama5d29_curiosity_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_a5d2/apps/driver/usart/sync/usart_echo/firmware/src/config/sama5d29_curiosity_freertos/system/debug/sys_debug.h
+  projectFolder: config/sama5d29_curiosity_freertos/system/debug
+  type: Header Files
+generatedSettings:
+- category: C32-LD
+  key: preprocessor-macros
+  value: ''
+- category: C32-LD
+  key: heap-size
+  value: '512'
+- category: C32
+  key: extra-include-directories
+  value: ../src;../src/config/sama5d29_curiosity_freertos;../src/packs/ATSAMA5D29_DFP;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/CMSIS/
+- category: C32CPP
+  key: extra-include-directories
+  value: ../src;../src/config/sama5d29_curiosity_freertos;../src/packs/ATSAMA5D29_DFP;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/CMSIS/
+- category: C32-LD
+  key: no-device-startup-code
+  value: 'true'
+- category: C32
+  key: appendMe
+  value: -marm
+- category: C32
+  key: extra-include-directories
+  value: ../src/third_party/rtos/FreeRTOS/Source/portable/XC32/SAM/CA5;../src/third_party/rtos/FreeRTOS/Source/include
+- category: C32CPP
+  key: extra-include-directories
+  value: ../src/third_party/rtos/FreeRTOS/Source/portable/XC32/SAM/CA5;../src/third_party/rtos/FreeRTOS/Source/include
+removedFiles: [
+  ]
