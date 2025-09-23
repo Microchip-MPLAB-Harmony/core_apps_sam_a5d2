@@ -185,6 +185,7 @@
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/component/uhphs.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/component/wdt.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/component/xdmac.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/component/syscwp.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/acc.h</itemPath>
@@ -252,13 +253,11 @@
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/wdt.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/xdmac0.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/xdmac1.h</itemPath>
-            <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/pio_ctrl.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/piob.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/piod.h</itemPath>
-            <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/s_pio.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/pioa.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/pioc.h</itemPath>
-            <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/s_pio_ctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/syscwp.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/pio/sama5d27cld2g.h</itemPath>
@@ -282,9 +281,27 @@
       <itemPath>../src/app.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos" displayName="sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos" projectFiles="true">
+        <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/BSP_SAM_A5D27_WLSOM1_Kit1.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/FreeRTOS.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/HarmonyCore.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/cmsis.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/core.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/dfp.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/drv_memory.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/drv_memory_0.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/drv_sst26.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/pit.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/qspi1.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/sys_fs.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/sys_time.yml</itemPath>
+          <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos_sam_a5d27_wlsom1_ek1_freertos/components/tc0.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_a5d27_wlsom1_ek1_freertos/harmony-manifest-success.yml</itemPath>
-      <itemPath>sqi_flash_fat_sam_a5d27_wlsom1_ek1_freertos.mc3</itemPath>
       <itemPath>../src/config/sam_a5d27_wlsom1_ek1_freertos/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
@@ -416,11 +433,11 @@
         <targetPluginBoard/>
         <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.11.228"/>
+        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.14.264"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
