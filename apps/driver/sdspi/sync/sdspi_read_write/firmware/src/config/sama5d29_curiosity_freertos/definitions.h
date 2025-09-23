@@ -14,7 +14,7 @@
 
 //DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -56,8 +56,8 @@
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/aic/plib_aic.h"
 #include "peripheral/xdmac/plib_xdmac0.h"
-#include "peripheral/spi/spi_master/plib_spi1_master.h"
 #include "peripheral/tc/plib_tc0.h"
+#include "peripheral/spi/spi_master/plib_spi1_master.h"
 #include "FreeRTOS.h"
 #include "task.h"
 #include "driver/sdspi/drv_sdspi.h"
