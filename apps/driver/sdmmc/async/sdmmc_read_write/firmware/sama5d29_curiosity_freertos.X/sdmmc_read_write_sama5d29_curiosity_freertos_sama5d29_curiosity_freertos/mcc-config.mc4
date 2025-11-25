@@ -35,7 +35,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sama5d29_curiosity_freertos\ddr.ld
   hash: d945ebbe1eda655d490ea238106694552967e0a38f4a4daf16cd30a63760bec3
 - file: ..\src\config\sama5d29_curiosity_freertos\definitions.h
-  hash: 84342b11953c9096ab3340ef0f9bf4fc5db7ce60c08889efd68fca516c396204
+  hash: 0440adec24296cdbae35ae2ba4cc01fc20df68c99b20e625e200f433935b40cc
 - file: ..\src\config\sama5d29_curiosity_freertos\device.h
   hash: 4d7a5908f693c0ebdd1b71878e37d52050e06c2881fda52e1991ac23de07335d
 - file: ..\src\config\sama5d29_curiosity_freertos\device_cache.h

@@ -293,6 +293,7 @@
         <itemPath>spi_self_loopback_multi_client_sama5d29_curiosity_freertos_sama5d29_curiosity_freertos/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/sama5d29_curiosity_freertos/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -400,7 +401,6 @@
       </logicalFolder>
       <itemPath>../src/app_monitor.c</itemPath>
       <itemPath>../src/main.c</itemPath>
-      <itemPath>../src/config/sama5d29_curiosity_freertos/pin_configurations.csv</itemPath>
       <itemPath>../src/app_client1.c</itemPath>
       <itemPath>../src/app_client2.c</itemPath>
     </logicalFolder>
@@ -419,7 +419,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
         <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.14.264"/>
       </packs>
       <ScriptingSettings>

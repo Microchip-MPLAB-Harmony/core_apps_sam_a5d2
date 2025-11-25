@@ -50,6 +50,7 @@
 #include <stdbool.h>
 #include "driver/usart/drv_usart.h"
 #include "bsp/bsp.h"
+#include "peripheral/pit/plib_pit.h"
 #include "peripheral/uart/plib_uart0.h"
 #include "peripheral/pit/plib_pit.h"
 #include "peripheral/mmu/plib_mmu.h"

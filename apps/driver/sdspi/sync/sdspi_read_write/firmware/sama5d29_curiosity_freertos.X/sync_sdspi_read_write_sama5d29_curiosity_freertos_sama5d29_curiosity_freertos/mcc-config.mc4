@@ -35,7 +35,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sama5d29_curiosity_freertos\ddr.ld
   hash: d945ebbe1eda655d490ea238106694552967e0a38f4a4daf16cd30a63760bec3
 - file: ..\src\config\sama5d29_curiosity_freertos\definitions.h
-  hash: 22e91d2735424ff2516c493ff91c5beb92f70fcbfbcf9717511f8aab0e8c84dc
+  hash: 86fac95f730ce1b1321fa56d0cd4ffa5466ab72e84e2cf2f4bb0dd7b070744d1
 - file: ..\src\config\sama5d29_curiosity_freertos\device.h
   hash: 4d7a5908f693c0ebdd1b71878e37d52050e06c2881fda52e1991ac23de07335d
 - file: ..\src\config\sama5d29_curiosity_freertos\device_cache.h
@@ -61,7 +61,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sama5d29_curiosity_freertos\freertos_hooks.c
   hash: c97b8f92ad60ff513a27ac7a27b3c6824b75005eb8f7b85fe5ae18deaf568c4e
 - file: ..\src\config\sama5d29_curiosity_freertos\initialization.c
-  hash: b61a272cf4d164f86c99da288b51bed176ed1d5308f7edeb870a3424e33f2620
+  hash: faeddcb8789919f494d06c46ea33535c66c77743666157d1442a9ae89454bf4e
 - file: ..\src\config\sama5d29_curiosity_freertos\interrupts.c
   hash: 41ca7a59ae228d276ee82e5a1c3e025d46541ffc70ef69ee42be6f7fb0c3dbb5
 - file: ..\src\config\sama5d29_curiosity_freertos\interrupts.h

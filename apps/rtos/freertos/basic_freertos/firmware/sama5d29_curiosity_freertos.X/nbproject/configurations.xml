@@ -269,6 +269,7 @@
         <itemPath>basic_freertos_sama5d29_curiosity_freertos_sama5d29_curiosity_freertos/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/sama5d29_curiosity_freertos/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -361,7 +362,6 @@
           <itemPath>../src/third_party/rtos/FreeRTOS/Source/list.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/config/sama5d29_curiosity_freertos/pin_configurations.csv</itemPath>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/task4.c</itemPath>
       <itemPath>../src/task3.c</itemPath>
@@ -384,7 +384,7 @@
       </toolsSet>
       <packs>
         <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.14.264"/>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>

@@ -31,7 +31,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sama5d29_curiosity\ddr.ld
   hash: d945ebbe1eda655d490ea238106694552967e0a38f4a4daf16cd30a63760bec3
 - file: ..\src\config\sama5d29_curiosity\definitions.h
-  hash: c4a1734af5a6cf3170382dfd4acf3011d6ba4b5b124fee32e2ac0f6ba30a3672
+  hash: 80aee585b0fdb81cc24e7dd2d154beec76d7bb89a45498035811534c0ee4ccdd
 - file: ..\src\config\sama5d29_curiosity\device.h
   hash: 4d7a5908f693c0ebdd1b71878e37d52050e06c2881fda52e1991ac23de07335d
 - file: ..\src\config\sama5d29_curiosity\device_cache.h

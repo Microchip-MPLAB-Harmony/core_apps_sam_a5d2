@@ -235,26 +235,27 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="sama5d29_curiosity_default"
-                     displayName="sama5d29_curiosity_default"
+      <logicalFolder name="sdio_read_write_sama5d29_curiosity_default"
+                     displayName="sdio_read_write_sama5d29_curiosity_default"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>sama5d29_curiosity_default/components/BSP_SAM_A5D29_Curiosity.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/HarmonyCore.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/cmsis.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/core.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/dfp.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/drv_sdmmc.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/drv_sdmmc_0.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/sdmmc1.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/stdio.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/sys_time.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/tc0.yml</itemPath>
-          <itemPath>sama5d29_curiosity_default/components/uart0.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/BSP_SAM_A5D29_Curiosity.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/HarmonyCore.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/cmsis.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/core.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/dfp.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/drv_sdmmc.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/drv_sdmmc_0.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/sdmmc1.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/stdio.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/sys_time.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/tc0.yml</itemPath>
+          <itemPath>sdio_read_write_sama5d29_curiosity_default/components/uart0.yml</itemPath>
         </logicalFolder>
-        <itemPath>sama5d29_curiosity_default/mcc-config.mc4</itemPath>
+        <itemPath>sdio_read_write_sama5d29_curiosity_default/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/default/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -325,7 +326,6 @@
           <itemPath>../src/config/default/fault_handlers.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/config/default/pin_configurations.csv</itemPath>
       <itemPath>../src/app.c</itemPath>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
@@ -344,7 +344,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
         <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.14.264"/>
       </packs>
       <ScriptingSettings>

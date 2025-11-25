@@ -16,6 +16,7 @@
               <itemPath>../src/config/sam_a5d27_som1_ek_freertos/driver/sdmmc/drv_sdmmc.h</itemPath>
               <itemPath>../src/config/sam_a5d27_som1_ek_freertos/driver/sdmmc/src/drv_sdmmc_local.h</itemPath>
               <itemPath>../src/config/sam_a5d27_som1_ek_freertos/driver/sdmmc/drv_sdmmc_definitions.h</itemPath>
+              <itemPath>../src/config/sam_a5d27_som1_ek_freertos/driver/sdmmc/src/drv_sdmmc_file_system.h</itemPath>
             </logicalFolder>
             <itemPath>../src/config/sam_a5d27_som1_ek_freertos/driver/driver.h</itemPath>
             <itemPath>../src/config/sam_a5d27_som1_ek_freertos/driver/driver_common.h</itemPath>
@@ -256,6 +257,7 @@
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/pioc.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/piod.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/hsmc.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CD1G_DFP/instance/syscwp.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="pio" projectFiles="true">
@@ -303,7 +305,6 @@
         <itemPath>sdmmc_fat_sam_a5d27_som1_ek_freertos_sam_a5d27_som1_ek_freertos/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/sam_a5d27_som1_ek_freertos/harmony-manifest-success.yml</itemPath>
       <itemPath>../src/config/sam_a5d27_som1_ek_freertos/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
@@ -445,7 +446,7 @@
       </toolsSet>
       <packs>
         <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.14.264"/>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>

@@ -11,61 +11,61 @@ modules:
 - cmsis
 - core
 - dfp
-- drv_sdspi
-- drv_sdspi_0
+- drv_usart
+- drv_usart_0
+- drv_usart_1
+- flexcom1
 - pit
-- spi1
-- sys_time
-- tc0
+- uart0
 generatedFileHashHistoryMap:
-- file: ..\src\app.c
-  hash: 632c78c323cb9f8c6359f20337440c08f8461eb4b0304552b6a3cfd5c4052620
-- file: ..\src\app.h
-  hash: 8e35d8509552a4d1d6e6f123ad75694cf784a707f7dac592ed33b55121aa8e28
+- file: ..\src\app_usart_usb_click_board.c
+  hash: 7b5e6d479d11c191d408839029417c9574d95f044e5850de3717dd113f6ddc72
+- file: ..\src\app_usart_usb_click_board.h
+  hash: 1d0672cdfb683601200d7183111bcf4950c1cb100c981d0fbaef60f8b1c0dd5f
+- file: ..\src\app_usart_usb_debug_port.c
+  hash: 3a19f019cd11836514ef4e89819dc7712d2c0ee2f28bb14906f421768d139905
+- file: ..\src\app_usart_usb_debug_port.h
+  hash: 4e5fef4069708c5441970f59d0139c67ad4af30006a1fe65e37449aeb514b01b
 - file: ..\src\config\sama5d29_curiosity_freertos\FreeRTOSConfig.h
   hash: f77661f7ee39929d5d276e9f99c237c56ad54e86d905a3de2318ff21cce6601e
 - file: ..\src\config\sama5d29_curiosity_freertos\bsp\bsp.c
   hash: 01c58e967b09b30368ece36ae4874a48c69738d6fa6301ea59fd33a3e817b157
 - file: ..\src\config\sama5d29_curiosity_freertos\bsp\bsp.h
-  hash: ad1d9a2089f6281e54db84f90f80837c68fd5835b8a465008b645110618c4b6d
+  hash: 23ac2e039ea486940b840312fa57152c7b8767e8f9425a57dbc11a4d913e9c27
 - file: ..\src\config\sama5d29_curiosity_freertos\configuration.h
-  hash: 0df0ced3a5b8d68344e7ca33595b1db50a99a46404ac76e491f4a697080d2c66
+  hash: 38ff38c10ac0665120d88b8b281584d24ece6e2cc94998387400a11c733724b9
 - file: ..\src\config\sama5d29_curiosity_freertos\cstartup.S
   hash: 9dc06ed8e26d53c3e09734516af95e8829dd1b098a88791388af60a901f24137
 - file: ..\src\config\sama5d29_curiosity_freertos\ddr.ld
   hash: d945ebbe1eda655d490ea238106694552967e0a38f4a4daf16cd30a63760bec3
 - file: ..\src\config\sama5d29_curiosity_freertos\definitions.h
-  hash: f010794e0363e36d28f44f24c6d06cb64b653384220daf9c17fd6cdfdbecb4e6
+  hash: 058fe55d63509c57ac92dc2832f7815ad3756a616fac1c03adc6ac8e453bf2de
 - file: ..\src\config\sama5d29_curiosity_freertos\device.h
   hash: 4d7a5908f693c0ebdd1b71878e37d52050e06c2881fda52e1991ac23de07335d
 - file: ..\src\config\sama5d29_curiosity_freertos\device_cache.h
-  hash: c194b0d909fc3e1bf4d670823b789c4f51615b6c574c631396a51e9e35a0a512
+  hash: 5338f76cd38109b0f8a1616b1fce69a0320d5e4c309c4be012775790af9f158c
 - file: ..\src\config\sama5d29_curiosity_freertos\driver\driver.h
   hash: 042fdd289460dbddb8e805850af7e3ac9aea95468e37414959781ebc5b2f454d
 - file: ..\src\config\sama5d29_curiosity_freertos\driver\driver_common.h
   hash: 5217965f6720b4fdf717e99ce9df4f2c9fbd82bbbc9655847166d1eefa806fee
-- file: ..\src\config\sama5d29_curiosity_freertos\driver\sdspi\drv_sdspi.h
-  hash: e32ef37da37e9aa65eced2ce7837fa357a49de927902754c92d7df4300d76a7c
-- file: ..\src\config\sama5d29_curiosity_freertos\driver\sdspi\drv_sdspi_definitions.h
-  hash: b0915e4a3afffb0a8a24bca64dc1b13de57692560e79b889c83ba07e9e7e0e14
-- file: ..\src\config\sama5d29_curiosity_freertos\driver\sdspi\src\drv_sdspi.c
-  hash: 266ecd46f5da020fed0074b62957ffe665812543e2bb3436cf8ba663a7571bee
-- file: ..\src\config\sama5d29_curiosity_freertos\driver\sdspi\src\drv_sdspi_local.h
-  hash: acfe89aec3f4cf34b9fe84f987b8cc46a0089917f40f28a2cc2bbf1062b8d2b9
-- file: ..\src\config\sama5d29_curiosity_freertos\driver\sdspi\src\drv_sdspi_plib_interface.c
-  hash: 59983d98a4b24d83abf6ee942298668f911e5d3a19364aa78e8c94b4ebceeb81
-- file: ..\src\config\sama5d29_curiosity_freertos\driver\sdspi\src\drv_sdspi_plib_interface.h
-  hash: 91c7dbafed62343f2199baef23c3c11b2bef51cf090a879a694dbf844405e3e1
+- file: ..\src\config\sama5d29_curiosity_freertos\driver\usart\drv_usart.h
+  hash: e13f2ded2fac55dd1f1522f341758ecac9115aef3acb88102a0ebcbe83cbdf79
+- file: ..\src\config\sama5d29_curiosity_freertos\driver\usart\drv_usart_definitions.h
+  hash: dd50fc221615aba56030c802a36d9f278bf3817038cb41f096ab678a6cf74557
+- file: ..\src\config\sama5d29_curiosity_freertos\driver\usart\src\drv_usart.c
+  hash: 2c6ff3423355399c0015030bfce56d47231626a0b92ba171a1c137d18d75c998
+- file: ..\src\config\sama5d29_curiosity_freertos\driver\usart\src\drv_usart_local.h
+  hash: fb1627074fc62b182af02ec69f886d67faa0b0c5855e45b1183026ea38d03b00
 - file: ..\src\config\sama5d29_curiosity_freertos\fault_handlers.c
   hash: 931e951cf7431d3d70d6ab81bcd265ff0ac8b3f473b73cd7a541f59d49786b7c
 - file: ..\src\config\sama5d29_curiosity_freertos\freertos_hooks.c
   hash: c97b8f92ad60ff513a27ac7a27b3c6824b75005eb8f7b85fe5ae18deaf568c4e
 - file: ..\src\config\sama5d29_curiosity_freertos\initialization.c
-  hash: 3a2d8c0478037b2c0f004e3f7bd708e35723f8fc1bc17839ef5ed97ec47ff27e
+  hash: 1deb422650be2c58a9d8a938dca7074027c1da610a05ea8d2d17cdcd14c37a3c
 - file: ..\src\config\sama5d29_curiosity_freertos\interrupts.c
   hash: 41ca7a59ae228d276ee82e5a1c3e025d46541ffc70ef69ee42be6f7fb0c3dbb5
 - file: ..\src\config\sama5d29_curiosity_freertos\interrupts.h
-  hash: 267edefd430a8838ce02287ffa35cf30e2e32120e588e916410ec6e6227e6d27
+  hash: 04b07d366fcecbd3b614ae51d93e478e23ef0e917dc45c7aa773e5609287e6ae
 - file: ..\src\config\sama5d29_curiosity_freertos\osal\osal.h
   hash: 1cfe3b61d9693b2369922041eef33fe16b3c1ccd9c85d4ded808b805f90a869c
 - file: ..\src\config\sama5d29_curiosity_freertos\osal\osal_definitions.h
@@ -75,17 +75,19 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sama5d29_curiosity_freertos\osal\osal_freertos.h
   hash: f9d8c97ce37bbb7516242ec37c4b0db387090cfed54580af683bc0ce126094e0
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\aic\plib_aic.c
-  hash: 24ed88031c9f1396e0f81107c0c7cac7f2d2d9b833c53ce2f80e05c64fc004ac
+  hash: 226fa74b3076834e2ca02fbe02345062cdb536a26ebb8e9012c0365590e4301e
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\aic\plib_aic.h
   hash: 150e39620b72b62d7b11a7338040d2c28c888d8714bbaa7462063932076b9081
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\clk\plib_clk.c
-  hash: a467f51d9d7927591abde844963efe35665b69dd8a6df30fb48c7af9693957ae
+  hash: 5f8a561b6bd409a60772b717760eca1989bc102517cda86ab32579bb282624ac
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\clk\plib_clk.h
   hash: bf774ca12503c7372b843f828e9df29957247874a318c611c1943d456590388b
-- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\l2cc\plib_l2cc.c
-  hash: 8b2599b89033ef3c0197f31539dea7b7f95a5eece32380dd5f3c65e32384509b
-- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\l2cc\plib_l2cc.h
-  hash: 1d4b0af21d5073259e3e6bc41971982190dee78c1c170567c053026c70342ee0
+- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\flexcom\usart\plib_flexcom1_usart.c
+  hash: 814cb5b1b2acc51960c079a20cd80f3eca7d395f471ada20cdc723e426ef1abe
+- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\flexcom\usart\plib_flexcom1_usart.h
+  hash: 5b87cb82ed9ed34c9e673c51f0be239fe2ef53e0c273e0515990bcd17dc7b2cf
+- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\flexcom\usart\plib_flexcom_usart_local.h
+  hash: 44c68d2efb80f2837e7bbcb39073972a6672c61ea2daf8f63e8c7e7da6e1208c
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\matrix\plib_matrix.c
   hash: 99eea2e3383b645778085769947e880fb23485d6312cec3e8e20d296bf36a70f
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\matrix\plib_matrix.h
@@ -95,37 +97,31 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\mmu\plib_mmu.h
   hash: 6cd47e9a81702a54bbf922b56e09b165a481d61df9298be2e81611521c6c134c
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\pio\plib_pio.c
-  hash: f32343906980dc77a1a9254cf0f91d9aa0fd16c21d8ef5efa86db829eb6c38eb
+  hash: 5a51e865e56f875fb0fe8ceecb65368fe9479f5a09b5b6b9ba5b7133860a301b
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\pio\plib_pio.h
-  hash: 0f0022441893294acde68f46b28f2f8b073de64d7ebcaa802ed0b3bc565889f7
+  hash: 9c05b53db2d44dcde26e3d553a5dc984b0324e1e8dcf7a46c723c6d31286f476
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\pit\plib_pit.c
   hash: 677d1d587ccafd1d88bfc9e7bb9a23c29a7a237bf9f51c208567d46a81dc4865
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\pit\plib_pit.h
   hash: a57d7f083c0934c099d205aefb6bb8c00b24aa27291fecdccad79dba5316bf50
-- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\spi\spi_master\plib_spi1_master.c
-  hash: 2630fb376b50df530e54e6527a81f27059984167ac93f1922d70194f99e9a31c
-- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\spi\spi_master\plib_spi1_master.h
-  hash: 9e6fd987fc5cbf4747d4fc45b2d21289ef5ef7f0364ff458b60a974d52424516
-- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\spi\spi_master\plib_spi_master_common.h
-  hash: e9a33a15a5f1458ccee12f902c1c4473038018a855a40614746be6e6e0e81b09
-- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\tc\plib_tc0.c
-  hash: 7882364abb157810fa82d048616efb5ffb323bfd62efa8639ba9009ec64651ee
-- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\tc\plib_tc0.h
-  hash: 79afe8007b0060db79e911ca3574ac588005761cabfd42c574d779bb71615a7d
-- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\tc\plib_tc_common.h
-  hash: 920c335908d58caf6b00d824870cc7c8b80011a09c27e6ff7b56f6fc237ee5c5
+- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\uart\plib_uart0.c
+  hash: a8950df7e4c4ea79ff558d5390ce3131fba9ba370ea0037eeb0ea29871cfafe7
+- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\uart\plib_uart0.h
+  hash: ac489953381ac7ab02930b0a842e84e4ce503cef3bb5d905b7c7a85756204670
+- file: ..\src\config\sama5d29_curiosity_freertos\peripheral\uart\plib_uart_common.h
+  hash: 345a16690828c424b43be3f872bea3aedf52658df320f0db8de261fedb4f8274
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\xdmac\plib_xdmac0.c
-  hash: a07c936d4472d98ab4048e912f02beb0bac92983bf25b97cb12cfd7f82a53df9
+  hash: b76f312f434e45318a2d7c6c9e00b99ac50973e8feadb0a0524bcabcf261bc2c
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\xdmac\plib_xdmac0.h
-  hash: 8c79611cd9aa87c2c2ab41e3e21d73716c014e2b39bdf5cc50d68cdc64bf124d
+  hash: fc0257f07ece96ebab3e56473b606f9cd064857a063b0a09988cabdcfd9804aa
 - file: ..\src\config\sama5d29_curiosity_freertos\peripheral\xdmac\plib_xdmac_common.h
   hash: 487e50cc7068ca884cba3f7319525d76466ced2e2ab8253c38c6909615e47f21
 - file: ..\src\config\sama5d29_curiosity_freertos\pin_configurations.csv
-  hash: 93d1413cbf5fcf2112c169ef17f3cc085c66d0c0c3811e6488d5c2ce1680fbef
+  hash: ff84b94801c4ecc0fb4c9d08b466bf171380fd859fa52e22fdf6fb368bf72b51
 - file: ..\src\config\sama5d29_curiosity_freertos\stdio\xc32_monitor.c
   hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
 - file: ..\src\config\sama5d29_curiosity_freertos\sys_tasks.h
-  hash: 8e1a48dc226e9af26c57fc69ba76d2de0279f4bbc96e071a57fd0911a782545d
+  hash: 52f2e8f62f526f5f44dcc237c90a33d3f2d6faadb56ab262208b445b3c183768
 - file: ..\src\config\sama5d29_curiosity_freertos\system\cache\sys_cache.c
   hash: f3e1b1a0784033dbb86eb289c81c3347398c08f65b18d09be0cfbf7d3a8f9bb6
 - file: ..\src\config\sama5d29_curiosity_freertos\system\cache\sys_cache.h
@@ -144,28 +140,14 @@ generatedFileHashHistoryMap:
   hash: dc104ae181fd5309e1bb42896246644fae95915a8e639b23ecfccc8840850274
 - file: ..\src\config\sama5d29_curiosity_freertos\system\int\sys_int_mapping.h
   hash: 652a7ea6c065e3a4cbcbfaef7c3519fca207fa36de25351875c3ba746dff242b
-- file: ..\src\config\sama5d29_curiosity_freertos\system\ports\sys_ports.h
-  hash: f45e9e0d816312da9ef63415c5a1c7ca299fcb89930f0478f156969161152583
-- file: ..\src\config\sama5d29_curiosity_freertos\system\ports\sys_ports_mapping.h
-  hash: 8b879741803b1927b0708cfc1cdd7ae6c08b0b4f06708429691d673990cf5920
 - file: ..\src\config\sama5d29_curiosity_freertos\system\system.h
   hash: 2b75f8e370e5cb2c54f70da7351ee149f0d5a7673e700f39b373099716b31b55
 - file: ..\src\config\sama5d29_curiosity_freertos\system\system_common.h
   hash: c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984
-- file: ..\src\config\sama5d29_curiosity_freertos\system\system_media.h
-  hash: e61ba67015cfba6a7425d077cd2c633ba9989218bbe585078efe2face729401f
 - file: ..\src\config\sama5d29_curiosity_freertos\system\system_module.h
   hash: 96c74368801b0a7aaa25aec3ec2cb0d483250385f103ffc1ff64089b4ca2c6d9
-- file: ..\src\config\sama5d29_curiosity_freertos\system\time\src\sys_time.c
-  hash: fa2d85ab967b80157caf8483f6e28a23b12b548844a1d80f2fef760cd9b99271
-- file: ..\src\config\sama5d29_curiosity_freertos\system\time\src\sys_time_local.h
-  hash: df56f970664902417d798760e44978cf4b84c108cf0761647a383e91db76980c
-- file: ..\src\config\sama5d29_curiosity_freertos\system\time\sys_time.h
-  hash: 6357468f7670698b16bfb6439d9919ed38eba99d4f03277a8b43ac34586fa1b3
-- file: ..\src\config\sama5d29_curiosity_freertos\system\time\sys_time_definitions.h
-  hash: 46537746b1d12ece6b682c9be1c8f3f219663c638c21a51a973762b7b393afe6
 - file: ..\src\config\sama5d29_curiosity_freertos\tasks.c
-  hash: 7404a52a59511192732cfa6092dd88a5450467739d23cf8e952232088e324f5b
+  hash: 2f53617471622e3d2583831306834437d46e7c03de5fa6371852fc2a78296f0e
 - file: ..\src\config\sama5d29_curiosity_freertos\toolchain_specifics.h
   hash: 406ef48ae415706beb0796977cab09342077f7b1efc3f24767bd97bbd5e5a433
 - file: ..\src\config\sama5d29_curiosity_freertos\user.h

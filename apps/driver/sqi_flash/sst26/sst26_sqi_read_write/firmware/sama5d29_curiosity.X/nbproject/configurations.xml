@@ -193,6 +193,10 @@
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/mcan0.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pmc.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/shdwc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pioc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/piod.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D29_DFP/instance/syscwp.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
@@ -219,21 +223,22 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity"
-                     displayName="sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity"
+      <logicalFolder name="sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity"
+                     displayName="sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity/components/BSP_SAM_A5D29_Curiosity.yml</itemPath>
-          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity/components/HarmonyCore.yml</itemPath>
-          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity/components/cmsis.yml</itemPath>
-          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity/components/core.yml</itemPath>
-          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity/components/dfp.yml</itemPath>
-          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity/components/drv_sst26.yml</itemPath>
-          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity/components/qspi1.yml</itemPath>
+          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity/components/BSP_SAM_A5D29_Curiosity.yml</itemPath>
+          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity/components/HarmonyCore.yml</itemPath>
+          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity/components/cmsis.yml</itemPath>
+          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity/components/core.yml</itemPath>
+          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity/components/dfp.yml</itemPath>
+          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity/components/drv_sst26.yml</itemPath>
+          <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity/components/qspi1.yml</itemPath>
         </logicalFolder>
-        <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sam_a5d29_curiosity/mcc-config.mc4</itemPath>
+        <itemPath>sst26_sqi_read_write_sama5d29_curiosity_sama5d29_curiosity/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/sama5d29_curiosity/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -299,7 +304,6 @@
           <itemPath>../src/config/sama5d29_curiosity/initialization.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/config/sama5d29_curiosity/pin_configurations.csv</itemPath>
       <itemPath>../src/app.c</itemPath>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
@@ -318,7 +322,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
         <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.14.264"/>
       </packs>
       <ScriptingSettings>
